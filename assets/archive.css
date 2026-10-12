@@ -196,6 +196,7 @@ h2.block{font-family:var(--disp); font-weight:400; font-size:1.5rem; color:var(-
   margin:0 0 10px; margin-inline-end:8px; box-shadow:var(--shadow-soft);}
 .btn-ours:hover{filter:brightness(1.18);}
 .status.done{color:var(--good); border-color:var(--good); background:var(--good-bg);}
+.status.paid{color:var(--gold-strong); border-color:var(--gold);}
 
 /* ---- הדפים שלנו: התשובות הסופיות והפתרון המלא. הכותרת שלהם נושאת את הזהב
        של המותג, כי הם שלנו. ---- */
