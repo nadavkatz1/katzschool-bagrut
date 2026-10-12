@@ -1,0 +1,1826 @@
+<!--
+  נבנה אוטומטית: template/tools/gen-archive.js
+  מקור הנתונים: .work/data/archive/catalogue.json
+  sha256 של הקטלוג: 6a4bbb1790b35230db9ca10a8d49999f34c5bc3c33b9687450b154140583fb6f
+  מזהה הבחינה בקטלוג: math-35572-2024-summer-a
+  השאלון: מקורות-קבועים/בגרויות-ארכיון/math/2024/summer-a/35572-summer-a-2024.pdf
+  sha256 של השאלון: 35cb5c57fd35f7b88aa312514082c95c9193db8b094f43f93014a76ac640006b
+  כתובת השאלון במשרד: https://meyda.education.gov.il/sheeloney_bagrut/2024/6/HEB/35572.pdf
+  העותק שאנחנו מגישים: bagrut/files/math/35572-2024-summer-a.pdf (זהה למקור, sha256 מושווה בכל ריצה)
+  הצעת הפתרון: מקורות-קבועים/בגרויות-ארכיון/math/2024/summer-a/35572-summer-a-2024-pitron.pdf
+  sha256 של הצעת הפתרון: 41e8eb51f4d78b9bfb0d60d7ab51ea721f508d77785007c36be94d11331c1719
+  כתובת הצעת הפתרון במשרד: https://meyda.education.gov.il/sheeloney_bagrut/Pitronot_bagrut/2024/6/pitron-035572-00-HEB.pdf
+  העותק שאנחנו מגישים: bagrut/files/math/35572-2024-summer-a-pitron.pdf (זהה למקור, sha256 מושווה בכל ריצה)
+  מצב האירוח: host (אירוח: הקבצים עצמם יושבים אצלנו תחת bagrut/files, והכפתור מצביע עליהם)
+  הדף: הפתרון המלא
+  המקור: template/archive-solutions/math-35572-2024-summer-a/solution.md
+  sha256 של המקור: 0affea8e94714d75c17863e957280ba1858a1423846dc03231b85c5c4dbd0fe0
+-->
+<!doctype html>
+<html lang="he" dir="rtl" data-subject="math">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>הפתרון המלא · מתמטיקה ב׳ · שאלון 35572 · קיץ, מועד א׳ תשפ״ד 2024 | ארכיון הבגרויות של נדב כץ</title>
+<meta name="description" content="הפתרון המלא של נדב כץ לשאלון 35572 במתמטיקה, קיץ, מועד א׳ תשפ״ד 2024: שאלה אחרי שאלה, שלב אחרי שלב.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Secular+One&family=David+Libre:wght@400;500;700&family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/archive.css">
+<link rel="icon" href="../assets/logo.png">
+</head>
+<body><header class="brandbar"><div class="brandbar-in">
+<img class="brandmark" src="../assets/logo.png" width="240" height="240" alt="נדב כץ">
+<div class="brandtext"><span class="brandname">נדב כץ</span> <span class="brandsep">·</span> <span class="brandline">בית הספר לשיעורים פרטיים ולקורסים</span></div>
+<a class="brandback" href="35572-2024-summer-a.html">לדף הבחינה</a>
+</div></header><main class="wrap"><nav class="crumbs" aria-label="מיקום"><a href="../index.html">ארכיון הבגרויות</a><span>›</span><a href="../index.html#math">מתמטיקה</a><span>›</span><a href="../index.html#sheelon-35572">שאלון 35572</a><span>›</span><a href="35572-2024-summer-a.html">קיץ, מועד א׳ תשפ״ד</a><span>›</span>הפתרון המלא</nav><section class="ourshead" data-kind="solution"><p class="eyebrow">הפתרון המלא · נדב כץ</p><h1>מתמטיקה ב׳</h1><p class="when">שאלון 35572 · קיץ, מועד א׳ · תשפ״ד · 2024</p><p class="ourslede">שאלה אחרי שאלה, שלב אחרי שלב, עם הנמקה לכל שלב. אפשר לקפוץ ישר לשאלה שבחרתם.</p><p class="ourslinks"><a href="35572-2024-summer-a.html">לדף הבחינה ולשאלון עצמו</a><a href="35572-2024-summer-a-answers.html">לתשובות הסופיות בלבד</a></p></section><nav class="soltoc" aria-label="תוכן הפתרון"><h2>בפתרון הזה</h2><ul><li class="lv2"><a href="#s1">לפני שמתחילים</a></li><li class="lv2"><a href="#s2">פרק ראשון: גאומטרייה אנליטית, וקטורים, טריגונומטרייה במרחב, מספרים מרוכבים</a></li><li class="lv3"><a href="#s3">שאלה 1, שני מעגלים ומשיקים שווים (<span class="math" dir="ltr">33⅓</span> נקודות)</a></li><li class="lv3"><a href="#s8">שאלה 2, שני ישרים במרחב ופירמידה (<span class="math" dir="ltr">33⅓</span> נקודות)</a></li><li class="lv3"><a href="#s14">שאלה 3, מעוין במישור גאוס (<span class="math" dir="ltr">33⅓</span> נקודות)</a></li><li class="lv2"><a href="#s19">פרק שני: גדילה ודעיכה, פונקציות מעריכיות ולוגריתמיות</a></li><li class="lv3"><a href="#s20">שאלה 4, פונקצייה מעריכית עם פרמטר, והפונקצייה <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">f</span></span></span> (<span class="math" dir="ltr">33⅓</span> נקודות)</a></li><li class="lv3"><a href="#s27">שאלה 5, פונקצייה עם <span class="math" dir="ltr">ln</span> בריבוע ושני שטחים (<span class="math" dir="ltr">33⅓</span> נקודות)</a></li><li class="lv2"><a href="#s34">התשובות בקצרה</a></li></ul></nav><article class="sol"><h2 id="s1" dir="rtl">לפני שמתחילים</h2>
+<p dir="rtl">זה השאלון השני של 5 יחידות לימוד בתוכנית החדשה. יש בו חמש שאלות בשני פרקים: גאומטרייה אנליטית, וקטורים, טריגונומטרייה במרחב ומספרים מרוכבים (שאלות 1 עד 3), וגדילה ודעיכה, פונקציות מעריכיות ולוגריתמיות (שאלות 4 ו-5).</p>
+<p dir="rtl">עונים על <b>שלוש שאלות</b> לבחירה. כל שאלה שווה <b><span class="math" dir="ltr">33⅓</span> נקודות</b>, ושלוש שאלות הן 100 נקודות. מי שעונה על יותר משלוש שאלות, נבדקות לו רק שלוש התשובות הראשונות שבמחברת. השאלון אינו מפרט ניקוד לתת-סעיפים.</p>
+<p dir="rtl">משך הבחינה שלוש שעות. מותרים מחשבון לא גרפי ודפי הנוסחאות המצורפים.</p>
+<p dir="rtl">כאן פתורות כל חמש השאלות, כדי שכל בחירה אפשרית של תלמיד תהיה מכוסה. בכל שאלה מופיעים הנתונים, השלבים והנימוק לכל שלב, ובסופה הערה קצרה על המקום שבו נופלים.</p>
+<hr>
+<h2 id="s2" dir="rtl">פרק ראשון: גאומטרייה אנליטית, וקטורים, טריגונומטרייה במרחב, מספרים מרוכבים</h2>
+<h3 id="s3" dir="rtl">שאלה 1, שני מעגלים ומשיקים שווים (<span class="math" dir="ltr">33⅓</span> נקודות)</h3>
+<p dir="rtl"><b>הנתונים.</b> מעגל <span class="math" dir="ltr">I</span> הוא <span class="math" dir="ltr">(x − 3)² + (y − 4)² = 9</span>, מרכזו <span class="math" dir="ltr">K(3 , 4)</span> ורדיוסו 3. מעגל <span class="math" dir="ltr">II</span> הוא <span class="math" dir="ltr">(x + 5)² + (y − 2)² = 1</span>, מרכזו <span class="math" dir="ltr">L(−5 , 2)</span> ורדיוסו 1. מן הנקודה <span class="math" dir="ltr">M</span> יוצאים משיק למעגל <span class="math" dir="ltr">I</span>, שנוגע בו בנקודה <span class="math" dir="ltr">A</span>, ומשיק למעגל <span class="math" dir="ltr">II</span>, שנוגע בו בנקודה <span class="math" dir="ltr">B</span>.</p>
+<h4 id="s4" dir="rtl">סעיף א: המקום הגאומטרי של <span class="math" dir="ltr">M</span></h4>
+<p dir="rtl">הכלי המרכזי כאן הוא המשולש ישר הזווית שיוצר משיק. הרדיוס <span class="math" dir="ltr">KA</span> מאונך למשיק <span class="math" dir="ltr">MA</span> בנקודת ההשקה, ולכן המשולש <span class="math" dir="ltr">MAK</span> ישר זווית ב-<span class="math" dir="ltr">A</span>. לפי משפט פיתגורס:</p>
+<div class="dm"><div class="eq" dir="ltr">MA² = MK² − KA² = MK² − 9</div></div>
+<p dir="rtl">באותו אופן במעגל <span class="math" dir="ltr">II</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">MB² = ML² − LB² = ML² − 1</div></div>
+<p dir="rtl">נסמן <span class="math" dir="ltr">M(x , y)</span>. שני האורכים חיוביים, ולכן התנאי <span class="math" dir="ltr">MA = MB</span> שקול לתנאי <span class="math" dir="ltr">MA² = MB²</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">MK² − 9 = ML² − 1</div><div class="eq" dir="ltr">(x − 3)² + (y − 4)² − 9 = (x + 5)² + (y − 2)² − 1</div></div>
+<p dir="rtl">נפתח סוגריים. באגף שמאל <span class="math" dir="ltr">x² − 6x + 9 + y² − 8y + 16 − 9</span>, ובאגף ימין <span class="math" dir="ltr">x² + 10x + 25 + y² − 4y + 4 − 1</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">x² + y² − 6x − 8y + 16 = x² + y² + 10x − 4y + 28</div></div>
+<p dir="rtl"><span class="math" dir="ltr">x²</span> ו-<span class="math" dir="ltr">y²</span> מופיעים בשני האגפים ומתבטלים. זה בדיוק הרגע שבו רואים שהתוצאה תהיה ישר, כי נשארת משוואה ממעלה ראשונה:</p>
+<div class="dm"><div class="eq" dir="ltr">−16x − 4y − 12 = 0</div><div class="eq" dir="ltr">4x + y + 3 = 0</div></div>
+<p dir="rtl"><b>המקום הגאומטרי הוא הישר <span class="math" dir="ltr">y = −4x − 3</span>.</b></p>
+<p dir="rtl">בדיקה שכדאי לעשות: האם מכל נקודה של הישר אפשר באמת להעביר משיקים? המרחק בין המרכזים הוא <span class="math" dir="ltr">KL = <span class="rad"><span class="rs">√</span><span class="rb g">8² + 2²</span></span> = <span class="rad"><span class="rs">√</span><span class="rb">68</span></span> ≈ 8.25</span>, וזה יותר מסכום הרדיוסים <span class="math" dir="ltr">3 + 1 = 4</span>. לכן המעגלים זרים, ואף אחד מהם אינו בתוך השני. אילו נקודה של הישר הייתה בתוך מעגל <span class="math" dir="ltr">I</span> או עליו, היה מתקיים <span class="math" dir="ltr">MK² − 9 ≤ 0</span>, ואז גם <span class="math" dir="ltr">ML² − 1 ≤ 0</span>, כלומר היא הייתה גם בתוך מעגל <span class="math" dir="ltr">II</span> או עליו. זה בלתי אפשרי כשהמעגלים זרים. לכן כל נקודה של הישר נמצאת מחוץ לשני המעגלים, ומכל אחת מהן יוצאים משיקים לשניהם.</p>
+<h4 id="s5" dir="rtl">סעיף ב</h4>
+<p dir="rtl"><b>(1)</b> השיפוע של <span class="math" dir="ltr">KL</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">m<sub>KL</sub> = (2 − 4) / (−5 − 3) = (−2) / (−8) = <span class="frac"><span class="fn">1</span><span class="fd">4</span></span></div></div>
+<p dir="rtl">השיפוע של הישר מסעיף א הוא <span class="math" dir="ltr">−4</span>, ומכפלת השיפועים:</p>
+<div class="dm"><div class="eq" dir="ltr">(<span class="frac"><span class="fn">1</span><span class="fd">4</span></span>) × (−4) = −1</div></div>
+<p dir="rtl"><b>מכפלת השיפועים היא <span class="math" dir="ltr">−1</span>, ולכן הישרים מאונכים זה לזה.</b></p>
+<p dir="rtl"><b>(2)</b> מסעיף א, בכל נקודה <span class="math" dir="ltr">M</span> של המקום הגאומטרי מתקיים:</p>
+<div class="dm"><div class="eq" dir="ltr">MK² − 9 = ML² − 1</div><div class="eq" dir="ltr">MK² = ML² + 8</div></div>
+<p dir="rtl">כלומר <span class="math" dir="ltr">MK²</span> גדול מ-<span class="math" dir="ltr">ML²</span> ב-8 בכל נקודה, ולכן תמיד <span class="math" dir="ltr">MK &gt; ML</span>.</p>
+<p dir="rtl"><b>לא קיימת נקודה <span class="math" dir="ltr">M</span> שבעבורה <span class="math" dir="ltr">ML = MK</span>.</b></p>
+<p dir="rtl">אותה מסקנה בדרך גאומטרית: הנקודות ששוות מרחק מ-<span class="math" dir="ltr">K</span> ומ-<span class="math" dir="ltr">L</span> יושבות על האנך האמצעי של הקטע <span class="math" dir="ltr">KL</span>. גם האנך האמצעי מאונך ל-<span class="math" dir="ltr">KL</span>, ולכן הוא מקביל לישר <span class="math" dir="ltr">y = −4x − 3</span>. אמצע הקטע <span class="math" dir="ltr">KL</span> הוא <span class="math" dir="ltr">(−1 , 3)</span>, והצבתו בישר נותנת <span class="math" dir="ltr">−4 × (−1) − 3 = 1</span>, ולא 3. אלה שני ישרים מקבילים ושונים, ואין להם נקודה משותפת.</p>
+<h4 id="s6" dir="rtl">סעיף ג: הנקודה <span class="math" dir="ltr">M</span> שבעבורה שטח המשולש <span class="math" dir="ltr">KLM</span> הוא 9</h4>
+<p dir="rtl">ניקח את <span class="math" dir="ltr">KL</span> כבסיס. אורכו <span class="math" dir="ltr"><span class="rad"><span class="rs">√</span><span class="rb">68</span></span> = 2<span class="rad"><span class="rs">√</span><span class="rb">17</span></span></span>, והגובה אליו הוא המרחק של <span class="math" dir="ltr">M</span> מן הישר <span class="math" dir="ltr">KL</span>.</p>
+<p dir="rtl">משוואת הישר <span class="math" dir="ltr">KL</span>, בשיפוע <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">4</span></span></span> דרך <span class="math" dir="ltr">K(3 , 4)</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">y − 4 = (<span class="frac"><span class="fn">1</span><span class="fd">4</span></span>)(x − 3)</div><div class="eq" dir="ltr">4y − 16 = x − 3</div><div class="eq" dir="ltr">x − 4y + 13 = 0</div></div>
+<p dir="rtl">(בדיקה עם <span class="math" dir="ltr">L</span>: <span class="math" dir="ltr">−5 − 8 + 13 = 0</span>.)</p>
+<p dir="rtl">מן השטח מקבלים את הגובה:</p>
+<div class="dm"><div class="eq" dir="ltr">½ × 2<span class="rad"><span class="rs">√</span><span class="rb">17</span></span> × h = 9</div><div class="eq" dir="ltr">h = <span class="frac"><span class="fn">9</span><span class="fd"><span class="rad"><span class="rs">√</span><span class="rb">17</span></span></span></span></div></div>
+<p dir="rtl"><span class="math" dir="ltr">M</span> על הישר מסעיף א, ולכן אפשר לכתוב <span class="math" dir="ltr">M(t , −4t − 3)</span>. נציב בנוסחת המרחק בין נקודה לישר:</p>
+<div class="dm"><div class="eq" dir="ltr">|t − 4(−4t − 3) + 13| / <span class="rad"><span class="rs">√</span><span class="rb">17</span></span> = <span class="frac"><span class="fn">9</span><span class="fd"><span class="rad"><span class="rs">√</span><span class="rb">17</span></span></span></span></div><div class="eq" dir="ltr">|17t + 25| = 9</div></div>
+<div class="dm"><div class="eqgrid" dir="ltr"><span class="lhs">17t + 25</span><span class="rhs">= 9     ⟹   t = −<span class="frac"><span class="fn">16</span><span class="fd">17</span></span></span><span class="lhs">17t + 25</span><span class="rhs">= −9    ⟹   t = −2</span></div></div>
+<p dir="rtl">יצאו שתי נקודות, אחת מכל צד של <span class="math" dir="ltr">KL</span>. נבדוק איזו מהן מעל הישר. משוואת <span class="math" dir="ltr">KL</span> בצורה מפורשת היא <span class="math" dir="ltr">y = <span class="frac"><span class="fn g">x + 13</span><span class="fd">4</span></span></span>.</p>
+<ul><li dir="rtl"><span class="math" dir="ltr">t = −2</span> נותן <span class="math" dir="ltr">M(−2 , 5)</span>. על הישר <span class="math" dir="ltr">KL</span>, ב-<span class="math" dir="ltr">x = −2</span>, הגובה הוא <span class="math" dir="ltr"><span class="frac"><span class="fn">11</span><span class="fd">4</span></span> = 2.75</span>, ו-5 גדול ממנו. <b>הנקודה מעל הישר.</b></li><li dir="rtl"><span class="math" dir="ltr">t = −<span class="frac"><span class="fn">16</span><span class="fd">17</span></span></span> נותן <span class="math" dir="ltr">M(−<span class="frac"><span class="fn">16</span><span class="fd">17</span></span> , <span class="frac"><span class="fn">13</span><span class="fd">17</span></span>)</span>. כאן <span class="math" dir="ltr"><span class="frac"><span class="fn">13</span><span class="fd">17</span></span> ≈ 0.76</span>, ואילו הישר באותו <span class="math" dir="ltr">x</span> נמצא בגובה <span class="math" dir="ltr"><span class="frac"><span class="fn">205</span><span class="fd">68</span></span> ≈ 3.01</span>. הנקודה מתחת לישר, ולכן נפסלת.</li></ul>
+<p class="ltrp" dir="ltr"><b><span class="math" dir="ltr">M(−2 , 5)</span>.</b></p>
+<p dir="rtl">בדיקה בנוסחת השטח לפי שיעורי הקודקודים <span class="math" dir="ltr">K(3 , 4), L(−5 , 2), M(−2 , 5)</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">S = ½ |3(2 − 5) + (−5)(5 − 4) + (−2)(4 − 2)| = ½ |−9 − 5 − 4| = 9</div></div>
+<h4 id="s7" dir="rtl">סעיף ד: המשיק לפרבולה בנקודה <span class="math" dir="ltr">M</span></h4>
+<p dir="rtl"><span class="math" dir="ltr">M(−2 , 5)</span> נמצאת על הפרבולה <span class="math" dir="ltr">y² = 2px</span>, ולכן:</p>
+<div class="dm"><div class="eqgrid" dir="ltr"><span class="lhs">5²</span><span class="rhs">= 2p × (−2)</span><span class="lhs">25</span><span class="rhs">= −4p</span></div><div class="eq" dir="ltr">p = −<span class="frac"><span class="fn">25</span><span class="fd">4</span></span></div></div>
+<p dir="rtl">הפרבולה היא <span class="math" dir="ltr">y² = −12.5x</span>. היא נפתחת שמאלה, וזה מתאים: <span class="math" dir="ltr">M</span> משמאל לציר ה-<span class="math" dir="ltr">y</span>.</p>
+<p dir="rtl">משוואת המשיק לפרבולה <span class="math" dir="ltr">y² = 2px</span> בנקודה <span class="math" dir="ltr">(x₁ , y₁)</span> שעליה היא <span class="math" dir="ltr">y·y₁ = p(x + x₁)</span>. נציב <span class="math" dir="ltr">x₁ = −2, y₁ = 5</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">5y = −(<span class="frac"><span class="fn">25</span><span class="fd">4</span></span>)(x − 2)</div><div class="eqgrid" dir="ltr"><span class="lhs">y</span><span class="rhs">= −(<span class="frac"><span class="fn">5</span><span class="fd">4</span></span>)(x − 2)</span><span class="lhs">y</span><span class="rhs">= −(<span class="frac"><span class="fn">5</span><span class="fd">4</span></span>)x + <span class="frac"><span class="fn">5</span><span class="fd">2</span></span></span></div></div>
+<p dir="rtl"><b>משוואת המשיק: <span class="math" dir="ltr">y = −1.25x + 2.5</span>.</b></p>
+<p dir="rtl">בדיקה: נבודד <span class="math" dir="ltr">x</span> מן המשיק, <span class="math" dir="ltr">x = <span class="frac"><span class="fn g">10 − 4y</span><span class="fd">5</span></span></span>, ונציב בפרבולה:</p>
+<div class="dm"><div class="eq" dir="ltr">y² = −(<span class="frac"><span class="fn">25</span><span class="fd">2</span></span>) × <span class="frac"><span class="fn g">10 − 4y</span><span class="fd">5</span></span> = −25 + 10y</div><div class="eq" dir="ltr">y² − 10y + 25 = 0</div><div class="eq" dir="ltr">(y − 5)² = 0</div></div>
+<p dir="rtl">פתרון יחיד, <span class="math" dir="ltr">y = 5</span>, כלומר הישר פוגש את הפרבולה רק בנקודה <span class="math" dir="ltr">M</span>. כך נראה משיק.</p>
+<blockquote class="tip"><p dir="rtl"><b>איפה נופלים בשאלה 1.</b> בסעיף א כותבים <span class="math" dir="ltr">MA = MK − 3</span>, כאילו אורך המשיק הוא המרחק מן המרכז פחות הרדיוס. אורך המשיק מגיע מפיתגורס, לא מחיסור. בסעיף ג מקבלים שתי נקודות ושוכחים לבחור את זו שמעל <span class="math" dir="ltr">KL</span>. ובסעיף ד נבהלים מ-<span class="math" dir="ltr">p</span> שלילי, אף שזה תקין לגמרי: הפרבולה פשוט נפתחת שמאלה.</p></blockquote>
+<hr>
+<h3 id="s8" dir="rtl">שאלה 2, שני ישרים במרחב ופירמידה (<span class="math" dir="ltr">33⅓</span> נקודות)</h3>
+<p dir="rtl"><b>הנתונים.</b></p>
+<div class="dm"><div class="eqgrid" dir="ltr"><span class="lhs">ℓ₁ : x</span><span class="rhs">= t(−1 , 3 , 0)</span><span class="lhs">ℓ₂ : x</span><span class="rhs">= (1 , −3 , 0) + m(0 , k , 1)</span></div></div>
+<p dir="rtl"><span class="math" dir="ltr">k</span> הוא פרמטר, ו-<span class="math" dir="ltr">A</span> היא נקודת החיתוך של שני הישרים.</p>
+<h4 id="s9" dir="rtl">סעיף א: הנקודה <span class="math" dir="ltr">A</span></h4>
+<p dir="rtl">נשווה את שלושת הרכיבים:</p>
+<div class="dm"><div class="eqgrid" dir="ltr"><span class="lhs">−t</span><span class="rhs">= 1</span><span class="lhs">3t</span><span class="rhs">= −3 + k·m</span><span class="lhs">0</span><span class="rhs">= m</span></div></div>
+<p dir="rtl">מן המשוואה השלישית <span class="math" dir="ltr">m = 0</span>, ומן הראשונה <span class="math" dir="ltr">t = −1</span>. נציב במשוואה השנייה:</p>
+<div class="dm"><div class="eq" dir="ltr">3 × (−1) = −3 + k × 0</div><div class="eq" dir="ltr">−3 = −3</div></div>
+<p dir="rtl">המשוואה מתקיימת לכל <span class="math" dir="ltr">k</span>, ולכן הישרים נחתכים לכל ערך של <span class="math" dir="ltr">k</span>.</p>
+<p dir="rtl"><b><span class="math" dir="ltr">A(1 , −3 , 0)</span>.</b> שימו לב שזו בדיוק נקודת המוצא בהצגה של <span class="math" dir="ltr">ℓ₂</span>.</p>
+<h4 id="s10" dir="rtl">סעיף ב: הערך של <span class="math" dir="ltr">k</span></h4>
+<p dir="rtl">הזווית בין שני ישרים היא הזווית החדה (או הישרה) בין וקטורי הכיוון שלהם, ולכן בנוסחה לוקחים את הערך המוחלט של המכפלה הסקלרית:</p>
+<div class="dm"><div class="eqgrid" dir="ltr"><span class="lhs">u</span><span class="rhs">= (−1 , 3 , 0),    |u| = <span class="rad"><span class="rs">√</span><span class="rb">10</span></span></span><span class="lhs">v</span><span class="rhs">= (0 , k , 1),     |v| = <span class="rad"><span class="rs">√</span><span class="rb g">k² + 1</span></span></span></div><div class="eq" dir="ltr">u · v = 0 + 3k + 0 = 3k</div></div>
+<div class="dm"><div class="eq" dir="ltr">cos α = |3k| / (<span class="rad"><span class="rs">√</span><span class="rb">10</span></span> · <span class="rad"><span class="rs">√</span><span class="rb g">k² + 1</span></span>) = <span class="frac"><span class="fn">3<span class="rad"><span class="rs">√</span><span class="rb">2</span></span></span><span class="fd">5</span></span></div></div>
+<p dir="rtl">נעלה את שני האגפים בריבוע:</p>
+<div class="dm"><div class="eq" dir="ltr">9k² / (10(k² + 1)) = <span class="frac"><span class="fn">18</span><span class="fd">25</span></span></div><div class="eq" dir="ltr">225k² = 180(k² + 1)</div><div class="eq" dir="ltr">45k² = 180</div><div class="eq" dir="ltr">k² = 4</div></div>
+<p dir="rtl"><b><span class="math" dir="ltr">k = 2</span> או <span class="math" dir="ltr">k = −2</span>.</b> שני הערכים נותנים את אותה זווית בין הישרים. מכאן ממשיכים עם <span class="math" dir="ltr">k = 2</span>, כמו שהשאלון מורה.</p>
+<h4 id="s11" dir="rtl">סעיף ג: משוואת המישור <span class="math" dir="ltr">π</span></h4>
+<p dir="rtl">עבור <span class="math" dir="ltr">k = 2</span> וקטורי הכיוון הם <span class="math" dir="ltr">u = (−1 , 3 , 0)</span> ו-<span class="math" dir="ltr">v = (0 , 2 , 1)</span>. הנורמל למישור מאונך לשניהם. נסמן <span class="math" dir="ltr">n = (a , b , c)</span>:</p>
+<div class="dm"><div class="eqgrid" dir="ltr"><span class="lhs">n · u</span><span class="rhs">= −a + 3b = 0    ⟹   a = 3b</span><span class="lhs">n · v</span><span class="rhs">= 2b + c = 0     ⟹   c = −2b</span></div></div>
+<p dir="rtl">נבחר <span class="math" dir="ltr">b = 1</span> ונקבל <span class="math" dir="ltr">n = (3 , 1 , −2)</span>.</p>
+<p dir="rtl">המישור עובר בראשית הצירים, כי <span class="math" dir="ltr">ℓ₁</span> עוברת בה (ב-<span class="math" dir="ltr">t = 0</span>). לכן המספר החופשי הוא 0:</p>
+<p class="ltrp" dir="ltr"><b><span class="math" dir="ltr">π : 3x + y − 2z = 0</span></b></p>
+<p dir="rtl">בדיקה עם <span class="math" dir="ltr">A(1 , −3 , 0)</span>: <span class="math" dir="ltr">3 − 3 − 0 = 0</span>.</p>
+<h4 id="s12" dir="rtl">סעיף ד: למה המשולש <span class="math" dir="ltr">AOB</span> נמצא במישור <span class="math" dir="ltr">π</span></h4>
+<ul><li dir="rtl"><span class="math" dir="ltr">O</span> נמצאת על <span class="math" dir="ltr">ℓ₁</span>, בפרמטר <span class="math" dir="ltr">t = 0</span>.</li><li dir="rtl"><span class="math" dir="ltr">A</span> נמצאת על שני הישרים.</li><li dir="rtl"><span class="math" dir="ltr">B</span> נמצאת על <span class="math" dir="ltr">ℓ₂</span>, לפי הנתון.</li></ul>
+<p dir="rtl">שני הישרים מוכלים כולם במישור <span class="math" dir="ltr">π</span>, ולכן גם שלושת הקודקודים <span class="math" dir="ltr">O, A</span> ו-<span class="math" dir="ltr">B</span> נמצאים בו. מישור שמכיל את שלושת הקודקודים של משולש מכיל את כל המשולש.</p>
+<p dir="rtl"><b>לכן המשולש <span class="math" dir="ltr">AOB</span> נמצא במישור <span class="math" dir="ltr">π</span>.</b></p>
+<h4 id="s13" dir="rtl">סעיף ה: הנקודה <span class="math" dir="ltr">S</span></h4>
+<p dir="rtl"><b>שטח הבסיס <span class="math" dir="ltr">AOB</span>.</b> הצלע <span class="math" dir="ltr">AO</span> מונחת על <span class="math" dir="ltr">ℓ₁</span> והצלע <span class="math" dir="ltr">AB</span> מונחת על <span class="math" dir="ltr">ℓ₂</span>. לכן הזווית <span class="math" dir="ltr">OAB</span> שווה ל-<span class="math" dir="ltr">α</span> או ל-<span class="math" dir="ltr">180° − α</span>, ובשני המקרים הסינוס שלה הוא <span class="math" dir="ltr">sin α</span>. נבדוק קודם את <span class="math" dir="ltr">cos α</span> עבור <span class="math" dir="ltr">k = 2</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">cos α = |3 × 2| / (<span class="rad"><span class="rs">√</span><span class="rb">10</span></span> · <span class="rad"><span class="rs">√</span><span class="rb">5</span></span>) = <span class="frac"><span class="fn">6</span><span class="fd"><span class="rad"><span class="rs">√</span><span class="rb">50</span></span></span></span> = <span class="frac"><span class="fn">6</span><span class="fd g">5<span class="rad"><span class="rs">√</span><span class="rb">2</span></span></span></span> = <span class="frac"><span class="fn">3<span class="rad"><span class="rs">√</span><span class="rb">2</span></span></span><span class="fd">5</span></span></div></div>
+<p dir="rtl">ומכאן:</p>
+<div class="dm"><div class="eq" dir="ltr">sin α = <span class="rad"><span class="rs">√</span><span class="rb g">1 − <span class="frac"><span class="fn">18</span><span class="fd">25</span></span></span></span> = <span class="rad"><span class="rs">√</span><span class="rb g"><span class="frac"><span class="fn">7</span><span class="fd">25</span></span></span></span> = <span class="frac"><span class="fn"><span class="rad"><span class="rs">√</span><span class="rb">7</span></span></span><span class="fd">5</span></span></div></div>
+<p dir="rtl">הצלעות:</p>
+<div class="dm"><div class="eq" dir="ltr">AO = <span class="rad"><span class="rs">√</span><span class="rb g">1² + (−3)² + 0²</span></span> = <span class="rad"><span class="rs">√</span><span class="rb">10</span></span></div><div class="eqr" dir="rtl"><span class="math" dir="ltr">AB = AO = <span class="rad"><span class="rs">√</span><span class="rb">10</span></span></span>          (נתון: המשולש שווה שוקיים)</div></div>
+<div class="dm"><div class="eq" dir="ltr">S<sub>AOB</sub> = ½ · AO · AB · sin α = ½ · <span class="rad"><span class="rs">√</span><span class="rb">10</span></span> · <span class="rad"><span class="rs">√</span><span class="rb">10</span></span> · <span class="frac"><span class="fn"><span class="rad"><span class="rs">√</span><span class="rb">7</span></span></span><span class="fd">5</span></span> = <span class="rad"><span class="rs">√</span><span class="rb">7</span></span></div></div>
+<p dir="rtl">שימו לב שלא היינו צריכים למצוא את <span class="math" dir="ltr">B</span> עצמה.</p>
+<p dir="rtl"><b>גובה הפירמידה.</b> <span class="math" dir="ltr">S</span> נמצאת על האנך למישור שעולה מ-<span class="math" dir="ltr">A</span>, ולכן <span class="math" dir="ltr">SA</span> הוא הגובה לבסיס <span class="math" dir="ltr">AOB</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">V = ⅓ · S<sub>AOB</sub> · SA</div><div class="eq" dir="ltr"><span class="frac"><span class="fn">14<span class="rad"><span class="rs">√</span><span class="rb">2</span></span></span><span class="fd">3</span></span> = ⅓ · <span class="rad"><span class="rs">√</span><span class="rb">7</span></span> · SA</div><div class="eq" dir="ltr">SA = <span class="frac"><span class="fn">14<span class="rad"><span class="rs">√</span><span class="rb">2</span></span></span><span class="fd"><span class="rad"><span class="rs">√</span><span class="rb">7</span></span></span></span> = 14<span class="rad"><span class="rs">√</span><span class="rb g"><span class="frac"><span class="fn">2</span><span class="fd">7</span></span></span></span> = 2<span class="rad"><span class="rs">√</span><span class="rb">14</span></span></div></div>
+<p dir="rtl"><b>שיעורי <span class="math" dir="ltr">S</span>.</b> האנך יוצא מ-<span class="math" dir="ltr">A</span> בכיוון הנורמל <span class="math" dir="ltr">n = (3 , 1 , −2)</span>, שאורכו <span class="math" dir="ltr"><span class="rad"><span class="rs">√</span><span class="rb g">9 + 1 + 4</span></span> = <span class="rad"><span class="rs">√</span><span class="rb">14</span></span></span>. כדי להתרחק מ-<span class="math" dir="ltr">A</span> מרחק <span class="math" dir="ltr">2<span class="rad"><span class="rs">√</span><span class="rb">14</span></span></span> צריך ללכת פעמיים את הנורמל, לאחד משני הכיוונים:</p>
+<div class="dm"><div class="eq" dir="ltr">S = A ± 2n = (1 , −3 , 0) ± (6 , 2 , −4)</div></div>
+<p dir="rtl"><b><span class="math" dir="ltr">S(7 , −1 , −4)</span> או <span class="math" dir="ltr">S(−5 , −5 , 4)</span>.</b></p>
+<p dir="rtl">בדיקה: <span class="math" dir="ltr">SA = |2n| = 2<span class="rad"><span class="rs">√</span><span class="rb">14</span></span></span>, והנפח <span class="math" dir="ltr">⅓ · <span class="rad"><span class="rs">√</span><span class="rb">7</span></span> · 2<span class="rad"><span class="rs">√</span><span class="rb">14</span></span> = <span class="frac"><span class="fn">2<span class="rad"><span class="rs">√</span><span class="rb">98</span></span></span><span class="fd">3</span></span> = <span class="frac"><span class="fn">14<span class="rad"><span class="rs">√</span><span class="rb">2</span></span></span><span class="fd">3</span></span></span>.</p>
+<blockquote class="tip"><p dir="rtl"><b>איפה נופלים בשאלה 2.</b> בסעיף ב שוכחים את הערך המוחלט ומאבדים את <span class="math" dir="ltr">k = −2</span>. בסעיף ה מתחילים לחפש את <span class="math" dir="ltr">B</span> ומסתבכים עם שני מיקומים אפשריים שלה, כשבעצם השטח תלוי רק ב-<span class="math" dir="ltr">AO</span>, ב-<span class="math" dir="ltr">AB</span> וב-<span class="math" dir="ltr">sin α</span>. ובסוף שוכחים שהאנך יוצא לשני צדי המישור, והשאלה מבקשת במפורש את שתי האפשרויות.</p></blockquote>
+<hr>
+<h3 id="s14" dir="rtl">שאלה 3, מעוין במישור גאוס (<span class="math" dir="ltr">33⅓</span> נקודות)</h3>
+<p dir="rtl"><b>הנתונים.</b> <span class="math" dir="ltr">ABCD</span> מעוין, ואלכסוניו נפגשים בראשית הצירים. הקודקוד <span class="math" dir="ltr">A</span> ברביע הראשון והקודקוד <span class="math" dir="ltr">B</span> ברביע השני. המספר <span class="math" dir="ltr">z</span> מייצג את <span class="math" dir="ltr">A</span>, ונתון <span class="math" dir="ltr">BD = 2AC</span>.</p>
+<h4 id="s15" dir="rtl">סעיף א: הקודקודים <span class="math" dir="ltr">B, C</span> ו-<span class="math" dir="ltr">D</span> באמצעות <span class="math" dir="ltr">z</span></h4>
+<p dir="rtl">שלוש תכונות של מעוין עושות כאן את כל העבודה: האלכסונים חוצים זה את זה, הם מאונכים זה לזה, ונקודת המפגש שלהם היא כאן ראשית הצירים.</p>
+<ul><li dir="rtl"><b><span class="math" dir="ltr">C</span>.</b> הראשית היא אמצע האלכסון <span class="math" dir="ltr">AC</span>, ולכן <span class="math" dir="ltr">C</span> סימטרית ל-<span class="math" dir="ltr">A</span> ביחס לראשית: <b><span class="math" dir="ltr">C = −z</span></b>.</li><li dir="rtl"><b><span class="math" dir="ltr">B</span>.</b> האלכסון <span class="math" dir="ltr">BD</span> מאונך ל-<span class="math" dir="ltr">AC</span>, ולכן <span class="math" dir="ltr">OB</span> מאונך ל-<span class="math" dir="ltr">OA</span>. האורך: <span class="math" dir="ltr">OB = <span class="frac"><span class="fn">BD</span><span class="fd">2</span></span> = <span class="frac"><span class="fn">2AC</span><span class="fd">2</span></span> = AC = 2·OA</span>. סיבוב ב-90° מתבטא בכפל ב-<span class="math" dir="ltr">i</span>, ולכן <span class="math" dir="ltr">B = 2iz</span> או <span class="math" dir="ltr">B = −2iz</span>. נכתוב <span class="math" dir="ltr">z = a + bi</span> עם <span class="math" dir="ltr">a &gt; 0</span> ו-<span class="math" dir="ltr">b &gt; 0</span>. אז <span class="math" dir="ltr">2iz = −2b + 2ai</span>, ברביע השני, ואילו <span class="math" dir="ltr">−2iz = 2b − 2ai</span>, ברביע הרביעי. לכן <b><span class="math" dir="ltr">B = 2iz</span></b>.</li><li dir="rtl"><b><span class="math" dir="ltr">D</span>.</b> סימטרית ל-<span class="math" dir="ltr">B</span> ביחס לראשית: <b><span class="math" dir="ltr">D = −2iz</span></b>.</li></ul>
+<h4 id="s16" dir="rtl">סעיף ב</h4>
+<p dir="rtl">נתון <span class="math" dir="ltr">z = r(cos θ + i sin θ)</span>, ו-<span class="math" dir="ltr">θ</span> ברביע הראשון.</p>
+<p dir="rtl"><b>(1)</b> קודם נכתוב את ארבעת הקודקודים בהצגה קוטבית. נשתמש בשתי עובדות: <span class="math" dir="ltr">i = cos 90° + i sin 90°</span> וגם <span class="math" dir="ltr">−1 = cos 180° + i sin 180°</span>. בכפל מודולים מוכפלים וזוויות מתחברות:</p>
+<div class="dm"><div class="eqgrid" dir="ltr"><span class="lhs">A:  z</span><span class="rhs">= r(cos θ + i sin θ)</span><span class="lhs">B:  2iz</span><span class="rhs">= 2r(cos(θ + 90°) + i sin(θ + 90°))</span><span class="lhs">C:  −z</span><span class="rhs">= r(cos(θ + 180°) + i sin(θ + 180°))</span><span class="lhs">D:  −2iz</span><span class="rhs">= 2r(cos(θ + 270°) + i sin(θ + 270°))</span></div></div>
+<p dir="rtl">המספר ההופכי למספר בהצגה קוטבית: המודול הופך ל-1 חלקי המודול, והזווית מחליפה סימן. הוספה של 360° לזווית אינה משנה את המספר, ולכן:</p>
+<div class="dm"><div class="eqgrid" dir="ltr"><span class="lhs"><span class="frac"><span class="fn">1</span><span class="fd">z</span></span></span><span class="rhs">= (<span class="frac"><span class="fn">1</span><span class="fd">r</span></span>)(cos(−θ) + i sin(−θ))</span><span class="lhs"><span class="frac"><span class="fn">1</span><span class="fd g">2iz</span></span></span><span class="rhs">= (<span class="frac"><span class="fn">1</span><span class="fd g">2r</span></span>)(cos(270° − θ) + i sin(270° − θ))</span><span class="lhs"><span class="frac"><span class="fn">1</span><span class="fd g">−z</span></span></span><span class="rhs">= (<span class="frac"><span class="fn">1</span><span class="fd">r</span></span>)(cos(180° − θ) + i sin(180° − θ))</span></div><div class="eq" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd g">−2iz</span></span> = (<span class="frac"><span class="fn">1</span><span class="fd g">2r</span></span>)(cos(90° − θ) + i sin(90° − θ))</div></div>
+<p dir="rtl">(למשל ב-<span class="math" dir="ltr">B</span>: הזווית ההפוכה היא <span class="math" dir="ltr">−θ − 90°</span>, ו-<span class="math" dir="ltr">360° − θ − 90° = 270° − θ</span>.)</p>
+<p dir="rtl"><b>(2)</b> נסתכל על ארבע הנקודות בזוגות:</p>
+<ul><li dir="rtl"><span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">z</span></span></span> ו-<span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd g">−z</span></span></span> נמצאות במרחק <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">r</span></span></span> מן הראשית, בזוויות <span class="math" dir="ltr">−θ</span> ו-<span class="math" dir="ltr">180° − θ</span>. הזוויות נבדלות ב-180°, ולכן הנקודות משני צדי הראשית. הקטע ביניהן עובר דרך הראשית, ואורכו <span class="math" dir="ltr"><span class="frac"><span class="fn">2</span><span class="fd">r</span></span></span>.</li><li dir="rtl"><span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd g">2iz</span></span></span> ו-<span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd g">−2iz</span></span></span> נמצאות במרחק <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd g">2r</span></span></span>, בזוויות <span class="math" dir="ltr">270° − θ</span> ו-<span class="math" dir="ltr">90° − θ</span>. גם הן משני צדי הראשית, והקטע ביניהן אורכו <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">r</span></span></span>.</li><li dir="rtl">הזוויות של שני הקטעים נבדלות ב-90° (למשל <span class="math" dir="ltr">−θ</span> לעומת <span class="math" dir="ltr">90° − θ</span>), ולכן הקטעים מאונכים זה לזה.</li></ul>
+<p dir="rtl">שני הקטעים הם אלכסוני המרובע. הם חוצים זה את זה בראשית ומאונכים, ולכן המרובע הוא שוב מעוין. שטח מעוין הוא מחצית מכפלת האלכסונים:</p>
+<div class="dm"><div class="eq" dir="ltr">S = ½ · (<span class="frac"><span class="fn">2</span><span class="fd">r</span></span>) · (<span class="frac"><span class="fn">1</span><span class="fd">r</span></span>) = <span class="frac"><span class="fn">1</span><span class="fd">r²</span></span></div></div>
+<p dir="rtl"><b>שטח המרובע הוא <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">r²</span></span></span>.</b></p>
+<h4 id="s17" dir="rtl">סעיף ג: סכום הפתרונות של <span class="math" dir="ltr">w¹¹ = w̄</span></h4>
+<p dir="rtl">נשווה את המודולים של שני האגפים. <span class="math" dir="ltr">|w¹¹| = |w|¹¹</span>, ולצמוד יש אותו מודול כמו ל-<span class="math" dir="ltr">w</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">|w|¹¹ = |w|</div></div>
+<p dir="rtl"><span class="math" dir="ltr">w ≠ 0</span>, ולכן מותר לחלק ב-<span class="math" dir="ltr">|w|</span>. מתקבל <span class="math" dir="ltr">|w|¹⁰ = 1</span>, והמודול חיובי, ולכן <span class="math" dir="ltr">|w| = 1</span>.</p>
+<p dir="rtl">כשהמודול הוא 1, מתקיים <span class="math" dir="ltr">w · w̄ = |w|² = 1</span>, כלומר <span class="math" dir="ltr">w̄ = <span class="frac"><span class="fn">1</span><span class="fd">w</span></span></span>. המשוואה נעשית:</p>
+<div class="dm"><div class="eqgrid" dir="ltr"><span class="lhs">w¹¹</span><span class="rhs">= <span class="frac"><span class="fn">1</span><span class="fd">w</span></span></span><span class="lhs">w¹²</span><span class="rhs">= 1</span></div></div>
+<p dir="rtl">הפתרונות הם 12 שורשי היחידה מסדר 12:</p>
+<div class="dm"><div class="eq" dir="ltr">w = cos(30°·k) + i sin(30°·k),    k = 0, 1, 2, …, 11</div></div>
+<p dir="rtl">כל אחד מהם באמת פותר את המשוואה המקורית: המודול שלו 1, ולכן <span class="math" dir="ltr">w̄ = <span class="frac"><span class="fn">1</span><span class="fd">w</span></span> = w¹¹</span>.</p>
+<p dir="rtl"><b>הסכום.</b> הפתרונות הם איברים של סדרה הנדסית שאיברה הראשון 1 ומנתה <span class="math" dir="ltr">q = cos 30° + i sin 30°</span>, ו-<span class="math" dir="ltr">q ≠ 1</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">1 + q + q² + … + q¹¹ = (q¹² − 1) / (q − 1) = (1 − 1) / (q − 1) = 0</div></div>
+<p dir="rtl"><b>סכום 12 הפתרונות הוא 0.</b></p>
+<p dir="rtl">במבט גאומטרי: 12 הנקודות הן קודקודים של מצולע משוכלל שמרכזו בראשית, וסכום הווקטורים מן המרכז אל הקודקודים מתאפס.</p>
+<h4 id="s18" dir="rtl">סעיף ד: הערך של <span class="math" dir="ltr">r</span></h4>
+<p dir="rtl">12 הפתרונות הם קודקודים של מצולע משוכלל בן 12 צלעות, החסום במעגל שרדיוסו 1. נחלק אותו ל-12 משולשים שווי שוקיים, שהקודקוד המשותף שלהם בראשית. השוקיים באורך 1, והזווית ביניהן <span class="math" dir="ltr">360°/12 = 30°</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">S = 12 · ½ · 1 · 1 · sin 30° = 12 · ½ · ½ = 3</div></div>
+<p dir="rtl">נשווה לשטח שמצאנו בסעיף ב(2):</p>
+<div class="dm"><div class="eq" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">r²</span></span> = 3</div><div class="eq" dir="ltr">r² = <span class="frac"><span class="fn">1</span><span class="fd">3</span></span></div><div class="eq" dir="ltr">r = <span class="frac"><span class="fn">1</span><span class="fd"><span class="rad"><span class="rs">√</span><span class="rb">3</span></span></span></span> = <span class="frac"><span class="fn"><span class="rad"><span class="rs">√</span><span class="rb">3</span></span></span><span class="fd">3</span></span> ≈ 0.577</div></div>
+<p dir="rtl"><span class="math" dir="ltr">r</span> הוא מודול, ולכן לוקחים רק את הערך החיובי.</p>
+<p class="ltrp" dir="ltr"><b><span class="math" dir="ltr">r = <span class="frac"><span class="fn"><span class="rad"><span class="rs">√</span><span class="rb">3</span></span></span><span class="fd">3</span></span></span>.</b></p>
+<blockquote class="tip"><p dir="rtl"><b>איפה נופלים בשאלה 3.</b> בסעיף א בוחרים <span class="math" dir="ltr">B = −2iz</span> בלי לבדוק באיזה רביע <span class="math" dir="ltr">B</span> יוצאת. בסעיף ב(1) כותבים את המודול של <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd g">2iz</span></span></span> כ-<span class="math" dir="ltr"><span class="frac"><span class="fn">2</span><span class="fd">r</span></span></span> במקום <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd g">2r</span></span></span>. ובסעיף ג מציבים מיד <span class="math" dir="ltr">w = cos φ + i sin φ</span>, בלי להראות קודם שהמודול חייב להיות 1, ואז הפתרון חסר נימוק.</p></blockquote>
+<hr>
+<h2 id="s19" dir="rtl">פרק שני: גדילה ודעיכה, פונקציות מעריכיות ולוגריתמיות</h2>
+<h3 id="s20" dir="rtl">שאלה 4, פונקצייה מעריכית עם פרמטר, והפונקצייה <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">f</span></span></span> (<span class="math" dir="ltr">33⅓</span> נקודות)</h3>
+<p dir="rtl"><b>הנתונים.</b></p>
+<div class="dm"><div class="eq" dir="ltr">f(x) = (eˣ − b) / (eˣ − 4)²,     b &gt; 0,  b ≠ 4</div></div>
+<h4 id="s21" dir="rtl">סעיף א: חקירה באמצעות <span class="math" dir="ltr">b</span></h4>
+<p dir="rtl"><b>(1) תחום ההגדרה.</b> המכנה מתאפס כאשר <span class="math" dir="ltr">eˣ = 4</span>, כלומר <span class="math" dir="ltr">x = ln 4</span>.</p>
+<p dir="rtl"><b>התחום: <span class="math" dir="ltr">x ≠ ln 4</span>.</b></p>
+<p dir="rtl"><b>(2) אסימפטוטות המאונכות לצירים.</b></p>
+<ul><li dir="rtl"><b>אנכית.</b> ב-<span class="math" dir="ltr">x = ln 4</span> המכנה מתאפס, והמונה שווה ל-<span class="math" dir="ltr">4 − b</span>, שאינו 0 כי <span class="math" dir="ltr">b ≠ 4</span>. <b><span class="math" dir="ltr">x = ln 4</span>.</b></li><li dir="rtl"><b>כש-<span class="math" dir="ltr">x</span> שואף לאינסוף</b>, נחלק את המונה ואת המכנה ב-<span class="math" dir="ltr">e²ˣ</span>:</li></ul>
+<div class="dm"><div class="eq" dir="ltr">f(x) = (e⁻ˣ − b·e⁻²ˣ) / (1 − 4e⁻ˣ)²   →   0 / 1 = 0</div></div>
+<p class="ltrp" dir="ltr"><b><span class="math" dir="ltr">y = 0</span>.</b></p>
+<ul><li dir="rtl"><b>כש-<span class="math" dir="ltr">x</span> שואף למינוס אינסוף</b>, <span class="math" dir="ltr">eˣ</span> שואף ל-0:</li></ul>
+<div class="dm"><div class="eq" dir="ltr">f(x)   →   (0 − b) / (0 − 4)² = −<span class="frac"><span class="fn">b</span><span class="fd">16</span></span></div></div>
+<p class="ltrp" dir="ltr"><b><span class="math" dir="ltr">y = −<span class="frac"><span class="fn">b</span><span class="fd">16</span></span></span>.</b></p>
+<p dir="rtl"><b>(3) נקודות החיתוך עם הצירים.</b></p>
+<ul><li dir="rtl">עם ציר ה-<span class="math" dir="ltr">y, x = 0</span>: <span class="math" dir="ltr">f(0) = <span class="frac"><span class="fn g">1 − b</span><span class="fd">(1 − 4)²</span></span> = <span class="frac"><span class="fn g">1 − b</span><span class="fd">9</span></span></span>. <b><span class="math" dir="ltr">(0 , <span class="frac"><span class="fn g">1 − b</span><span class="fd">9</span></span>)</span>.</b></li><li dir="rtl">עם ציר ה-<span class="math" dir="ltr">x</span>: המונה מתאפס, <span class="math" dir="ltr">eˣ = b, x = ln b</span>. הנקודה בתחום, כי <span class="math" dir="ltr">b &gt; 0</span> ו-<span class="math" dir="ltr">b ≠ 4</span>. <b><span class="math" dir="ltr">(ln b , 0)</span>.</b></li></ul>
+<h4 id="s22" dir="rtl">סעיף ב: הערך של <span class="math" dir="ltr">b</span> וסוג נקודת הקיצון</h4>
+<p dir="rtl">נגזור לפי כלל המנה. הנגזרת של <span class="math" dir="ltr">(eˣ − 4)²</span> היא <span class="math" dir="ltr">2(eˣ − 4)·eˣ</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">f′(x) = [eˣ(eˣ − 4)² − (eˣ − b) · 2(eˣ − 4)·eˣ] / (eˣ − 4)⁴</div></div>
+<p dir="rtl">נוציא <span class="math" dir="ltr">eˣ(eˣ − 4)</span> מן המונה ונצמצם עם המכנה:</p>
+<div class="dm"><div class="eqgrid" dir="ltr"><span class="lhs">f′(x)</span><span class="rhs">= eˣ[(eˣ − 4) − 2(eˣ − b)] / (eˣ − 4)³</span><span class="lhs"></span><span class="rhs">= eˣ(2b − 4 − eˣ) / (eˣ − 4)³</span></div></div>
+<p dir="rtl">בנקודת קיצון הנגזרת מתאפסת. ב-<span class="math" dir="ltr">x = ln 12</span> מתקיים <span class="math" dir="ltr">eˣ = 12</span>, ו-<span class="math" dir="ltr">eˣ</span> אינו 0 לעולם:</p>
+<div class="dm"><div class="eq" dir="ltr">2b − 4 − 12 = 0</div><div class="eq" dir="ltr">b = 8</div></div>
+<p class="ltrp" dir="ltr"><b><span class="math" dir="ltr">b = 8</span>.</b></p>
+<p dir="rtl">סוג הקיצון. עבור <span class="math" dir="ltr">b = 8</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">f′(x) = eˣ(12 − eˣ) / (eˣ − 4)³</div></div>
+<p dir="rtl">ליד <span class="math" dir="ltr">x = ln 12</span> מתקיים <span class="math" dir="ltr">eˣ &gt; 4</span>, ולכן המכנה חיובי. גם <span class="math" dir="ltr">eˣ</span> חיובי, ולכן הסימן נקבע לפי <span class="math" dir="ltr">12 − eˣ</span>:</p>
+<div class="tblwrap"><table class="soltbl"><thead><tr><th><span class="math" dir="ltr">x</span></th><th><span class="math" dir="ltr">ln 4 &lt; x &lt; ln 12</span></th><th><span class="math" dir="ltr">x = ln 12</span></th><th><span class="math" dir="ltr">x &gt; ln 12</span></th></tr></thead><tbody><tr><td><span class="math" dir="ltr">f′(x)</span></td><td>+</td><td>0</td><td>−</td></tr><tr><td><span class="math" dir="ltr">f(x)</span></td><td dir="rtl">עולה</td><td dir="rtl">מקסימום</td><td dir="rtl">יורדת</td></tr></tbody></table></div>
+<div class="dm"><div class="eq" dir="ltr">f(ln 12) = (12 − 8) / (12 − 4)² = <span class="frac"><span class="fn">4</span><span class="fd">64</span></span> = <span class="frac"><span class="fn">1</span><span class="fd">16</span></span></div></div>
+<p dir="rtl"><b>נקודת מקסימום, <span class="math" dir="ltr">(ln 12 , <span class="frac"><span class="fn">1</span><span class="fd">16</span></span>)</span>.</b></p>
+<p dir="rtl">מכאן והלאה <span class="math" dir="ltr">b = 8</span>:</p>
+<div class="dm"><div class="eq" dir="ltr">f(x) = (eˣ − 8) / (eˣ − 4)²</div></div>
+<p dir="rtl">כדאי להשלים כבר עכשיו את התמונה של <span class="math" dir="ltr">f</span>, כי היא תשמש בכל הסעיפים הבאים:</p>
+<ul><li dir="rtl">משמאל ל-<span class="math" dir="ltr">ln 4</span> המכנה <span class="math" dir="ltr">(eˣ − 4)³</span> שלילי והמונה <span class="math" dir="ltr">eˣ(12 − eˣ)</span> חיובי, ולכן <span class="math" dir="ltr">f′ &lt; 0</span>: <b><span class="math" dir="ltr">f</span> יורדת בכל התחום <span class="math" dir="ltr">x &lt; ln 4</span>.</b></li><li dir="rtl">האסימפטוטות: <span class="math" dir="ltr">x = ln 4, y = 0</span> (באינסוף), <span class="math" dir="ltr">y = −<span class="frac"><span class="fn">8</span><span class="fd">16</span></span> = −½</span> (במינוס אינסוף).</li><li dir="rtl">החיתוכים עם הצירים: <span class="math" dir="ltr">(0 , −<span class="frac"><span class="fn">7</span><span class="fd">9</span></span>)</span> ו-<span class="math" dir="ltr">(ln 8 , 0)</span>.</li><li dir="rtl">ליד <span class="math" dir="ltr">x = ln 4</span>, משני הצדדים, המונה קרוב ל-<span class="math" dir="ltr">4 − 8 = −4</span> והמכנה הוא ריבוע קטן וחיובי. לכן <span class="math" dir="ltr">f</span> שואפת למינוס אינסוף משני הצדדים.</li></ul>
+<h4 id="s23" dir="rtl">סעיף ג: הפונקצייה <span class="math" dir="ltr">g(x) = 1/f(x)</span></h4>
+<div class="dm"><div class="eq" dir="ltr">g(x) = (eˣ − 4)² / (eˣ − 8)</div></div>
+<p dir="rtl"><b>(1) תחום ההגדרה.</b> <span class="math" dir="ltr">g</span> מוגדרת בכל מקום שבו <span class="math" dir="ltr">f</span> מוגדרת ואינה 0. <span class="math" dir="ltr">f</span> אינה מוגדרת ב-<span class="math" dir="ltr">x = ln 4</span>, ומתאפסת ב-<span class="math" dir="ltr">x = ln 8</span>.</p>
+<p dir="rtl"><b>התחום: <span class="math" dir="ltr">x ≠ ln 4</span> וגם <span class="math" dir="ltr">x ≠ ln 8</span>.</b></p>
+<p dir="rtl">שימו לב: הביטוי <span class="math" dir="ltr"><span class="frac"><span class="fn">(eˣ − 4)²</span><span class="fd g">eˣ − 8</span></span></span> דווקא מוגדר ב-<span class="math" dir="ltr">ln 4</span>, אבל <span class="math" dir="ltr">g</span> היא <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">f</span></span></span>, ובנקודה שבה <span class="math" dir="ltr">f</span> אינה קיימת אין גם <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">f</span></span></span>.</p>
+<p dir="rtl"><b>(2) אסימפטוטות המאונכות לצירים.</b></p>
+<ul><li dir="rtl"><b><span class="math" dir="ltr">x = ln 8</span></b> אסימפטוטה אנכית: שם <span class="math" dir="ltr">f</span> שואפת ל-0, ולכן <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">f</span></span></span> שואפת לאינסוף או למינוס אינסוף. (המונה של <span class="math" dir="ltr">g</span> שם הוא <span class="math" dir="ltr">(8 − 4)² = 16</span>, שאינו 0.)</li><li dir="rtl">ב-<span class="math" dir="ltr">x = ln 4</span> <b>אין</b> אסימפטוטה: <span class="math" dir="ltr">f</span> שואפת שם למינוס אינסוף, ולכן <span class="math" dir="ltr">g</span> שואפת ל-0. בגרף של <span class="math" dir="ltr">g</span> יש שם נקודה ריקה, <span class="math" dir="ltr">(ln 4 , 0)</span>.</li><li dir="rtl">במינוס אינסוף <span class="math" dir="ltr">f</span> שואפת ל-−<span class="math" dir="ltr">½</span>, ולכן <span class="math" dir="ltr">g</span> שואפת ל-<span class="math" dir="ltr">−2</span>. <b><span class="math" dir="ltr">y = −2</span>.</b></li><li dir="rtl">באינסוף <span class="math" dir="ltr">f</span> שואפת ל-0 מלמעלה (<span class="math" dir="ltr">f</span> חיובית כאשר <span class="math" dir="ltr">eˣ &gt; 8</span>), ולכן <span class="math" dir="ltr">g</span> שואפת לאינסוף, ואין שם אסימפטוטה אופקית.</li></ul>
+<p dir="rtl"><b>האסימפטוטות של <span class="math" dir="ltr">g</span>: <span class="math" dir="ltr">x = ln 8</span> ו-<span class="math" dir="ltr">y = −2</span>.</b></p>
+<h4 id="s24" dir="rtl">סעיף ד: סקיצה של שני הגרפים במערכת צירים אחת</h4>
+<p dir="rtl">לגרף של <span class="math" dir="ltr">g</span> משתמשים בקשר <span class="math" dir="ltr">g′ = −<span class="frac"><span class="fn">f′</span><span class="fd">f²</span></span></span>. הסימן של <span class="math" dir="ltr">g′</span> הפוך לסימן של <span class="math" dir="ltr">f′</span>, ולכן <span class="math" dir="ltr">g</span> עולה היכן ש-<span class="math" dir="ltr">f</span> יורדת, ולהפך. נוסף על כך, היכן ש-<span class="math" dir="ltr">f</span> קרובה ל-0, הערכים של <span class="math" dir="ltr">g</span> גדולים מאוד בערכם המוחלט, והיכן ש-<span class="math" dir="ltr">f</span> גדולה מאוד בערכה המוחלט, <span class="math" dir="ltr">g</span> קרובה ל-0.</p>
+<p dir="rtl"><b>הגרף של <span class="math" dir="ltr">f</span>:</b></p>
+<ul><li dir="rtl"><b>הענף השמאלי, <span class="math" dir="ltr">x &lt; ln 4</span>:</b> מתחיל סמוך לאסימפטוטה <span class="math" dir="ltr">y = −½</span> ומתחתיה, יורד כל הזמן, עובר ב-<span class="math" dir="ltr">(0 , −<span class="frac"><span class="fn">7</span><span class="fd">9</span></span>)</span>, וצולל למינוס אינסוף ליד <span class="math" dir="ltr">x = ln 4 (ln 4 ≈ 1.39)</span>.</li><li dir="rtl"><b>הענף הימני, <span class="math" dir="ltr">x &gt; ln 4</span>:</b> עולה ממינוס אינסוף ליד <span class="math" dir="ltr">x = ln 4</span>, חותך את ציר ה-<span class="math" dir="ltr">x</span> ב-<span class="math" dir="ltr">(ln 8 , 0) (ln 8 ≈ 2.08)</span>, מגיע למקסימום <span class="math" dir="ltr">(ln 12 , <span class="frac"><span class="fn">1</span><span class="fd">16</span></span>) (ln 12 ≈ 2.48)</span>, ואחר כך יורד ומתקרב לציר ה-<span class="math" dir="ltr">x</span> מלמעלה בלי לגעת בו.</li></ul>
+<p dir="rtl"><b>הגרף של <span class="math" dir="ltr">g</span>:</b></p>
+<ul><li dir="rtl"><b><span class="math" dir="ltr">x &lt; ln 4</span>:</b> מתחיל סמוך לאסימפטוטה <span class="math" dir="ltr">y = −2</span> ומעליה, עולה כל הזמן, עובר ב-<span class="math" dir="ltr">(0 , −<span class="frac"><span class="fn">9</span><span class="fd">7</span></span>)</span>, ומגיע לנקודה הריקה <span class="math" dir="ltr">(ln 4 , 0)</span>.</li><li dir="rtl"><b><span class="math" dir="ltr">ln 4 &lt; x &lt; ln 8</span>:</b> יוצא מן הנקודה הריקה <span class="math" dir="ltr">(ln 4 , 0)</span>, יורד כל הזמן, וצולל למינוס אינסוף ליד <span class="math" dir="ltr">x = ln 8</span>.</li><li dir="rtl"><b><span class="math" dir="ltr">x &gt; ln 8</span>:</b> יורד מאינסוף ליד <span class="math" dir="ltr">x = ln 8</span> עד נקודת מינימום <span class="math" dir="ltr">(ln 12 , 16)</span>, ואחר כך עולה לאינסוף.</li></ul>
+<p dir="rtl">שני הגרפים נחתכים בשתי נקודות בגובה <span class="math" dir="ltr">y = −1</span> (ראו סעיף ה): אחת בענף השמאלי, ב-<span class="math" dir="ltr">x ≈ 0.36</span>, ואחת בין <span class="math" dir="ltr">ln 4</span> ל-<span class="math" dir="ltr">ln 8</span>, ב-<span class="math" dir="ltr">x ≈ 1.72</span>.</p>
+<h4 id="s25" dir="rtl">סעיף ה: שיעור ה-<span class="math" dir="ltr">y</span> של נקודות החיתוך</h4>
+<p dir="rtl">בנקודת חיתוך מתקיים <span class="math" dir="ltr">f(x) = g(x) = 1/f(x)</span>, ולכן:</p>
+<div class="dm"><div class="eq" dir="ltr">(f(x))² = 1</div><div class="eqr" dir="rtl"><span class="math" dir="ltr">f(x) = 1</span>   או   <span class="math" dir="ltr">f(x) = −1</span></div></div>
+<p dir="rtl">עכשיו צריך לבדוק אילו מן הערכים האלה <span class="math" dir="ltr">f</span> באמת מקבלת:</p>
+<ul><li dir="rtl">בענף השמאלי כל הערכים של <span class="math" dir="ltr">f</span> קטנים מ-−<span class="math" dir="ltr">½</span>, ולכן <span class="math" dir="ltr">f</span> אינה מגיעה שם ל-1.</li><li dir="rtl">בענף הימני הערך הגדול ביותר של <span class="math" dir="ltr">f</span> הוא המקסימום <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">16</span></span></span>, ולכן גם שם <span class="math" dir="ltr">f</span> אינה מגיעה ל-1.</li></ul>
+<p dir="rtl">לכן <span class="math" dir="ltr">f(x) = 1</span> אינו אפשרי. לעומת זאת, <span class="math" dir="ltr">f(x) = −1</span> מתקבל: בענף השמאלי <span class="math" dir="ltr">f</span> יורדת ברציפות מ-−<span class="math" dir="ltr">½</span> למינוס אינסוף, ובענף הימני היא עולה ממינוס אינסוף עד <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">16</span></span></span>, ולכן היא עוברת דרך <span class="math" dir="ltr">−1</span> פעם אחת בכל ענף.</p>
+<p dir="rtl"><b>שיעור ה-<span class="math" dir="ltr">y</span> של נקודות החיתוך הוא <span class="math" dir="ltr">−1</span>.</b></p>
+<p dir="rtl">להשלמה, שיעורי ה-<span class="math" dir="ltr">x</span>: <span class="math" dir="ltr">f(x) = −1</span> פירושו <span class="math" dir="ltr">eˣ − 8 = −(eˣ − 4)²</span>, כלומר <span class="math" dir="ltr">e²ˣ − 7eˣ + 8 = 0</span>. מכאן <span class="math" dir="ltr">eˣ = <span class="frac"><span class="fn g">7 ± <span class="rad"><span class="rs">√</span><span class="rb">17</span></span></span><span class="fd">2</span></span></span>, ו-<span class="math" dir="ltr">x ≈ 0.36</span> או <span class="math" dir="ltr">x ≈ 1.72</span>.</p>
+<h4 id="s26" dir="rtl">סעיף ו: האם האינטגרל קטן או גדול מ-<span class="math" dir="ltr">1½</span></h4>
+<p dir="rtl">הקטע <span class="math" dir="ltr">−2 ≤ x ≤ −1</span> נמצא כולו בענף השמאלי, <span class="math" dir="ltr">x &lt; ln 4</span>. בענף הזה:</p>
+<ul><li dir="rtl"><span class="math" dir="ltr">f</span> יורדת, כפי שראינו בסעיף ב.</li><li dir="rtl"><span class="math" dir="ltr">g</span> עולה, כי <span class="math" dir="ltr">g′ = −<span class="frac"><span class="fn">f′</span><span class="fd">f²</span></span></span> ו-<span class="math" dir="ltr">f′ &lt; 0</span>.</li></ul>
+<p dir="rtl">לכן ההפרש <span class="math" dir="ltr">f(x) − g(x)</span> יורד כל הזמן בענף השמאלי. במינוס אינסוף <span class="math" dir="ltr">f</span> שואפת ל-−<span class="math" dir="ltr">½</span> ו-<span class="math" dir="ltr">g</span> שואפת ל-<span class="math" dir="ltr">−2</span>, ולכן:</p>
+<div class="dm"><div class="eqr" dir="rtl"><span class="math" dir="ltr">f(x) − g(x)   →   −½ − (−2) = <span class="frac"><span class="fn">3</span><span class="fd">2</span></span></span>      כש-<span class="math" dir="ltr">x</span> שואף למינוס אינסוף</div></div>
+<p dir="rtl">פונקצייה יורדת שגבולה במינוס אינסוף הוא <span class="math" dir="ltr"><span class="frac"><span class="fn">3</span><span class="fd">2</span></span></span> קטנה מ-<span class="math" dir="ltr"><span class="frac"><span class="fn">3</span><span class="fd">2</span></span></span> בכל נקודה. לכן בכל הקטע <span class="math" dir="ltr">f(x) − g(x) &lt; <span class="frac"><span class="fn">3</span><span class="fd">2</span></span></span>. אורך הקטע הוא 1, ולכן:</p>
+<div class="dm"><div class="eqr" dir="rtl"><span class="math" dir="ltr">∫ (f(x) − g(x)) dx</span>  מ-<span class="math" dir="ltr">(−2)</span> עד <span class="math" dir="ltr">(−1)   &lt;   (<span class="frac"><span class="fn">3</span><span class="fd">2</span></span>) · 1 = 1½</span></div></div>
+<p dir="rtl"><b>הערך של האינטגרל קטן מ-<span class="math" dir="ltr">1½</span>.</b></p>
+<p dir="rtl">בשפת הגרף: האינטגרל הוא השטח בין <span class="math" dir="ltr">f</span> (למעלה) ל-<span class="math" dir="ltr">g</span> (למטה) בקטע שאורכו 1, והמרחק האנכי בין הגרפים קטן תמיד מן המרחק בין שתי האסימפטוטות האופקיות <span class="math" dir="ltr">y = −½</span> ו-<span class="math" dir="ltr">y = −2</span>, שהוא בדיוק <span class="math" dir="ltr">1½</span>. (חישוב מקורב, לבדיקה בלבד, נותן כ-1.28.)</p>
+<blockquote class="tip"><p dir="rtl"><b>איפה נופלים בשאלה 4.</b> בסעיף א(2) מוצאים אסימפטוטה אופקית אחת בלבד, ושוכחים שבאינסוף ובמינוס אינסוף הגבולות שונים. בסעיף ג מכניסים את <span class="math" dir="ltr">ln 4</span> לתחום של <span class="math" dir="ltr">g</span>, כי הביטוי המצומצם מוגדר שם, או מסמנים שם אסימפטוטה אנכית במקום נקודה ריקה. ובסעיף ה עונים &quot;1 או <span class="math" dir="ltr">−1</span>&quot; בלי לבדוק ש-<span class="math" dir="ltr">f</span> אינה מגיעה לעולם ל-1.</p></blockquote>
+<hr>
+<h3 id="s27" dir="rtl">שאלה 5, פונקצייה עם <span class="math" dir="ltr">ln</span> בריבוע ושני שטחים (<span class="math" dir="ltr">33⅓</span> נקודות)</h3>
+<p dir="rtl"><b>הנתונים.</b></p>
+<div class="dm"><div class="eq" dir="ltr">f(x) = x((ln x)² − 2ln x + 2),     x &gt; 0</div></div>
+<h4 id="s28" dir="rtl">סעיף א: תחומי עלייה וירידה</h4>
+<p dir="rtl">נגזור לפי כלל המכפלה. הנגזרת של הביטוי שבסוגריים היא <span class="math" dir="ltr">2ln x · (<span class="frac"><span class="fn">1</span><span class="fd">x</span></span>) − <span class="frac"><span class="fn">2</span><span class="fd">x</span></span></span>:</p>
+<div class="dm"><div class="eqgrid" dir="ltr"><span class="lhs">f′(x)</span><span class="rhs">= (ln x)² − 2ln x + 2 + x · (2ln <span class="frac"><span class="fn">x</span><span class="fd">x</span></span> − <span class="frac"><span class="fn">2</span><span class="fd">x</span></span>)</span><span class="lhs"></span><span class="rhs">= (ln x)² − 2ln x + 2 + 2ln x − 2</span><span class="lhs"></span><span class="rhs">= (ln x)²</span></div></div>
+<p dir="rtl">כמעט הכול מתבטל, ונשאר ריבוע. לכן <span class="math" dir="ltr">f′(x) ≥ 0</span> בכל התחום, והנגזרת מתאפסת רק כאשר <span class="math" dir="ltr">ln x = 0</span>, כלומר <span class="math" dir="ltr">x = 1</span>. משני צדי <span class="math" dir="ltr">x = 1</span> הנגזרת חיובית, ולכן אין שם קיצון.</p>
+<p dir="rtl"><b><span class="math" dir="ltr">f</span> עולה בכל התחום <span class="math" dir="ltr">x &gt; 0</span>, ואין לה תחום ירידה.</b></p>
+<h4 id="s29" dir="rtl">סעיף ב: נקודת הפיתול</h4>
+<div class="dm"><div class="eq" dir="ltr">f″(x) = 2ln x · (<span class="frac"><span class="fn">1</span><span class="fd">x</span></span>) = 2ln x / x</div></div>
+<p dir="rtl"><span class="math" dir="ltr">x</span> חיובי, ולכן הסימן של <span class="math" dir="ltr">f″</span> הוא הסימן של <span class="math" dir="ltr">ln x</span>:</p>
+<div class="tblwrap"><table class="soltbl"><thead><tr><th><span class="math" dir="ltr">x</span></th><th><span class="math" dir="ltr">0 &lt; x &lt; 1</span></th><th><span class="math" dir="ltr">x = 1</span></th><th><span class="math" dir="ltr">x &gt; 1</span></th></tr></thead><tbody><tr><td><span class="math" dir="ltr">f″(x)</span></td><td>−</td><td>0</td><td>+</td></tr><tr><td><span class="math" dir="ltr">f(x)</span></td><td dir="rtl">קעורה כלפי מטה (∩)</td><td dir="rtl">פיתול</td><td dir="rtl">קעורה כלפי מעלה (∪)</td></tr></tbody></table></div>
+<div class="dm"><div class="eq" dir="ltr">f(1) = 1 · (0 − 0 + 2) = 2</div></div>
+<p dir="rtl"><b>נקודת הפיתול: <span class="math" dir="ltr">(1 , 2)</span>.</b> גם <span class="math" dir="ltr">f′(1) = 0</span>, ולכן זו נקודת פיתול עם משיק אופקי.</p>
+<h4 id="s30" dir="rtl">סעיף ג: תחומי חיוביות ושליליות</h4>
+<p dir="rtl">נשלים לריבוע את הביטוי שבסוגריים:</p>
+<div class="dm"><div class="eq" dir="ltr">(ln x)² − 2ln x + 2 = (ln x − 1)² + 1 ≥ 1 &gt; 0</div></div>
+<p dir="rtl">גם <span class="math" dir="ltr">x</span> חיובי בכל התחום, ולכן <span class="math" dir="ltr">f(x)</span> היא מכפלה של שני מספרים חיוביים.</p>
+<p dir="rtl"><b><span class="math" dir="ltr">f</span> חיובית בכל התחום <span class="math" dir="ltr">x &gt; 0</span>, ואין לה תחום שליליות.</b></p>
+<h4 id="s31" dir="rtl">סעיף ד: סקיצות</h4>
+<p dir="rtl"><b>(1) הגרף של <span class="math" dir="ltr">f</span>.</b></p>
+<ul><li dir="rtl">כש-<span class="math" dir="ltr">x</span> מתקרב ל-0 מימין, ערכי <span class="math" dir="ltr">f</span> מתקרבים ל-0 (למשל <span class="math" dir="ltr">f(0.001) ≈ 0.064</span>), ולכן הגרף מתחיל סמוך לראשית. הראשית עצמה אינה בתחום.</li><li dir="rtl">הגרף עולה כל הזמן (סעיף א), וכולו מעל ציר ה-<span class="math" dir="ltr">x</span> (סעיף ג).</li><li dir="rtl">בתחום <span class="math" dir="ltr">0 &lt; x &lt; 1</span> הוא קעור כלפי מטה, ומגיע לנקודת הפיתול <span class="math" dir="ltr">(1 , 2)</span> עם משיק אופקי.</li><li dir="rtl">מימין ל-1 הוא קעור כלפי מעלה ועולה לאינסוף. נקודות עזר: <span class="math" dir="ltr">f(e) = e ≈ 2.72, f(e²) = 2e² ≈ 14.78</span>.</li><li dir="rtl">ליד <span class="math" dir="ltr">x = 0</span> הגרף תלול מאוד, כי שם <span class="math" dir="ltr">f′(x) = (ln x)²</span> גדולה מאוד.</li></ul>
+<p dir="rtl"><b>(2) הגרף של <span class="math" dir="ltr">f′(x) = (ln x)²</span>.</b></p>
+<ul><li dir="rtl"><span class="math" dir="ltr">f′(x) ≥ 0</span> תמיד, והגרף נוגע בציר ה-<span class="math" dir="ltr">x</span> רק בנקודה <span class="math" dir="ltr">(1 , 0)</span>, שהיא נקודת מינימום.</li><li dir="rtl">כש-<span class="math" dir="ltr">x</span> שואף ל-0 מימין, <span class="math" dir="ltr">ln x</span> שואף למינוס אינסוף, ולכן <span class="math" dir="ltr">(ln x)²</span> שואף לאינסוף. <b><span class="math" dir="ltr">x = 0</span> אסימפטוטה אנכית.</b></li><li dir="rtl">בתחום <span class="math" dir="ltr">0 &lt; x &lt; 1</span> הגרף יורד (שם <span class="math" dir="ltr">f″ &lt; 0</span>), ומימין ל-1 הוא עולה לאינסוף (שם <span class="math" dir="ltr">f″ &gt; 0</span>).</li><li dir="rtl">נקודות עזר: <span class="math" dir="ltr">(<span class="frac"><span class="fn">1</span><span class="fd">e</span></span> , 1)</span> ו-<span class="math" dir="ltr">(e , 1)</span>.</li></ul>
+<h4 id="s32" dir="rtl">סעיף ה: השטח המוגבל על ידי <span class="math" dir="ltr">g</span> ועל ידי ציר ה-<span class="math" dir="ltr">x</span></h4>
+<div class="dm"><div class="eq" dir="ltr">g(x) = (ln x)² − 4</div></div>
+<p dir="rtl">נקודות החיתוך עם ציר ה-<span class="math" dir="ltr">x</span>: <span class="math" dir="ltr">(ln x)² = 4</span>, כלומר <span class="math" dir="ltr">ln x = 2</span> או <span class="math" dir="ltr">ln x = −2</span>:</p>
+<div class="dm"><div class="eqr" dir="rtl"><span class="math" dir="ltr">x = e⁻² ≈ 0.135</span>     ו-     <span class="math" dir="ltr">x = e² ≈ 7.39</span></div></div>
+<p dir="rtl">בין שתי הנקודות <span class="math" dir="ltr">|ln x| &lt; 2</span>, ולכן <span class="math" dir="ltr">g</span> שלילית שם. השטח הוא האינטגרל של <span class="math" dir="ltr">−g</span>:</p>
+<div class="dm"><div class="eqr" dir="rtl"><span class="math" dir="ltr">S = ∫ (4 − (ln x)²) dx</span>    מ-<span class="math" dir="ltr">e⁻²</span> עד <span class="math" dir="ltr">e²</span></div></div>
+<p dir="rtl">כאן נמצא הצעד החשוב של השאלה: לפי סעיף א, <span class="math" dir="ltr">f′(x) = (ln x)²</span>. כלומר <b><span class="math" dir="ltr">f</span> היא פונקצייה קדומה של <span class="math" dir="ltr">(ln x)²</span></b>, והחלק הראשון של השאלה הכין לנו אותה. לכן:</p>
+<div class="dm"><div class="eqr" dir="rtl"><span class="math" dir="ltr">S = [4x − f(x)]</span>    מ-<span class="math" dir="ltr">e⁻²</span> עד <span class="math" dir="ltr">e²</span></div></div>
+<p dir="rtl">נחשב את <span class="math" dir="ltr">f</span> בשני הקצוות:</p>
+<div class="dm"><div class="eqgrid" dir="ltr"><span class="lhs">f(e²)</span><span class="rhs">= e²(4 − 4 + 2)  = 2e²</span><span class="lhs">f(e⁻²)</span><span class="rhs">= e⁻²(4 + 4 + 2) = 10e⁻²</span></div></div>
+<div class="dm"><div class="eqgrid" dir="ltr"><span class="lhs">S</span><span class="rhs">= (4e² − 2e²) − (4e⁻² − 10e⁻²)</span><span class="lhs"></span><span class="rhs">= 2e² + 6e⁻²</span></div></div>
+<p dir="rtl"><b>השטח הוא <span class="math" dir="ltr">2e² + <span class="frac"><span class="fn">6</span><span class="fd">e²</span></span> ≈ 15.59</span> יחידות שטח.</b></p>
+<h4 id="s33" dir="rtl">סעיף ו: השטח בין <span class="math" dir="ltr">g, h</span> והאנכים</h4>
+<div class="dm"><div class="eq" dir="ltr">h(x) = <span class="frac"><span class="fn">f(x)</span><span class="fd">x²</span></span> = ((ln x)² − 2ln x + 2) / x</div></div>
+<p dir="rtl">האנכים הם <span class="math" dir="ltr">x = e⁻²</span> ו-<span class="math" dir="ltr">x = e²</span>. לפני שמחסירים, בודקים מי מעל מי. לפי סעיף ג המונה של <span class="math" dir="ltr">h</span> חיובי, וגם <span class="math" dir="ltr">x</span> חיובי, ולכן <span class="math" dir="ltr">h(x) &gt; 0</span>. בקטע שבין האנכים <span class="math" dir="ltr">g(x) ≤ 0</span>. לכן הגרף של <span class="math" dir="ltr">h</span> מעל הגרף של <span class="math" dir="ltr">g</span> בכל הקטע, והם אינם נחתכים בו:</p>
+<div class="dm"><div class="eqr" dir="rtl"><span class="math" dir="ltr">S = ∫ (h(x) − g(x)) dx = ∫ h(x) dx + ∫ (−g(x)) dx</span>      (מ-<span class="math" dir="ltr">e⁻²</span> עד <span class="math" dir="ltr">e²</span>)</div></div>
+<p dir="rtl">האינטגרל השני הוא בדיוק השטח מסעיף ה, <span class="math" dir="ltr">2e² + 6e⁻²</span>.</p>
+<p dir="rtl">לאינטגרל הראשון נפרק את <span class="math" dir="ltr">h</span> לשלושה מחוברים:</p>
+<div class="dm"><div class="eq" dir="ltr">h(x) = (ln x)² · (<span class="frac"><span class="fn">1</span><span class="fd">x</span></span>) − 2 · ln x · (<span class="frac"><span class="fn">1</span><span class="fd">x</span></span>) + 2 · (<span class="frac"><span class="fn">1</span><span class="fd">x</span></span>)</div></div>
+<p dir="rtl">בשני המחוברים הראשונים מופיעה חזקה של <span class="math" dir="ltr">ln x</span> כפול הנגזרת שלו, <span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">x</span></span></span>. לכן:</p>
+<div class="dm"><div class="eq" dir="ltr">∫ h(x) dx = <span class="frac"><span class="fn">(ln x)³</span><span class="fd">3</span></span> − (ln x)² + 2ln x + C</div></div>
+<p dir="rtl">נציב את הגבולות, <span class="math" dir="ltr">ln(e²) = 2</span> ו-<span class="math" dir="ltr">ln(e⁻²) = −2</span>:</p>
+<div class="dm"><div class="eqr" dir="rtl">ב-<span class="math" dir="ltr">x = e²</span>:     <span class="math" dir="ltr"><span class="frac"><span class="fn">8</span><span class="fd">3</span></span> − 4 + 4 = <span class="frac"><span class="fn">8</span><span class="fd">3</span></span></span></div><div class="eqr" dir="rtl">ב-<span class="math" dir="ltr">x = e⁻²</span>:    <span class="math" dir="ltr">−<span class="frac"><span class="fn">8</span><span class="fd">3</span></span> − 4 − 4 = −<span class="frac"><span class="fn">32</span><span class="fd">3</span></span></span></div></div>
+<div class="dm"><div class="eqr" dir="rtl"><span class="math" dir="ltr">∫ h(x) dx</span>  מ-<span class="math" dir="ltr">e⁻²</span> עד <span class="math" dir="ltr">e²  =  <span class="frac"><span class="fn">8</span><span class="fd">3</span></span> − (−<span class="frac"><span class="fn">32</span><span class="fd">3</span></span>) = <span class="frac"><span class="fn">40</span><span class="fd">3</span></span></span></div></div>
+<p dir="rtl">ולכן:</p>
+<div class="dm"><div class="eq" dir="ltr">S = <span class="frac"><span class="fn">40</span><span class="fd">3</span></span> + 2e² + <span class="frac"><span class="fn">6</span><span class="fd">e²</span></span></div></div>
+<p dir="rtl"><b>השטח הוא <span class="math" dir="ltr"><span class="frac"><span class="fn">40</span><span class="fd">3</span></span> + 2e² + <span class="frac"><span class="fn">6</span><span class="fd">e²</span></span> ≈ 28.92</span> יחידות שטח.</b></p>
+<blockquote class="tip"><p dir="rtl"><b>איפה נופלים בשאלה 5.</b> בסעיף א פותחים סוגריים ולא שמים לב שכמעט הכול מתבטל ונשאר <span class="math" dir="ltr">(ln x)²</span>. ואז, בסעיף ה, מחפשים פונקצייה קדומה ל-<span class="math" dir="ltr">(ln x)²</span> מאפס, כשהיא כבר מחכה בסעיף א. בסעיף ו שוכחים לבדוק מי מהגרפים למעלה, ומחסירים בסדר ההפוך.</p></blockquote>
+<hr>
+<h2 id="s34" dir="rtl">התשובות בקצרה</h2>
+<div class="tblwrap"><table class="soltbl"><thead><tr><th dir="rtl">שאלה</th><th dir="rtl">סעיף</th><th dir="rtl">תשובה</th></tr></thead><tbody><tr><td>1</td><td dir="rtl">א</td><td dir="rtl">הישר <span class="math" dir="ltr">y = −4x − 3</span> (כלומר <span class="math" dir="ltr">4x + y + 3 = 0</span>)</td></tr><tr><td>1</td><td dir="rtl">ב(1)</td><td dir="rtl">הוכחה: <span class="math" dir="ltr">m<sub>KL</sub> = <span class="frac"><span class="fn">1</span><span class="fd">4</span></span></span>, ו-<span class="math" dir="ltr">(<span class="frac"><span class="fn">1</span><span class="fd">4</span></span>) × (−4) = −1</span></td></tr><tr><td>1</td><td dir="rtl">ב(2)</td><td dir="rtl">לא קיימת. <span class="math" dir="ltr">MK² = ML² + 8</span>, ולכן תמיד <span class="math" dir="ltr">MK &gt; ML</span></td></tr><tr><td>1</td><td dir="rtl">ג</td><td><span class="math" dir="ltr">M(−2 , 5)</span></td></tr><tr><td>1</td><td dir="rtl">ד</td><td><span class="math" dir="ltr">y = −1.25x + 2.5 (p = −<span class="frac"><span class="fn">25</span><span class="fd">4</span></span>)</span></td></tr><tr><td>2</td><td dir="rtl">א</td><td><span class="math" dir="ltr">A(1 , −3 , 0)</span></td></tr><tr><td>2</td><td dir="rtl">ב</td><td dir="rtl"><span class="math" dir="ltr">k = 2</span> או <span class="math" dir="ltr">k = −2</span></td></tr><tr><td>2</td><td dir="rtl">ג</td><td><span class="math" dir="ltr">3x + y − 2z = 0</span></td></tr><tr><td>2</td><td dir="rtl">ד</td><td dir="rtl">הסבר: <span class="math" dir="ltr">O, A, B</span> על הישרים <span class="math" dir="ltr">ℓ₁</span> ו-<span class="math" dir="ltr">ℓ₂</span>, ששניהם במישור <span class="math" dir="ltr">π</span></td></tr><tr><td>2</td><td dir="rtl">ה</td><td dir="rtl"><span class="math" dir="ltr">S(7 , −1 , −4)</span> או <span class="math" dir="ltr">S(−5 , −5 , 4)</span></td></tr><tr><td>3</td><td dir="rtl">א</td><td><span class="math" dir="ltr">B = 2iz, C = −z, D = −2iz</span></td></tr><tr><td>3</td><td dir="rtl">ב(1)</td><td dir="rtl"><span class="math" dir="ltr">(<span class="frac"><span class="fn">1</span><span class="fd">r</span></span>)</span> בזווית <span class="math" dir="ltr">−θ</span>; <span class="math" dir="ltr">(<span class="frac"><span class="fn">1</span><span class="fd g">2r</span></span>)</span> בזווית <span class="math" dir="ltr">270° − θ</span>; <span class="math" dir="ltr">(<span class="frac"><span class="fn">1</span><span class="fd">r</span></span>)</span> בזווית <span class="math" dir="ltr">180° − θ</span>; <span class="math" dir="ltr">(<span class="frac"><span class="fn">1</span><span class="fd g">2r</span></span>)</span> בזווית <span class="math" dir="ltr">90° − θ</span></td></tr><tr><td>3</td><td dir="rtl">ב(2)</td><td><span class="math" dir="ltr"><span class="frac"><span class="fn">1</span><span class="fd">r²</span></span></span></td></tr><tr><td>3</td><td dir="rtl">ג</td><td>0</td></tr><tr><td>3</td><td dir="rtl">ד</td><td><span class="math" dir="ltr">r = <span class="frac"><span class="fn"><span class="rad"><span class="rs">√</span><span class="rb">3</span></span></span><span class="fd">3</span></span> ≈ 0.577</span></td></tr><tr><td>4</td><td dir="rtl">א(1)</td><td><span class="math" dir="ltr">x ≠ ln 4</span></td></tr><tr><td>4</td><td dir="rtl">א(2)</td><td dir="rtl"><span class="math" dir="ltr">x = ln 4, y = 0</span> (באינסוף), <span class="math" dir="ltr">y = −<span class="frac"><span class="fn">b</span><span class="fd">16</span></span></span> (במינוס אינסוף)</td></tr><tr><td>4</td><td dir="rtl">א(3)</td><td><span class="math" dir="ltr">(0 , <span class="frac"><span class="fn g">1 − b</span><span class="fd">9</span></span>), (ln b , 0)</span></td></tr><tr><td>4</td><td dir="rtl">ב</td><td dir="rtl"><span class="math" dir="ltr">b = 8</span>, נקודת מקסימום <span class="math" dir="ltr">(ln 12 , <span class="frac"><span class="fn">1</span><span class="fd">16</span></span>)</span></td></tr><tr><td>4</td><td dir="rtl">ג(1)</td><td><span class="math" dir="ltr">x ≠ ln 4, x ≠ ln 8</span></td></tr><tr><td>4</td><td dir="rtl">ג(2)</td><td><span class="math" dir="ltr">x = ln 8, y = −2</span></td></tr><tr><td>4</td><td dir="rtl">ד</td><td dir="rtl">סקיצה: <span class="math" dir="ltr">f</span> עם אסימפטוטות <span class="math" dir="ltr">x = ln 4, y = −½, y = 0</span> ומקסימום <span class="math" dir="ltr">(ln 12 , <span class="frac"><span class="fn">1</span><span class="fd">16</span></span>)</span>; <span class="math" dir="ltr">g</span> עם אסימפטוטות <span class="math" dir="ltr">x = ln 8, y = −2</span>, נקודה ריקה <span class="math" dir="ltr">(ln 4 , 0)</span> ומינימום <span class="math" dir="ltr">(ln 12 , 16)</span></td></tr><tr><td>4</td><td dir="rtl">ה</td><td><span class="math" dir="ltr">y = −1</span></td></tr><tr><td>4</td><td dir="rtl">ו</td><td dir="rtl">קטן מ-<span class="math" dir="ltr">1½</span></td></tr><tr><td>5</td><td dir="rtl">א</td><td dir="rtl">עולה בכל התחום <span class="math" dir="ltr">x &gt; 0</span>, אין ירידה</td></tr><tr><td>5</td><td dir="rtl">ב</td><td><span class="math" dir="ltr">(1 , 2)</span></td></tr><tr><td>5</td><td dir="rtl">ג</td><td dir="rtl">חיובית בכל התחום <span class="math" dir="ltr">x &gt; 0</span>, אין שליליות</td></tr><tr><td>5</td><td dir="rtl">ד(1)</td><td dir="rtl">סקיצה: מתחילה סמוך לראשית, עולה, פיתול עם משיק אופקי ב-<span class="math" dir="ltr">(1 , 2)</span></td></tr><tr><td>5</td><td dir="rtl">ד(2)</td><td dir="rtl">סקיצה: <span class="math" dir="ltr">(ln x)²</span>, אסימפטוטה <span class="math" dir="ltr">x = 0</span>, מינימום <span class="math" dir="ltr">(1 , 0)</span></td></tr><tr><td>5</td><td dir="rtl">ה</td><td><span class="math" dir="ltr">2e² + <span class="frac"><span class="fn">6</span><span class="fd">e²</span></span> ≈ 15.59</span></td></tr><tr><td>5</td><td dir="rtl">ו</td><td><span class="math" dir="ltr"><span class="frac"><span class="fn">40</span><span class="fd">3</span></span> + 2e² + <span class="frac"><span class="fn">6</span><span class="fd">e²</span></span> ≈ 28.92</span></td></tr></tbody></table></div></article></main><footer class="archfoot"><div class="wrap">
+<div class="footbrand"><img src="../assets/logo.png" width="240" height="240" alt="נדב כץ"><span class="brandname">נדב כץ</span> <span class="brandsep">·</span> <span class="brandline">בית הספר לשיעורים פרטיים ולקורסים</span></div>
+<h2>מה כאן שלנו ומה אינו שלנו</h2>
+<p>הפתרון המלא בדף הזה, הדרך, ההסברים, הטבלאות והעיצוב נכתבו ונבנו אצלנו, והזכויות בהם שמורות לנדב כץ.</p>
+<p>השאלות שהפתרון עונה עליהן הן מן השאלון של משרד החינוך, המנהל הפדגוגי, אגף בכיר בחינות, והזכויות בו שמורות למדינת ישראל. השאלון עצמו אינו מועתק לדף הזה: הוא נפתח מדף הבחינה, שמקושר בראש הדף.</p>
+<blockquote class="rights"><p>זכות היוצרים שמורה למדינת ישראל</p><p>אין להעתיק או לפרסם אלא ברשות משרד החינוך</p><cite>ההודעה מודפסת בעמוד האחרון של השאלון ושל הצעת הפתרון. מצוטטת כאן מילה במילה.</cite></blockquote>
+<p class="disclaim">הדף הזה אינו מסמך רשמי של משרד החינוך, ואינו מאושר על ידו.</p>
+<p>המקור: <a href="https://meyda.education.gov.il/sheeloney_bagrut/2024/6/HEB/35572.pdf" target="_blank" rel="noopener noreferrer">https://meyda.education.gov.il/sheeloney_bagrut/2024/6/HEB/35572.pdf</a></p>
+</div></footer>
+<script>
+/* ============================================================================
+   שכבת הכיוון המשותפת של הדף.
+
+   נדב, 21.9.2026: "אם אתה כותב משפט בעברית ויש בו מילים באנגלית אתה עדיין
+   צריך לכתוב מימין לשמאל, וזה משום שהמשפט בעברית ותלמידים דוברי עברית
+   קוראים אותו."
+
+   עד כאן הכיוון הוצהר פעם אחת בכל נושא, ב-topics/<slug>/visual.css, ולכן
+   היה נכון בדיוק במקומות שבהם מישהו זכר להצהיר עליו. כל השאר ירש את כיוון
+   הדף, ובדף אנגלית כיוון הדף הוא ltr, ולכן משפט עברי שלם נפרש שם משמאל
+   לימין. כל מה שנכתב אל הדף בזמן ריצה (רמז, הסבר שאחרי בדיקה, לוח המשחק,
+   בועת הקמע) לא היה יכול לקבל הצהרה כזאת כלל.
+
+   ארבעה כללים, ולא יותר:
+   1. יחידה שהכותב הצהיר עליה כתב (class="he", class="en", dir="rtl") מקבלת
+      את ההצהרה שלו. עטיפה מוטבעת שהוצהרה אנגלית ורוב מילותיה עבריות אינה
+      מתארת את הטקסט, ושם הטקסט מכריע.
+   2. יחידה שלא הוצהרה והטקסט שבה מערב כתבים: סופרים מילים, וסימון אינו
+      מילה (אות בודדת, ספרה רומית, תווית של שלוש אותיות גדולות). אם יש בה
+      מילה עברית או ערבית אחת לפחות והרוב הלועזי אינו מכריע, זהו משפט עברי
+      ובסיסו rtl. רק רוב לועזי מכריע - פי שלושה ולפחות שש מילים - קובע
+      אנגלית. בין השניים לא נוגעים בכיוון כלל, כי אין שם הוכחה. הספירה
+      אינה קובעת סדר מילים אלא באיזה קצה מתחילים לקרוא: הבידוד כבר מבטיח
+      שכל רצף נקרא בכיוון שלו ובסדר שבו נכתב.
+   3. בכל יחידה, בין שנגענו בכיוונה ובין שלא, כל רצף של הכתב הנגדי נכנס
+      לתיבת בידוד אחת - אחת, ולא אחת לכל תגית, אחרת שני חלקים של אותו
+      צירוף נפרשים בסדר הבסיס. פסקה עברית שלמה בדף ltr מקבלת rtl, כדי
+      שהנקודה תיפול בשמאל והשוליים המשוננים יהיו בצד הנכון.
+   4. כיוון אינו משנה פריסה. מי שמשנה כיוון על תיבה גמישה, על רשת או על
+      שורת טבלה מהפך גם את סדר הפריטים שבה, וזה עיצוב מחדש ולא סדר קריאה.
+      לכן התיבות האלה אינן מקבלות כיוון לעולם; הטקסט שיושב בהן ישירות עוטף
+      את עצמו. מאותה סיבה בלוק שיורש rtl אינו מקבל ltr: זה היה מזיז את
+      היישור ואת מספר הפריט אל הצד ההפוך. במקרה כזה מבודדים את הרצף הלועזי
+      שבתוכו ומשאירים את התיבה במקומה.
+
+   חמש הערות שנלמדו במדידה:
+   1. direction על תיבה מוטבעת בלי unicode-bidi אינו עושה דבר. הדפדפן מדווח
+      direction:rtl ופורש את הטקסט משמאל לימין. כאן תמיד נכתבים שניהם יחד.
+   2. dir="auto" אינו הפתרון: הוא הולך לפי התו החזק הראשון, ויש בקורפוס
+      אלפי משפטים עבריים שנפתחים במילה לועזית.
+   3. הסימן שנוסע עם המילה הלועזית הוא סוגר שהפותח שלו כבר בתוך הקטע,
+      ועוד סימן קריאה. נקודה, פסיק, נקודתיים **וסימן שאלה** שייכים למשפט
+      שסביב, ואת מקומם הנכון אלגוריתם הדו-כיווניות כבר נותן להם לבדו;
+      משיכתם פנימה הזיזה אותם אל הצד הלא נכון בכל הקורפוס.
+
+      סימן השאלה עבר לכאן ב-28.9.2026, וזהו שינוי של הכרעה קודמת.
+      נדב: "כשאתה כותב נקודה או סימן שאלה בסוף משפט אז זה בצורה נכונה
+      באמת בסוף המשפט בצד הנכון של המשפט בעברית וגם אם זה באנגלית ללא
+      טעויות... וזהו העיקר, שלא ייראה בינה מלאכותית."
+      עד כאן נכתב כאן ש-"הוא עונה על Where?" בלי משיכה נקרא "?Where",
+      וזו הייתה קריאה של המסך ולא של המסמכים. הנמדד במסמכי משרד החינוך
+      (‎.work/proof-punct/ministry-convention.md §1, §2, §6): 925 מופעים
+      של משפט עברי שנגמר במילה לועזית ו-363 שנגמרים במספר, ובכולם
+      **הנקודה היא התו השמאלי ביותר בשורה**; 47 מופעים של שאלה עברית
+      שנגמרת במילה לועזית או במספר, ובכל 47 **סימן השאלה הוא התו
+      השמאלי ביותר**. מופעים נגדיים בשאלוני הבגרות: 0.
+      סימן קריאה נשאר נמשך עם המילה: בכל 279 שאלוני הבגרות אין אף מופע
+      של סימן קריאה שסוגר משפט עברי שנגמר במילה לועזית (§6), כלומר אין
+      מה לחקות, ואילו בקורפוס שלנו סימן הקריאה שאחרי אות לטינית הוא
+      כמעט תמיד עצרת בנוסחה ("n!", "4!/(1!·3!)"). זה נאמר כאן
+      במפורש כדי שלא ייקרא כהכרעה.
+   3א. גבול משפט חותך רצף, ‎30.9.2026. עד כאן רצף של הכתב הנגדי נמתח עד
+      התו החזק הבא של הבסיס, ולכן הוא בלע סימני סיום שיושבים בתוכו:
+      "…נמצא עליו: On the roof. On Tuesday, In the afternoon ו-At night
+      מוסרים מתי…" קיבל תיבת בידוד אחת מ-On עד afternoon, והנקודה
+      שסוגרת את המשפט העברי נצבעה בתוכה, צמודה מימין ל-roof. עכשיו
+      סימן סיום שיש רווח אחריו (SENTBREAK: ‎. ? : ;) סוגר את הרצף,
+      ומה שבא אחריו מקבל תיבה חדשה. אותו כלל בדיוק בשלושת הנתיבים:
+      oppSegments בתוך צומת טקסט, isPunctBreak בנתיב האיחוד,
+      ו-releaseRunTail לזנב שבסוף.
+      מה שמצייר משרד החינוך במצב הזה נמדד ומופיע ב-§7.3.1 של
+      ‎.work/proof-punct/ministry-convention.md: "אנשי פוליטיקלי קורקט הם
+      הגזענים ביותר. TheMarker." מצויר משמאל לימין כ-".TheMarker.אנשי",
+      כלומר הנקודה של המשפט העברי צמודה לעברית - מימין לרצף הלטיני
+      שבא אחריה - והנקודה של "TheMarker." היא השמאלית ביותר. הפיצול
+      נותן בדיוק את הגאומטריה הזאת, ונמדד תו בתו בקנרית seg-themarker.
+   3ב. מה שבסוגריים אינו קובע את שפת היחידה, ‎30.9.2026. ספירת המילים
+      הכריעה rtl על "moved = came to live there (עברה לגור)." - חמש
+      מילים לועזיות מול שתיים עבריות, כלומר בלי רוב מכריע - וכל השורה
+      נצבעה עברית, כך שהנקודה נצבעה בקצה השמאלי. §5.3 של המפרט מעיד
+      על הצורה הזאת במסמכי משרד החינוך: משפט אנגלי שהאסימון האחרון בו
+      הוא מילה עברית בסוגריים נסגר בקצה הימני שלו. לכן יחידה שבלי מה
+      שבסוגריים אין בה אף מילה עברית אינה משפט עברי, והיא נמסרת אל
+      הטיפול של "יחידה שכולה לועזית".
+
+   4. הדף נצבע פעם אחת לפני השכבה, ורק אז מתוקן. זו תכונה ידועה ולא שקופה:
+     הסריקה הראשונה יכולה לרוץ רק על DOM שלם, כלומר ב-DOMContentLoaded,
+     ולכן בקו תקשורת איטי התלמיד רואה את הדף בסדר הקודם עד שהבית האחרון
+     מגיע, ואז הוא קופץ. שתי ההצעות לתקן נבדקו ונמדדו ונדחו:
+       - העברת הבלוק אל <head> עם סריקה ב-DOMContentLoaded אינה מקצרת את
+         החלון כלל. נמדד ב-.work/proof-bidi/r3/tools/fouc2.js: אותו דף
+         מוגש בשני חלקים, והחיתוך ב-50%, ב-90% וב-99% מן הבתים. בשתי
+         ההצבות, בסוף הגוף וב-head, בזמן ההמתנה יש 0 איברים שקיבלו כיוון
+         והתווית נקראת "כיתה ה׳ · English"; רק אחרי 100% מן הבתים היא
+         נעשית "English · כיתה ה׳". ההמתנה היא למסמך השלם, לא לבלוק.
+       - הצהרת הכיוון כ-CSS בגיליון הנושא אינה מתקנת את מה שקופץ. נמדד
+         ב-.work/proof-bidi/r3/tools/cssdecl.js על 26 דפים: 21,925 איברים
+         הושוו עם השכבה ובלעדיה, 1,643 מהם שינו כיוון, ו-0 מתוכם נושאים
+         הצהרה של הכותב (מאפיין dir או כלל CSS שקובע direction). כל מה
+         שמשתנה הוא הלא-מוצהר, וכלל (2) מכריע אותו בספירת מילים בזמן
+         ריצה - החלטה שאין דרך לכתוב אותה בגיליון סגנון.
+     מה שכן היה סוגר את החלון הוא הסתרת הגוף עד לסריקה, וזו החלטת מוצר
+     (מסך ריק במקום דף בסדר הקודם) ולא החלטה של השכבה.
+  5. אסור להזריק תווי בקרה (LRM, RLM, בידוד). מנוע המשחק משווה טקסט גולמי,
+      ותו בלתי נראה אחד היה מרוקן את מאגר המילים או פוסל תשובה נכונה. לכן
+      כל התיקון הוא מאפיין, סגנון ועטיפה בלבד, והטקסט עצמו אינו נוגע:
+      textContent לפני ואחרי זהה תו בתו.
+   ============================================================================ */
+(function(){
+  "use strict";
+
+  /* אותיות בלבד. ניקוד, גרש, גרשיים, מקף ופיסוק אינם "מילה". */
+  /* גרש וגרשיים עבריים (U+05F3, U+05F4) הם חלק מן המילה: "ג׳", "יח״ל".
+     בלעדיהם הם נשארים מחוץ לתיבת הבידוד, ובדף ltr הם נגררים אל הצד השני
+     של המילה. */
+  var RTL_SRC = '[\\u05D0-\\u05EA\\u05EF-\\u05F4\\uFB1D-\\uFB4F' +
+                '\\u0620-\\u064A\\u066E\\u066F\\u0671-\\u06D3\\u06D5\\u06E5\\u06E6' +
+                '\\u06EE\\u06EF\\u06FA-\\u06FF\\uFB50-\\uFDFF\\uFE70-\\uFEFC]';
+  /* בטווח הלאטיני המורחב יושבים שני סימני חשבון, U+00D7 ו-U+00F7,
+     והם אינם אותיות. בלי החריגה הזאת "3×2 + 3×35." נספר כמילה
+     לועזית, והנקודה שאחריה נגררה איתה. */
+  var LTR_SRC = '[A-Za-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u024F\\u0370-\\u03FF\\u0400-\\u04FF]';
+  var RTL_W = new RegExp(RTL_SRC + '+', 'g');
+  var LTR_W = new RegExp(LTR_SRC + '+', 'g');
+  function nWords(t, re){ re.lastIndex = 0; var n = 0; while (re.exec(t)) n++; return n; }
+  /* מילה לועזית לעומת סימון. אות בודדת ("x", "y") וספרה רומית ("II", "III")
+     אינן מילים באנגלית, והן מופיעות בתוך משפט עברי כסימון. בלי ההבחנה
+     הזאת כותרת ערבית "II \u00b7 פיעל \u00b7 III" נספרת כשני מילים לועזיות מול
+     אחת עברית ונקבעת ltr, וגם תווית הרמה "A2 / B1 / B2 \u00b7 3-5 יח״ל".
+     הספירה הזאת משמשת רק להכרעת בסיס הכיוון; לזיהוי "יחידה שכולה לועזית"
+     נשארת הספירה הגולמית, אחרת נוסחה טהורה הייתה יוצאת מחוץ לטיפול. */
+  var ROMAN = /^[IVXLCDM]+$/;
+  var LABEL = /^[A-Z]{1,3}$/;
+  function nLatinWords(t){
+    LTR_W.lastIndex = 0;
+    var m, n = 0;
+    while ((m = LTR_W.exec(t))){
+      if (m[0].length < 2) continue;
+      if (ROMAN.test(m[0])) continue;
+      /* תווית גאומטרית או קיצור: "BD : DC = AB : AC" אינו משפט אנגלי. */
+      if (LABEL.test(m[0])) continue;
+      n++;
+    }
+    return n;
+  }
+  /* מה שבסוגריים הוא פירוש ואינו קובע את שפת היחידה. נמדד על דף אמיתי,
+     english-g7-reading-my-best-friend: "moved = came to live there
+     (עברה לגור)." הוא חמש מילים לועזיות מול שתי עבריות, ולכן ספירת
+     המילים (paraW < 3·paraR) הכריעה rtl, וכל השורה נצבעה עברית -
+     והנקודה, שבמסמכי משרד החינוך מצוירת בקצה הימני של משפט אנגלי
+     שהאסימון האחרון בו הוא מילה עברית בסוגריים (‎.work/proof-punct/
+     ministry-convention.md §5.3, 3 מופעים מצוירים ונמדדים), נצבעה
+     בקצה השמאלי: השער מדד אותה ב-x=75.4 והרצף ב-[84…112.8].
+     לכן הסוגריים מוסרים לספירה שנייה, והיא מכריעה רק כשהיא חד-משמעית:
+     יחידה שבלי מה שבסוגריים אין בה מילה עברית אחת אינה משפט עברי.
+     זו אותה נפילה בדיוק שכתובה בשער (check-punct-placement, "ספירת
+     המילים בלי מה שבסוגריים"), ומכאן שהשניים מודדים אותו דבר.
+     סוגריים שאינם מאוזנים בתוך אותו צומת אינם מוסרים כלל, ולכן
+     הספירה השנייה נופלת חזרה אל הראשונה ולא אל ניחוש. */
+  var PARENS = /\([^()]*\)/g;
+  function outsideParens(t){ return t.indexOf('(') < 0 ? t : t.replace(PARENS, ' '); }
+
+  var RTL_C = new RegExp(RTL_SRC), LTR_C = new RegExp(LTR_SRC);
+  var SPACE = /\s/;
+  var OPENER = /[([{"'“‘«‹]/;
+
+  /* תווים חלשים: ספרה, סימן חשבון, סימן יחס, מפריד עשרוני. אלגוריתם
+     הדו-כיווניות מצרף אותם מאליו אל הרצף שלידם, ולכן "x = 6" הוא ביטוי
+     אחד שנקרא משמאל לימין. אם מבודדים את ה-x לבדו, "= 6" נשאר בבסיס
+     העברי ונמשך ימינה, והתלמיד קורא "6 = x". הסימנים נכתבים כ-escape
+     כדי שקו מפריד לא יופיע כתו בקובץ. */
+  var WEAK  = new RegExp('[0-9\\u0660-\\u0669+\\-\\u2212\\u2013=\\u2248\\u2245\\u2261\\u00D7\\u00F7*/^<>\\u2264\\u2265\\u2260\\u00B1\\u00B7.,%\\u00B0]');
+  /* כדי לספוח רצף חלש צריך שיהיה בו סימן ולא רק ספרה: "מקור 5 times"
+     אינו ביטוי, והספרה שם שייכת למילה הבאה.
+     הנקודה האמצעית (U+00B7) אינה כאן. היא סימן כפל רק כשהיא בין שני
+     אגפים, ובקורפוס הזה היא כמעט תמיד מפריד עיצובי: "English · כיתה ה׳".
+     כשהיא נספרה כסימן חשבון היא הפכה כל מפריד כזה ל"ביטוי", והנקודה
+     נגררה אל תוך תיבת הבידוד הלועזית ונצבעה בקצה החיצוני שלה. */
+  var WEAKOP = new RegExp('[+\\-\\u2212\\u2013=\\u2248\\u2245\\u2261\\u00D7\\u00F7*/^<>\\u2264\\u2265\\u2260\\u00B1%]');
+  /* אחורה סופחים רק ספרה וכפל צמודים ("2·x"). מקף לעולם לא: הוא מחבר
+     תחילית עברית ("ו-the"), ולקיחתו הייתה קורעת אותה מן המילה שלה. */
+  var BACKWEAK = new RegExp('[0-9\\u0660-\\u0669.,\\u00B7]');
+
+  /* גבול משפט: סימן שסוגר משפט ואחריו רווח. אותו סט בדיוק משמש
+     ב-isPunctBreak בנתיב האיחוד, כדי ששני הנתיבים יחתכו באותו מקום.
+     סימן קריאה אינו כאן: המפרט מסמן אותו UNATTESTED (§6), ובקורפוס הזה
+     הוא כמעט תמיד עצרת בנוסחה ("n!", "4!/(1!·3!)"), ולכן חיתוך בו היה
+     מפרק ביטוי. */
+  var SENTBREAK = /[.?:;]/;
+
+  /* קטעי הכתב הנגדי בתוך מחרוזת אחת, יחד עם סימני הפיסוק הצמודים להם
+     ועם הביטוי החשבוני שנמשך מהם. בלי זה "הוא עונה על Where?" מצייר את
+     סימן השאלה משמאל למילה, כלומר על המסך נראה "?Where". */
+  function oppSegments(v, opp){
+    var S_OPP = opp === 'ltr' ? LTR_C : RTL_C;
+    var S_BASE = opp === 'ltr' ? RTL_C : LTR_C;
+    var out = [], i = 0, n = v.length;
+    while (i < n){
+      if (!S_OPP.test(v.charAt(i))){ i++; continue; }
+      var s = i, e = i, j = i;
+      /* הרצף נגמר גם בגבול משפט שבתוכו, ולא רק בתו של הבסיס. סימן סיום
+         שיש רווח אחריו סוגר את המשפט של **הבסיס**, ולכן הוא אינו נכנס
+         לתיבת הבידוד; מה שבא אחריו הוא משפט חדש, ותיבה חדשה.
+         נמדד על דף אמיתי, english-g5-practice-prepositions-time-place:
+         הכתוב הוא "…והחתול נמצא עליו: On the roof. On Tuesday, In the
+         afternoon ו-At night מוסרים מתי…", והלולאה מתחה את הרצף עד
+         ה-n האחרון של afternoon, כלומר בלעה את הנקודה שסוגרת את המשפט
+         העברי ואת הפסיק שאחרי Tuesday. השער מדד את הנקודה ב-x=341.4
+         בתוך תיבת הבידוד [248…590], כלומר צמודה מימין ל-roof.
+         מה שמצייר משרד החינוך בדיוק במצב הזה כתוב ב-§7.3.1 של המפרט:
+         "‎\u2013 מרגלית, ל' (2020). אנשי פוליטיקלי קורקט הם הגזענים ביותר.
+         TheMarker." (התו הראשון במקור הוא מקף קצר; הוא כתוב כאן כקוד,
+         כי הקובץ הזה נשתל בכל דף, וכלל המקפים חל גם עליו) מצויר משמאל לימין כ-".TheMarker.אנשי…", כלומר
+         הנקודה של המשפט העברי מצוירת צמודה לעברית - מימין לרצף
+         הלטיני שבא אחריה - והנקודה של "TheMarker." היא השמאלית ביותר.
+         חיתוך הרצף בגבול המשפט נותן בדיוק את הגאומטריה הזאת: הסימן
+         נשאר בזרימה העברית בין שתי תיבות הבידוד.
+         פסיק ונקודה אמצעית אינם כאן: הם ממשיכים משפט ולא סוגרים אותו,
+         וחיתוך בהם היה מפרק "In the afternoon, At night" לשתי תיבות
+         בלי שיש גבול משפט ביניהן. */
+      while (j < n && !S_BASE.test(v.charAt(j))){
+        if (j > e && e > i - 1 && S_OPP.test(v.charAt(e)) &&
+            SENTBREAK.test(v.charAt(j)) && j + 1 < n && SPACE.test(v.charAt(j + 1))) break;
+        if (S_OPP.test(v.charAt(j))) e = j;
+        j++;
+      }
+      var end = e + 1;
+      while (end < n && attaches(v, end, e, s)) end++;
+      end = absorbWeak(v, end, S_BASE, S_OPP);
+      var st = s, floor = out.length ? out[out.length - 1][1] : 0;
+      while (st > floor && !SPACE.test(v.charAt(st - 1)) && BACKWEAK.test(v.charAt(st - 1))) st--;
+      /* סוגר פותח שצמוד לרצף, כשהסוגר הסוגר שלו כבר בתוך הרצף, נכנס איתו.
+         נמדד ב-summer-math-g9-g10-5u-ch3: "מהם פתרונות המשוואה (x − 3)(x + 8)
+         = 0?" נחתך כך שה-"(" הראשון נשאר בזרימה העברית ובן הזוג שלו בתוך
+         תיבת הבידוד. סוגר שאין לו בן זוג באותו רצף מצויר בבסיס העברי בצורה
+         ההפוכה, והתלמיד ראה "x − 3)(x + 8) = 0)". "המילה (cat)" אינה
+         משתנה: הסוגר הסוגר שלה אינו בתוך הרצף. */
+      if (st > floor){
+        var op0 = v.charAt(st - 1), cl0 = PAIR[op0];
+        if (cl0 && closesOutside(v, st, end, op0, cl0)) st--;
+      }
+      out.push([st, end]);
+      i = j;
+    }
+    return out;
+  }
+
+  /* איזה סימן נוסע עם המילה ואיזה שייך למשפט שסביבה. זו ההבחנה שנמדדה
+     ונמצאה הפוכה בסבב הראשון: שם כל סימן צמוד נלקח אל תוך המילה הלועזית,
+     ובפועל נקודה, פסיק ונקודתיים שייכים כמעט תמיד למשפט העברי שסביבה, ואת
+     המקום הנכון שלהם - משמאל למילה - אלגוריתם הדו-כיווניות כבר נותן להם
+     לבדו. לקיחתם פנימה הזיזה אותם אל הצד הלא נכון, ונמדד ש-"צירוף אחד:
+     under the bed." הפך ל-". under the bed".
+     נדב, 28.9.2026, וזה מבטל את ההכרעה של 21.9 בעניין סימן השאלה: סימן
+     שאלה שסוגר משפט הוא סופו של המשפט, ומקומו בקצה של המשפט - בעברית
+     בקצה השמאלי. מה שנכתב כאן קודם ("בלי זה נקרא ?Where") היה תיאור של
+     המסך ולא של המסמכים, ובמסמכי משרד החינוך הנמדדים
+     (‎.work/proof-punct/ministry-convention.md §6) סימן השאלה הוא התו
+     השמאלי ביותר בשורה בכל 47 המופעים, בלי מופע נגדי אחד.
+     לכן נשאר נמשך עם המילה: סימן קריאה בלבד - שהוא בקורפוס הזה כמעט
+     תמיד עצרת בנוסחה, ושבשאלוני הבגרות אין לו אף מופע כסימן סיום אחרי
+     מילה לועזית, כלומר אין קונבנציה שאפשר לחקות - וסוגר או מרכאה סוגרת
+     שהפותח שלהם כבר בתוך הקטע.
+     מדוע זה מספיק: הלולאה שלמעלה מותחת את e עד לתו הנגדי האחרון שלפני
+     תו הבסיס, ולכן כל סימן שמגיע לכאן יושב בין רצף לועזי לבין תו בסיס
+     או סוף הטקסט - בדיוק המקרה שבו נדב קבע שהסימן אינו נבלע. סימן שיושב
+     בין שתי אותיות לטיניות ("Yes?No") נמצא כבר בתוך הקטע ואינו עובר
+     כאן כלל. */
+  var MARK_ATTACH = /[!]/;
+  /* מרכאה ישרה אינה מבחינה בין פתיחה לסגירה, ולכן היא לעולם אינה נלקחת:
+     נמדד שלקיחתה הצמידה את שתי המרכאות זו לזו בצד אחד. סוגר של ממש נלקח
+     רק אם הפותח שלו כבר בתוך הקטע עצמו. */
+  var CLOSER = { ')': '(', ']': '[', '}': '{',
+                 '\u201D': '\u201C', '\u2019': '\u2018', '\u00BB': '\u00AB', '\u203A': '\u2039' };
+  /* זוגות סוגריים, ומבחן אחד לשני הנתיבים: האם בקטע t[from..to) יש סוגר
+     סוגר שהפותח שלו יושב לפני הקטע, כלומר מחוץ לתיבת הבידוד. */
+  var PAIR = { '(': ')', '[': ']', '{': '}' };
+  function closesOutside(t, from, to, op, cl){
+    var d = 0;
+    for (var q = from; q < to; q++){
+      var c = t.charAt(q);
+      if (c === op) d++;
+      else if (c === cl){ if (d === 0) return true; d--; }
+    }
+    return false;
+  }
+  function attaches(v, k, lastLetter, segStart){
+    var c = v.charAt(k);
+    if (SPACE.test(c)) return false;
+    if (MARK_ATTACH.test(c)) return true;
+    var op = CLOSER[c];
+    if (!op) return false;
+    for (var i = lastLetter; i >= segStart; i--) if (v.charAt(i) === op) return true;
+    return false;
+  }
+
+  /* הרצף החלש שאחרי הקטע נכנס אליו כל עוד לא הגיעה אות: כך "x = 6",
+     "x + 1" ו-"A2 / B1 · 3-5" נשארים ביטוי אחד. */
+  function absorbWeak(v, end, S_BASE, S_OPP){
+    var j = end, last = end, sawOp = false, sawDigit = false;
+    while (j < v.length){
+      var c = v.charAt(j);
+      if (SPACE.test(c)){ j++; continue; }
+      if (S_BASE.test(c) || S_OPP.test(c)) break;
+      if (!WEAK.test(c)) break;
+      /* גבול משפט עוצר גם כאן, כמו בלולאה של oppSegments (3א): "N חלקי X.
+         25% זה רבע" בלע את הנקודה ואת "25%" אל תוך הבידוד של X, והנקודה
+         שסוגרת את המשפט העברי צוירה מימין ל-X (g6-percent-basics-practice). */
+      if (SENTBREAK.test(c) && j + 1 < v.length && SPACE.test(v.charAt(j + 1))) break;
+      if (WEAKOP.test(c)) sawOp = true;
+      if (c >= '0' && c <= '9') sawDigit = true;
+      j++; last = j;
+    }
+    if (last === end) return end;
+    /* סופחים ביטוי, לא פיסוק. סימן חשבון מעיד על ביטוי גם כשיש רווח
+       ("x = 6"); ספרה מעידה על ביטוי גם כשיש רווח ("Unit 3", "Text 1",
+       "grade 8"); פסיק או נקודה לבדם אינם ביטוי, והם שייכים למשפט
+       שסביב ("II," ו-"bed.").
+
+       הרווח לפני הספרה: עד 28.9.2026 נדרשה כאן צמידות (attached), ולכן
+       "Unit 3" נשאר "Unit" בתוך הבידוד ו-" 3" בחוץ, ובבסיס עברי הספרה
+       נמשכה אל הקצה השני: נמדד ב-numside.js על 1,667 הדפים הבנויים -
+       13 זוגות "<מילה לועזית> <מספר>" מצוירים בצד הלא נכון בלי השכבה,
+       38 איתה, 31 מהם התהפכו. בפועל זו הייתה רגרסיה מול אלגוריתם
+       הדו-כיווניות עצמו: כלל W7 שלו הופך ספרה ל-L כשהתו החזק שלפניה
+       הוא L, בלי קשר לרווחים שביניהם, ולכן הדפדפן לבדו צייר "Unit 3"
+       נכון. תיבת הבידוד מנתקת את הספרה מאותו תו חזק, ולכן היא נופלת
+       לכיוון הפסקה. הספיחה מחזירה בדיוק את מה שהדפדפן עשה.
+       הכיוון האחורי לא נגע: "מקור 5 times" עדיין אינו ביטוי, משום
+       שהספרה שם נמצאת לפני הקטע ומטופלת ב-BACKWEAK, שם רווח עוצר. */
+    if (!sawOp && !sawDigit) return end;
+    /* מקף תלוי משתחרר רק כשמה שעצר את הספיחה הוא אות של הבסיס. "∠C = ?" נעצר
+       בסימן השאלה, וה-"=" שם הוא חלק מביטוי עם מקום ריק, לא מקף מפריד. */
+    return releaseTrail(v, end, last, j < v.length && S_BASE.test(v.charAt(j)));
+  }
+
+  /* נדב, 22.9.2026: "סימן חלש נבלע רק בין שני תווים חזקים מאותו כיוון.
+     x = 6 שומר על סימן השוויון שלו כי אות לטינית עומדת בצד אחד וספרה
+     בצד השני. נקודה אמצעית, פסיק, נקודה או נקודתיים שנגררים אחרי רצף
+     לטיני שייכים למשפט העברי שסביבו ונשארים מחוץ לבידוד."
+     לכן: אחרי שהרצף החלש נספח, משחררים את הזנב שלו - כל רצף של סימני
+     פיסוק ורווחים שיושב בסופו. מה שנשאר מסתיים תמיד בתו שאינו פיסוק,
+     כלומר בספרה או באות, ולכן הוא באמת ביטוי. תווית הרמה
+     "A2 / B1 · 3-5 יח״ל" שורדת משום שהזנב שלה נגמר בספרה 5. */
+  var TRAILMARK = new RegExp('[.,:;\\u00B7]');
+  /* וסימן חשבון שנשאר תלוי בסוף, אחרי רווח ובלי אגף אחריו, אינו חלק
+     מביטוי אלא מקף מפריד של המשפט העברי: "the girl who won the race -
+     מה התפקיד של who כאן?" צייר את המקף בקצה הימני של תיבת הבידוד,
+     כלומר לפני המשפט האנגלי בקריאה מימין לשמאל. מקף צמוד למילה ("re-",
+     "-teen") נשאר: הוא חלק מן האסימון. אחוז אינו כאן, הוא שייך למספר. */
+  var DANGLE = new RegExp('[+\\-\\u2212\\u2013=\\u2248\\u2245\\u2261\\u00D7\\u00F7*/^<>\\u2264\\u2265\\u2260\\u00B1]');
+  function dangles(v, k){ return k >= 2 && DANGLE.test(v.charAt(k - 1)) && SPACE.test(v.charAt(k - 2)); }
+  function releaseTrail(v, end, last, dangleOk){
+    var k = last;
+    while (k > end){
+      var c = v.charAt(k - 1);
+      if (SPACE.test(c) || TRAILMARK.test(c) || (dangleOk && k - 1 > end && dangles(v, k))) k--; else break;
+    }
+    return k > end ? k : end;
+  }
+
+  /* ------------------------------------------------------------------
+     המבנה של הדף אינו זז.
+
+     נדב, 22.9.2026: "השכבה לא מזיזה כלום. היא מוסיפה מאפיינים וסגנון,
+     ומותר לה לעטוף צומת טקסט חשוף. אסור לה להוציא ממקומו, להחליף,
+     לשכפל או לסדר מחדש איבר שיש לו id, מאפיין data או class, משום
+     שהסקריפטים של הדף מחזיקים בהם: כך #storyEq איבד את הילד #storyKind
+     והמעבדה מתה."
+
+     מה שקרה באמת ב-g10-3u-word-problems, נמדד: המעבדה כותבת
+     eqEl.childNodes[0].nodeValue, והשכבה החליפה שם את צומת הטקסט
+     בפרגמנט בן שלושה צמתים. childNodes[0] הפך לאיבר, הכתיבה הפכה
+     לפעולה ריקה, ו-#storyKind נדחף ממקום 1 למקום 2. המשוואה קפאה על
+     התרחיש הראשון בזמן שהכותרת שלידה המשיכה להתחלף, והתלמיד ראה
+     משוואה קווית שכתוב מעליה "משוואה ריבועית".
+
+     שתי מגבלות, ושתיהן נמדדות ב-.work/proof-bidi/r3/tools/ids.js:
+     1. איבר שיש לו id אינו מועבר לעולם אל תוך עטיפה: רצף שיש בו איבר
+        כזה אינו מאוחד כלל.
+     2. בתיבה שיש לה ילד עם id לא נוגעים במבנה כלל אלא חותמים בלבד, וכך
+        גם בתיבה שיש לה id בעצמה כשהיא יושבת בתוך מעבדה, תרשים, משחק או
+        מחשבון. זו התיבה שהסקריפט של הדף מגיע אליה לפי getElementById
+        ומדלג בה לפי מקום, וגם צומת הטקסט הראשון שלה הוא ממשק.
+     המדידה: 33 דפים, 22,955 איברים נושאי id / class / data, 2,228 מהם
+     עם id - 0 מהם שינו הורה, מקום בין אחים או זהות.
+
+     מה שלא נאסר כאן, ולמה.
+     א. האיסור המלא - גם על איבר שיש לו רק class או רק מאפיין data -
+        נמדד על מדגם של 139 דפי dist ועלה מ-1 ממצא ל-189 (order=35
+        run=76 attach=77), כלומר 188 פגמי קריאה נוספים על 56 דפים
+        נוספים. הסיבה היא ש-.math מבודד בגיליון עצמו (01-base.css:32),
+        ולכן "AM = 40" שכתוב בשני span.math חייב עטיפה אחת משותפת, ואי
+        אפשר להשיג אותה בלי להעביר אותם.
+     ב. חוץ מתוך המעבדה, איבר שיש לו id ופותח בצומת טקסט אינו מוקפא,
+        ולכן childNodes[0] שלו יכול לחדול להיות צומת טקסט. ההקפאה הגורפת
+        שם הייתה משאירה את טיפ הקמע <p id="mascotTip">Hi! ...</p> שבור
+        ב-26 מתוך 139 דפי המדגם. מה שנשאר חשוף נמדד ונקרא בשמו
+        (ids.js --soft): #mascotTip, #modeChip ו-#dhookMeanTag על מדגם
+        של 139 דפים, ובמדידה נוספת על 73 דפים (inject.js) גם #dvLbl,
+        #pyL1 ו-#pyL2. כולם נכתבים ב-textContent או אינם נכתבים כלל
+        (topics/g7-pythagoras/solver.js:6,
+        topics/g11-4u-optimization/solver.js:6-7). הרשימה נמדדה על
+        מדגמים ולא על הקורפוס כולו, ולכן היא אינה רשימה סגורה.
+     כל 26 סקריפטי הנושא שמדלגים ב-DOM לפי מקום (childNodes[n],
+     children[n], firstChild, nextSibling) נוהגו כאן לחיצה אחר לחיצה,
+     129 לחיצות ו-155 שלבים, ונמצאו זהים תו בתו לפני ואחרי
+     (.work/proof-bidi/r3/tools/drive.js). אותו כלי על שכבת הסבב הקודם
+     נכשל על g10-3u-word-problems, וזו ההוכחה שהוא יודע לראות את הפגם.
+     ------------------------------------------------------------------ */
+  function isOurWrap(el){
+    return !!(el && el.nodeType === 1 && el.getAttribute &&
+              el.getAttribute('data-bidi-wrap') !== null);
+  }
+  /* איבר שיש לו id: הדף מגיע אליו לפי שם, ולכן הוא לעולם אינו זז. */
+  function isPinnedEl(node){
+    if (!node || node.nodeType !== 1) return false;
+    if (isOurWrap(node)) return false;
+    return !!node.id;
+  }
+  function hasPinned(list){
+    for (var i = 0; i < list.length; i++) if (isPinnedEl(list[i])) return true;
+    return false;
+  }
+  /* בתוך מעבדה, תרשים, משחק או מחשבון - גם התיבה עצמה קפואה, ולא רק
+     תיבה שיש לה ילד עם id. שם יושבים הסקריפטים שמחזיקים במבנה: הם
+     מגיעים לאיבר לפי getElementById ואז מדלגים בו לפי מקום, ולכן גם
+     צומת הטקסט הראשון שלו הוא ממשק. זהו בדיוק #storyEq, שהמעבדה שלו
+     כותבת eqEl.childNodes[0].nodeValue.
+     הבוררות הן השורשים שקיימים באמת בקורפוס (.gm-wrap, .game, .sorter
+     ו-.builder נמדדו ב-0 דפים והוצאו). המחיר נמדד ונאמר: 0 ממצאים
+     נוספים על מדגם של 139 דפים, ושניים על הקורפוס כולו - שתי נוסחאות
+     בתוך מעבדה שאינן מבודדות עכשיו, ‎#spReset ב-g10-3u-paths-speed
+     ו-‎#exState ב-g7-algebraic-expressions. זה המחיר של הכלל, והוא
+     נמוך ממחירו של ווידג׳ט מת.
+     מחוץ למעבדה אין הקפאה של התיבה עצמה, ובכוונה: טיפ הקמע
+     <p id="mascotTip">Hi! ...</p> פותח באנגלית, וכל דף אנגלי צריך את
+     הבידוד שלה. הקפאת כל איבר שיש לו id הייתה מותירה את הטיפ שבור
+     ב-26 מתוך 139 דפי המדגם. מה שנשאר חשוף נמדד אחד אחד
+     (tools/ids.js --soft): #mascotTip, #modeChip ו-#dhookMeanTag, ושלושתם
+     נכתבים ב-textContent או אינם נכתבים כלל, ואף אחד מהם אינו נקרא
+     לפי מקום. */
+  var WIDGET_SEL = '.grapher,.ps-lab,.lab,.gm,.diagram,.calc';
+  function inWidget(el){
+    if (!el.closest) return false;
+    try { return !!el.closest(WIDGET_SEL); } catch (e) { return false; }
+  }
+  function structFrozen(el){
+    if (!el || el.nodeType !== 1) return true;
+    if (el.id && inWidget(el)) return true;
+    for (var n = el.firstElementChild; n; n = n.nextElementSibling) if (n.id) return true;
+    return false;
+  }
+
+  /* עטיפה בלבד. הטקסט עצמו אינו נוגע: textContent לפני ואחרי זהה, ולכן
+     מנוע המשחק, מפתח התשובות וכל השוואת מחרוזת ממשיכים לראות אותו דבר. */
+  /* בתוך SVG אין <span>: הוא אינו נצבע כלל. שם העוטפת היא <tspan>. */
+  function mkWrap(node, opp, mark){
+    var owner = node.parentNode;
+    var svg = owner && (owner.ownerSVGElement || owner.tagName === 'svg');
+    var sp = svg ? document.createElementNS('http://www.w3.org/2000/svg', 'tspan')
+                 : document.createElement('span');
+    sp.setAttribute(mark || 'data-bidi-run', opp);
+    /* סימן שהעטיפה הזאת נוצרה כאן ואינה איבר של הדף: כך אפשר להסיר את
+       השכבה לגמרי ולמדוד את אותו קובץ בדיוק לפניה ואחריה. */
+    sp.setAttribute('data-bidi-wrap', '');
+    sp.style.direction = opp;
+    sp.style.unicodeBidi = 'isolate';
+    return sp;
+  }
+
+  function isolateTextNode(tn, opp){
+    var v = tn.nodeValue;
+    if (!v) return;
+    if (structFrozen(tn.parentNode)) return;
+    var segs = oppSegments(v, opp);
+    if (!segs.length) return;
+    var frag = document.createDocumentFragment(), pos = 0;
+    for (var k = 0; k < segs.length; k++){
+      if (segs[k][0] > pos) frag.appendChild(document.createTextNode(v.slice(pos, segs[k][0])));
+      var sp = mkWrap(tn, opp);
+      sp.appendChild(document.createTextNode(v.slice(segs[k][0], segs[k][1])));
+      frag.appendChild(sp);
+      pos = segs[k][1];
+    }
+    if (pos < v.length) frag.appendChild(document.createTextNode(v.slice(pos)));
+    /* למה פרגמנט ולא עטיפה אחת. הניסיון לשמור על אורך childNodes של
+       ההורה - צומת אחד יוצא, צומת אחד נכנס - נמדד ונדחה: העטיפה הבודדת
+       הפכה את הזנב " going to." לאיבר אחד, ואיחוד הרצפים בלע אותו כולו,
+       יחד עם הנקודה, אל תוך תיבת בידוד לועזית אחת. הנקודה נצבעה אז בקצה
+       החיצוני של הרצף, כלומר בדיוק הפגם שהסבב הזה בא לתקן: נמדד
+       ב-english-g5-going-to (#summary) וב-english-g11-writing-descriptive
+       (.compare), ובסריקת הקורפוס היא הוסיפה ממצא ב-62 דפים. השמירה על
+       מקומם של צמתים אינה נחוצה כאן משום ש-structFrozen כבר מקפיא כל
+       תיבה שיש בה ילד עם id, ולכן אף איבר שהדף מגיע אליו לפי שם אינו
+       זז - וזו הטענה שמוכיחה tools/ids.js. */
+    if (tn.parentNode) tn.parentNode.replaceChild(frag, tn);
+  }
+
+  /* אותו סט מצומצם, כשהסימן יושב בצומת אחר מן המילה. סימן השאלה יצא מכאן
+     ב-28.9.2026 יחד עם MARK_ATTACH: זהו בדיוק הנתיב שיצר את הצורה
+     <span data-bidi-run="ltr"><b>X</b>?</span> ב-arabic-g10-derived-forms,
+     כלומר "מהי תבנית העבר של בניין X?" שצויר "X?" במקום "?X" - 1,182
+     ממצאי R1q בשער הפיסוק מול 102 בלי השכבה. */
+  var ATTACH = '!';
+
+  /* סימן שצמוד למילה אך יושב בצומת אחר: "<b>book</b>, וזהו" - המילה בתוך
+     <b> והפסיק בטקסט שאחריו. עטיפה לכל צומת בנפרד הייתה משאירה את הפסיק
+     בחוץ, והוא היה נמשך אל צד הבסיס ומצויר משמאל למילה. כאן עוטפים את
+     האיבר ואת הסימנים יחד בתיבת בידוד אחת. הטקסט אינו זז: אותו רצף
+     תווים בדיוק, רק בתוך עטיפה נוספת. */
+  function mergeBoundaryMarks(texts, opp, sink){
+    var jobs = [];
+    for (var i = 0; i < texts.length; i++){
+      var tn = texts[i];
+      if (!tn.parentNode || tn.parentNode.nodeType !== 1) continue;
+      if (tn.parentNode.getAttribute && tn.parentNode.getAttribute('data-bidi-run')) continue;
+      if (structFrozen(tn.parentNode)) continue;
+      /* בתיבה גמישה או בטבלה איחוד של שני אחים לעטיפה אחת הוא איחוד של
+         שני פריטי פריסה, ולכן שם לא נוגעים. */
+      if (isItemBoxEl(tn.parentNode)) continue;
+      var v = tn.nodeValue; if (!v) continue;
+      var m = 0;
+      while (m < v.length && ATTACH.indexOf(v.charAt(m)) >= 0) m++;
+      if (!m) continue;
+      var prev = tn.previousSibling;
+      if (!prev || prev.nodeType !== 1) continue;
+      /* האיבר הזה עומד לעבור אל תוך עטיפה. איבר שיש לו id, class או
+         מאפיין data אינו זז לעולם; רק איבר חשוף לגמרי (<b>, <i>, <span>
+         בלי שום מאפיין) נכנס לעטיפה. */
+      if (isPinnedEl(prev)) continue;
+      var pt = prev.textContent || '';
+      if (!pt.length || SPACE.test(pt.charAt(pt.length - 1))) continue;
+      var last = null;
+      for (var k = pt.length - 1; k >= 0; k--){
+        var c = pt.charAt(k);
+        if (SPACE.test(c)) break;
+        if (RTL_C.test(c)) { last = 'rtl'; break; }
+        if (LTR_C.test(c)) { last = 'ltr'; break; }
+      }
+      if (last !== opp) continue;
+      /* האיבר כולו חייב להיות מן הכתב הנגדי, ולא רק להסתיים בו.
+         <b>ביחס לציר ה-<span class="math">y</span></b>: מסתיים ב-y אבל רובו עברית,
+         ועטיפה שלו בתיבת ltr הייתה מפרשת את כל הביטוי העברי
+         משמאל לימין. במקרה כזה הסימן שייך למשפט העברי, לא למילה. */
+      var base = (opp === 'ltr') ? RTL_C : LTR_C;
+      if (base.test(pt)) continue;
+      jobs.push([tn, m, prev]);
+    }
+    for (var j = 0; j < jobs.length; j++){
+      var t = jobs[j][0], cut = jobs[j][1], pv = jobs[j][2];
+      var rest = null;
+      if (cut < t.nodeValue.length) rest = t.splitText(cut);
+      var sp = mkWrap(t, opp);
+      pv.parentNode.insertBefore(sp, pv);
+      sp.appendChild(pv);
+      sp.appendChild(t);
+      if (rest) sink.push(rest);
+    }
+  }
+
+  /* שני רצפים לועזיים שכנים שנפרדו רק ברווח או בתגית: "Choose <b>said</b>
+     or <b>told</b>". אם כל אחד מהם מקבל תיבת בידוד משלו, שתי התיבות
+     נפרשות בסדר של הבסיס, ובבסיס עברי המילים נפגשות הפוך: "told or said
+     Choose". לכן אחרי הבידוד לפי צומת עובר מעבר שמאחד שכנים: כל רצף של
+     שכנים שכולם מן הכתב הנגדי, עם רווחים וסימנים ביניהם, נכנס לתיבה אחת.
+     תיבות בידוד מקוננות באותו כיוון אינן מזיקות, ולכן אין צורך לפרק את
+     הפנימיות. */
+  function classifyNeighbour(node, opp){
+    if (node.nodeType === 3){
+      var v = node.nodeValue || '';
+      if (RTL_C.test(v) || LTR_C.test(v)) return 'other';
+      return 'neutral';
+    }
+    if (node.nodeType !== 1) return 'neutral';
+    var tg = (node.tagName || '').toUpperCase();
+    if (SKIP_TAG[tg]) return 'other';
+    var d = null;
+    try { d = window.getComputedStyle(node).display; } catch (e) {}
+    /* איבר מוסתר שהוא בלוק כשהוא נגלה (div, p, button) שובר את הרצף כמו
+       בלוק גלוי. נמדד ב-english-bagrut-module-a: אחרי שאלה 4 באים כפתור
+       "הצג תשובה" ו-div.bg-solution מוסתר; הכפתור נספר כרצף עברי, הפתרון
+       המוסתר נספר כשכן ניטרלי, ושניהם נעטפו בתיבה מוטבעת אחת. בסריקה
+       הבאה כל עברית הפתרון נספרה כטקסט של גוף השאלה, גוף שאלה אנגלית
+       נצבע rtl, ו-"ANSWER:" קיבל את הנקודתיים בצד שמאל. */
+    if (d === 'none') return breaksLine(node, null) ? 'other' : 'neutral';
+    if (breaksLine(node, d)) return 'other';
+    var t = node.textContent || '';
+    var base = opp === 'ltr' ? RTL_C : LTR_C;
+    var mine = opp === 'ltr' ? LTR_C : RTL_C;
+    if (base.test(t)) return 'other';
+    if (mine.test(t)) return 'opp';
+    return 'neutral';
+  }
+
+  function mergeNeighbours(el, opp){
+    if (!el || el.nodeType !== 1) return;
+    if (isItemBoxEl(el)) return;
+    if (structFrozen(el)) return;
+    var kids = [], n;
+    for (n = el.firstChild; n; n = n.nextSibling) kids.push(n);
+    var run = [], strong = 0;
+    /* רצף חלש שנמשך אל הצומת הבא: "<span class="math">AM</span> = <span
+       class="math">40</span>" ו-"פיתול ב-x = <b>1</b>", שבו המספר נכתב
+       אל הדף בזמן ריצה. הסימן והמספר אינם אותיות, ולכן הם נשארים בבסיס
+       העברי ונמשכים ימינה, והתלמיד קורא "40 = AM". הם חייבים להיכנס אל
+       אותה תיבת בידוד עם האות שלפניהם. */
+    /* ביטוי, לא פיסוק: ספרה או סימן חשבון. נקודה או פסיק לבדם שייכים
+       למשפט שסביב, ומשיכתם אל תוך תיבת הבידוד הזיזה אותם לצד הלא נכון. */
+    function isWeakish(node){
+      var t = node.nodeType === 3 ? node.nodeValue : (node.textContent || '');
+      for (var k = 0; k < t.length; k++){
+        var c = t.charAt(k);
+        if ((c >= '0' && c <= '9') || WEAKOP.test(c)) return true;
+      }
+      return false;
+    }
+    function trimTail(){
+      while (run.length && classifyNeighbour(run[run.length - 1], opp) === 'neutral' &&
+             !isWeakish(run[run.length - 1])) run.pop();
+    }
+    /* אותו כלל של נדב, בנתיב האיחוד: סימן חלש נבלע רק בין שני תווים
+       חזקים מאותו כיוון. ב-"בא <b>ten</b> (10)." הסוגריים והספרות הם
+       חלק מן הביטוי - ספרה עומדת משני צדי הסוגר - אבל הנקודה נגררת
+       אחרי הרצף כולו והיא סופו של המשפט העברי. absorbWeak כבר משחררת
+       זנב כזה כשהיא עובדת על צומת טקסט אחד; כאן הרצף פרוש על כמה
+       צמתים, ולכן חותכים את צומת הטקסט האחרון כך שהזנב יישאר בחוץ.
+       בלי החיתוך הזה הנקודה נצבעה בקצה הימני של התיבה, כלומר בין
+       "בא" לבין "ten", והמשפט העברי נגמר באמצע השורה. נמדד: 40 ממצאי
+       mark על פני הקורפוס, מהם "P(6):", "x = 15 (15, 16, 17)." ו-
+       "|f(x)| ≥ 0;". */
+    /* הזנב שיושב **בתוך** האיבר האחרון של הרצף: <b>more.</b>, <b>2:</b>,
+       <b>0;</b>. עד 28.9.2026 השחרור עבד רק כשהצומת האחרון של הרצף היה
+       צומת טקסט, ולכן תג אחד הספיק כדי שהנקודה תיבלע אל תוך הבידוד
+       ותצויר בצדו החיצוני - בדיוק הפגם שהסבב הזה בא לסגור. נמדד לפני
+       התיקון (.work/proof-punct-r4/fx-r4.json, דף ltr): "בא אלינו
+       <b>ten</b> and <b>more.</b> ואז הלך משם" יצא על המסך
+       "םשמךלהזאוtenandmore.ונילאאב", כלומר הנקודה בין "בא אלינו" לבין
+       ten, ואילו הצורה עם צומת הטקסט, "<b>more</b>.", יצאה נכון.
+       דפוס התיקון: מוציאים את הזנב מן האיבר אל מחוץ לעטיפה. זו העברת
+       צומת טקסט בלבד, ולכן textContent של הדף אינו משתנה תו אחד; מה
+       שמשתנה הוא textContent של ה-<b> עצמו, ולכן אסור לעשות זאת כשיש
+       id באיבר או בדרך אליו (הסקריפט של הדף מגיע אליו לפי שם), וגם לא
+       כשהרצף בכלל אינו עומד להתאחד. */
+    function lastTextIn(el0){
+      var n = el0.lastChild;
+      while (n){
+        if (n.nodeType === 3 && /\S/.test(n.nodeValue || '')) return n;
+        if (n.nodeType === 1 && !SKIP_TAG[(n.tagName || '').toUpperCase()]){
+          var inner = lastTextIn(n);
+          if (inner) return inner;
+        }
+        n = n.previousSibling;
+      }
+      return null;
+    }
+    function pathClear(tn, top){
+      for (var p = tn.parentNode; p && p !== top.parentNode; p = p.parentNode){
+        if (p.nodeType === 1 && p.id) return false;
+        if (p === top) return true;
+      }
+      return false;
+    }
+    function hasOtherText(el0, skip){
+      var tw = null;
+      try { tw = document.createTreeWalker(el0, NodeFilter.SHOW_TEXT, null); } catch (e) { return true; }
+      var n;
+      while ((n = tw.nextNode())){
+        if (n === skip) continue;
+        if (/\S/.test(n.nodeValue || '')) return true;
+      }
+      return false;
+    }
+    /* הזנב שיוצא מן הרצף: רווחים ו-TRAILMARK כמו קודם, ועוד שניים.
+       סימן שאלה שסוגר את המשפט, ‎6.10.2026: בנתיב האיחוד הוא נשאר בתוך
+       התיבה, ולכן "מהו log₂ 32?" ו-"y = x² − 3?" בלוח המשחק ובכרטיסי
+       התרגול צוירו עם סימן השאלה מימין למספר (R2q, 84 מדידות בשער
+       הפיסוק, ו-18 ממצאי mark ב-check-bidi). בנתיב של צומת אחד הוא מעולם
+       לא נבלע (הערה 3 בראש הקובץ), וכאן הוא מקבל אותו דין. סימן שאלה
+       שאחרי סימן חשבון ("x = ?") הוא מקום ריק בביטוי ולא סוף משפט, והוא
+       נשאר בפנים.
+       וסוגר סוגר שהפותח שלו מחוץ לרצף: "(רמז: הקדומה היא x³/3.)" - הפותח
+       בזרימה העברית, ולכן גם הסוגר שייך לשם, ובלעדיו הנקודה שלפניו לא
+       יכלה לצאת. pre הוא הטקסט של הרצף שלפני הצומת הזה. */
+    function opBefore(t, k){
+      while (k > 0 && SPACE.test(t.charAt(k - 1))) k--;
+      return k > 0 && WEAKOP.test(t.charAt(k - 1));
+    }
+    function markTail(v, pre){
+      var k = v.length, w = (pre || '') + v, off = w.length - v.length;
+      while (k > 0){
+        var c0 = v.charAt(k - 1);
+        if (SPACE.test(c0) || TRAILMARK.test(c0) || dangles(v, k)){ k--; continue; }
+        if (c0 === '?' && !opBefore(w, off + k - 1)){ k--; continue; }
+        var op1 = CLOSER[c0];
+        if (op1 && PAIR[op1] === c0 && closesOutside(w, 0, off + k, op1, c0)){ k--; continue; }
+        break;
+      }
+      return k;
+    }
+    function runPrefix(stop){
+      var t = '';
+      for (var q = 0; q < run.length; q++){
+        var nd = run[q];
+        if (nd === stop) return t;
+        if (nd.nodeType === 3){ t += nd.nodeValue || ''; continue; }
+        if (nd.nodeType !== 1) continue;
+        var tw0 = document.createTreeWalker(nd, NodeFilter.SHOW_TEXT, null), x0;
+        while ((x0 = tw0.nextNode())){ if (x0 === stop) return t; t += x0.nodeValue || ''; }
+      }
+      return t;
+    }
+    function releaseRunTail(){
+      if (!run.length) return;
+      var lastN = run[run.length - 1];
+      if (lastN.nodeType === 3){
+        var lv = lastN.nodeValue || '', lk = markTail(lv, runPrefix(lastN));
+        if (lk === 0) run.pop();
+        else if (lk < lv.length) lastN.splitText(lk);
+        return;
+      }
+      if (lastN.nodeType !== 1) return;
+      if (isPinnedEl(lastN)) return;
+      var tn = lastTextIn(lastN);
+      if (!tn || !pathClear(tn, lastN)) return;
+      var tv = tn.nodeValue || '', tk = markTail(tv, runPrefix(tn));
+      if (tk >= tv.length) return;
+      /* צומת שכולו סימנים ("." לבדו, אחרי שהבידוד לפי צומת כבר חתך את
+         המילה) יוצא כולו; צומת מעורב ("more.") נחתך והזנב יוצא. בשני
+         המקרים חייב להישאר באיבר טקסט ממשי, אחרת יצרנו <b> ריק. */
+      var tail = tk === 0 ? tn : tn.splitText(tk);
+      if (tk === 0 && !hasOtherText(lastN, tn)) return;
+      el.insertBefore(tail, lastN.nextSibling);
+    }
+    function willMerge(){
+      var weakTail = false;
+      for (var w = 0; w < run.length; w++){
+        if (classifyNeighbour(run[w], opp) === 'neutral' && isWeakish(run[w])) weakTail = true;
+      }
+      /* רצף שיש בו איבר מוגן אינו מאוחד כלל: איחוד הוא העברה. */
+      return (strong >= 2 || (strong >= 1 && weakTail)) && !hasPinned(run);
+    }
+    function flush(){
+      trimTail();
+      if (willMerge()) releaseRunTail();
+      trimTail();
+      if (willMerge()){
+        var sp = mkWrap(run[0], opp);
+        el.insertBefore(sp, run[0]);
+        for (var q = 0; q < run.length; q++) sp.appendChild(run[q]);
+      }
+      run = []; strong = 0;
+    }
+    /* סימן פיסוק בין שני ביטויים אינו מחבר אותם אלא מפריד ביניהם.
+       "בדיקה ב-<span class="math">x = 2</span>: <span class="math">שבר
+       </span>" - הנקודתיים סוגרות את הפסוקית העברית, והאיחוד בלע אותן
+       אל תוך תיבה לועזית אחת יחד עם שני הביטויים, כך שהן צוירו בין
+       "בדיקה ב-" לבין x. רווח לבדו עדיין מחבר, וכך גם סימן חשבון או
+       ספרה ("AM = 40"): ההבדל הוא בין מה שממשיך ביטוי לבין מה שסוגר
+       משפט. */
+    /* ועד 30.9.2026 המבחן הזה דרש שהצומת כולו יהיה פיסוק ורווחים, ולכן
+       תו אחד נוסף בתוכו הספיק כדי שהסימן ייבלע. נמדד על דף אמיתי,
+       g11-5u-sequences-series-practice: הכתוב הוא
+       "ולכן <span class="math">q = 2</span>. (<span class="math">d</span>
+       הוא הפרש…)", והצומת שבין שני הביטויים הוא ". (" - נקודה, רווח,
+       סוגר פותח. מפני שהסוגר אינו TRAILMARK החזיר המבחן false, שני
+       הביטויים אוחדו לתיבת ltr אחת, והנקודה שסוגרת את המשפט העברי נבלעה
+       אל תוכה ונצבעה מימין ל-2: השער מדד אותה ב-x=180.2 והספרה
+       ב-[168…177.8]. זהו בדיוק הפגם של §2 במפרט (363 מופעים בשאלונים,
+       0 נגדיים), ובצורה אחרת של אותה מכונה שסגרה releaseRunTail.
+       הכלל של נדב הוא שסימן חלש נבלע רק בין שני תווים חזקים; סימן שיש
+       רווח אחריו אינו במצב הזה, והוא סוגר משפט. לכן: צומת שכולו פיסוק
+       ורווחים שובר כמו קודם, וצומת מעורב שובר אם יש בו סימן סיום
+       (SENTBREAK, אותו סט של oppSegments) שאחריו רווח. פסיק ונקודה
+       אמצעית אינם ברשימה הזאת
+       בכוונה - הם ממשיכים ביטוי ("(1, 2)", "0.5, ") - והזנב שבסוף הצומת
+       (" (10).") אינו נוגע כאן כלל, כי אין אחריו רווח, והוא ממילא
+       משוחרר ב-releaseRunTail. */
+    function isPunctBreak(node){
+      if (node.nodeType !== 3) return false;
+      var t = node.nodeValue || '', sawMark = false, onlyMarks = true, k;
+      for (k = 0; k < t.length; k++){
+        var c2 = t.charAt(k);
+        if (SPACE.test(c2)) continue;
+        if (TRAILMARK.test(c2)){ sawMark = true; continue; }
+        onlyMarks = false; break;
+      }
+      if (onlyMarks) return sawMark;
+      for (k = 0; k < t.length - 1; k++){
+        if (SENTBREAK.test(t.charAt(k)) && SPACE.test(t.charAt(k + 1))) return true;
+      }
+      return false;
+    }
+    for (var i = 0; i < kids.length; i++){
+      var c = classifyNeighbour(kids[i], opp);
+      if (c === 'opp'){ run.push(kids[i]); strong++; continue; }
+      if (c === 'neutral'){
+        if (run.length){ if (isPunctBreak(kids[i])) flush(); else run.push(kids[i]); }
+        continue;
+      }
+      flush();
+    }
+    flush();
+    /* ירידה אל צאצאים מוטבעים בלבד: בלוק מחליט על עצמו. */
+    for (n = el.firstChild; n; n = n.nextSibling){
+      if (n.nodeType !== 1) continue;
+      if (SKIP_TAG[n.tagName && n.tagName.toUpperCase()]) continue;
+      if (n.getAttribute && n.getAttribute('data-bidi-run')) continue;
+      var dd = null;
+      try { dd = window.getComputedStyle(n).display; } catch (e) {}
+      if (dd === 'none') dd = null;
+      if (isBlockLevel(n, dd)) continue;
+      mergeNeighbours(n, opp);
+    }
+  }
+
+  function isolateRuns(el, texts, base){
+    var opp = base === 'rtl' ? 'ltr' : 'rtl';
+    mergeBoundaryMarks(texts, opp, texts);
+    for (var i = 0; i < texts.length; i++){
+      var tn = texts[i];
+      if (!tn.parentNode || tn.parentNode.nodeType !== 1) continue;
+      var pe = tn.parentNode;
+      if (pe.getAttribute && pe.getAttribute('data-bidi-run')) continue;
+      isolateTextNode(tn, opp);
+    }
+    mergeNeighbours(el, opp);
+  }
+
+  var SKIP_TAG = { SCRIPT:1, STYLE:1, NOSCRIPT:1, TEMPLATE:1, HEAD:1, LINK:1, META:1, TITLE:1, CANVAS:1 };
+
+  /* גם כשהדפדפן מדווח display:none (רמז שטרם נחשף, כרטיס שטרם הוצג) צריך
+     להחליט, ולכן יש נפילה לאחור לפי שם התגית. */
+  var BLOCK_TAG = { DIV:1, P:1, LI:1, UL:1, OL:1, TD:1, TH:1, TR:1, TABLE:1, THEAD:1, TBODY:1,
+    TFOOT:1, CAPTION:1, SECTION:1, ARTICLE:1, HEADER:1, FOOTER:1, MAIN:1, ASIDE:1, NAV:1,
+    H1:1, H2:1, H3:1, H4:1, H5:1, H6:1, BLOCKQUOTE:1, FIGURE:1, FIGCAPTION:1, DETAILS:1,
+    SUMMARY:1, DL:1, DT:1, DD:1, FORM:1, FIELDSET:1, LEGEND:1, BUTTON:1, LABEL:1, PRE:1, HR:1 };
+
+  /* הצהרות הכתב של הקורפוס עצמו. הן הראיה הטובה ביותר לכוונת הכותב:
+     <span class="en">When?</span> הוא אנגלית גם כשהוא יושב במשפט עברי. */
+  var CLS_RTL = /^(he|ar|heb|he-inline|gl-t|gl-he|ar-word|ar-syl|ar-line|.+-he|.+-ar)$/;
+  var CLS_LTR = /^(en|eng|en-block|en-quote|gl-w|gl-en|.+-en)$/;
+
+  function classesOf(el){
+    var c = el.className;
+    if (typeof c !== 'string') c = (el.getAttribute && el.getAttribute('class')) || '';
+    return c ? c.split(/\s+/) : [];
+  }
+
+  /* מאפיין dir שנכתב על האיבר עצמו הוא הצהרה מפורשת של הכותב, ומעמדו כשל
+     שם מחלקה. הוא נכתב ב-3,001 קבצי נושא ועד כה לא נקרא כאן כלל, ולכן
+     <span dir="rtl"> שבמחוון הבגרות לא נספר כהצהרה. dir של אב אינו נקרא:
+     כמעט כל מעבדה יושבת בתוך <div class="ps-lab" dir="ltr">, וגם הוראה
+     עברית לגמרי יושבת שם. */
+  function declOf(el){
+    var d = el.getAttribute && el.getAttribute('dir');
+    if (d === 'rtl' || d === 'ltr') return d;
+    var cs = classesOf(el);
+    for (var i = 0; i < cs.length; i++){ if (cs[i] && CLS_RTL.test(cs[i])) return 'rtl'; }
+    for (var j = 0; j < cs.length; j++){ if (cs[j] && CLS_LTR.test(cs[j])) return 'ltr'; }
+    return null;
+  }
+
+  function isBlockLevel(el, disp){
+    if (disp && disp !== 'none'){
+      if (disp === 'inline' || disp === 'contents' || disp.indexOf('ruby') === 0) return false;
+      return true;
+    }
+    var t = el.tagName;
+    return !!BLOCK_TAG[t && t.toUpperCase()] || t === 'text';
+  }
+
+  /* בתיבות האלה הכיוון קובע את סדר הפריטים ולא רק את סדר המילים: שורת
+     מילון, כותרת גמישה, רשת אפשרויות, סרגל עליון. שינוי כיוון שם הוא
+     עיצוב מחדש, ולכן הן אינן מקבלות כיוון לעולם. */
+  function isItemBox(disp){
+    return disp === 'flex' || disp === 'inline-flex' || disp === 'grid' || disp === 'inline-grid' ||
+           disp === 'table' || disp === 'inline-table' || disp === 'table-row' ||
+           disp === 'table-row-group' || disp === 'table-header-group' || disp === 'table-footer-group';
+  }
+  /* שובר שורה: תיבה בלוקית ממש, או <br>. תיבה מוטבעת-בלוקית
+     (inline-block, inline-flex) יושבת בתוך השורה ואינה שוברת אותה, ולכן
+     היא אינה מפרידה בין שני חלקים של אותו משפט. בלעדי ההבחנה הזאת
+     "The pupils ___ in the ___" נשבר סביב שדה ההקלדה לשתי תיבות בידוד,
+     והן נפרשות בסדר של הבסיס. */
+  function breaksLine(el, disp){
+    var t = (el.tagName || '').toUpperCase();
+    if (t === 'BR') return true;
+    if (disp){
+      return disp === 'block' || disp === 'flow-root' || disp === 'list-item' ||
+             disp === 'flex' || disp === 'grid' || disp === 'table' || disp.indexOf('table-') === 0;
+    }
+    return !!BLOCK_TAG[t];
+  }
+
+  var TAILMARK_END = new RegExp('[.,:;\\u00B7][\\s\\u200f\\u200e]*$');
+  function tailMarkOnly(el, target){
+    var t = el.textContent || '';
+    if (!TAILMARK_END.test(t)) return false;
+    var other = target === 'ltr' ? RTL_C : LTR_C;
+    var mine  = target === 'ltr' ? LTR_C : RTL_C;
+    return !other.test(t) && mine.test(t);
+  }
+
+  function isItemBoxEl(el){
+    if (!el || el.nodeType !== 1) return false;
+    var d = null;
+    try { d = window.getComputedStyle(el).display; } catch (e) {}
+    return !!d && d !== 'none' && isItemBox(d);
+  }
+
+  /* כלל (4) במלואו: שינוי כיוון אינו מזיז פריסה. תכונה לוגית
+     (border-inline-start, padding-inline-*, margin-inline-*) מתהפכת
+     יחד עם הכיוון, וזה מזיז דבר שהתלמיד רואה. נמדד: כרטיס הפתרון
+     בשאלוני הבגרות באנגלית נושא border-inline-start:4px
+     (bagrut/bagrut.css), ו-92 מתוך 254 כרטיסים נצבעו rtl, כך שפס
+     ההדגשה קפץ מן הצד השמאלי אל הימני - ובאותו שאלון עצמו נשארו
+     כרטיסים עם פס משמאל וכרטיסים עם פס מימין. לכן מודדים את
+     הגאומטריה הפיזית לפני, ומחזירים אותה אחרי. */
+  var PHYS = ['marginLeft','marginRight','paddingLeft','paddingRight',
+              'borderLeftWidth','borderRightWidth','borderLeftStyle','borderRightStyle',
+              'borderLeftColor','borderRightColor'];
+  function pinPhysical(el, before){
+    var cs;
+    try { cs = window.getComputedStyle(el); } catch (e) { return; }
+    for (var i = 0; i < PHYS.length; i++){
+      var k = PHYS[i];
+      if (before[k] !== undefined && before[k] !== cs[k]) el.style[k] = before[k];
+    }
+  }
+  function readPhysical(el){
+    var out = {}, cs;
+    try { cs = window.getComputedStyle(el); } catch (e) { return out; }
+    for (var i = 0; i < PHYS.length; i++) out[PHYS[i]] = cs[PHYS[i]];
+    return out;
+  }
+
+  /* הכיוון יורד גם אל הצאצאים, ולכן תכונה לוגית שיושבת על צאצא
+     מתהפכת אף שלא נגענו בו. נמדד: ul.bg-mc בשאלון בגרות באנגלית ירש
+     rtl מ-div.bg-qbody שנחתם, וההזחה של רשימת האפשרויות קפצה מצד אל
+     צד (padding-inline-start של ברירת המחדל של הדפדפן).
+     כדי לא לסרוק את כל תת-העץ על כל חתימה, נאספות פעם אחת הבוררות
+     של כל כלל CSS בדף שיש בו תכונה לוגית באופק, ואליהן מצטרפות
+     התגיות שברירת המחדל של הדפדפן נותנת להן ריפוד או שוליים לוגיים. */
+  var LOGICAL_SEL = null;
+  function collectLogical(rules, out){
+    for (var i = 0; i < rules.length; i++){
+      var r = rules[i];
+      if (r.cssRules){ collectLogical(r.cssRules, out); continue; }
+      if (!r.selectorText || !r.style) continue;
+      var t = r.style.cssText || '';
+      if (t.indexOf('-inline-start') < 0 && t.indexOf('-inline-end') < 0) continue;
+      out.push(r.selectorText);
+    }
+  }
+  function logicalSelectors(){
+    if (LOGICAL_SEL !== null) return LOGICAL_SEL;
+    var out = ['ul', 'ol', 'menu', 'dd', 'blockquote'];
+    try {
+      var sh = document.styleSheets;
+      for (var i = 0; i < sh.length; i++){
+        var rules = null;
+        try { rules = sh[i].cssRules; } catch (e) { continue; }
+        if (rules) collectLogical(rules, out);
+      }
+    } catch (e) {}
+    LOGICAL_SEL = out.join(',');
+    return LOGICAL_SEL;
+  }
+  function logicalKids(el){
+    var sel = logicalSelectors();
+    if (!sel || !el.querySelectorAll) return [];
+    try { return el.querySelectorAll(sel); } catch (e) { return []; }
+  }
+
+  function stamp(el, target){
+    if (el.getAttribute('data-bidi') === target) return;
+    var ta0 = null;
+    try { ta0 = window.getComputedStyle(el).textAlign; } catch (e) {}
+    var cur0 = null;
+    try { cur0 = window.getComputedStyle(el).direction; } catch (e) {}
+    var phys0 = readPhysical(el);
+    var kids0 = null, kids = null;
+    if (cur0 && cur0 !== target){
+      kids = logicalKids(el);
+      kids0 = [];
+      for (var kk = 0; kk < kids.length; kk++) kids0.push(readPhysical(kids[kk]));
+    }
+    el.setAttribute('data-bidi', target);
+    el.style.direction = target;
+    el.style.unicodeBidi = 'isolate';
+    try {
+      var ta1 = window.getComputedStyle(el).textAlign;
+      if (target === 'rtl'){
+        /* text-align לוגי (start) מסתדר לבדו ברגע שהכיוון נכון. מה שנשאר
+           "left" אחרי שקבענו rtl נכתב כך פיזית באחד מ-1,023 גיליונות
+           הנושא, והוא משאיר פסקה עברית משוננת בצד הלא נכון.
+           מרכוז ויישור לשני הצדדים אינם נוגעים. */
+        if (ta1 === 'left') el.style.textAlign = 'right';
+      } else if (ta0 && ta1 !== ta0){
+        el.style.textAlign = ta0;
+      }
+    } catch (e) {}
+    pinPhysical(el, phys0);
+    if (kids0) for (var k2 = 0; k2 < kids.length; k2++) pinPhysical(kids[k2], kids0[k2]);
+  }
+
+  /* עטיפת כל התוכן המוטבע של בלוק בתיבת בידוד אחת, במקום לשנות את כיוון
+     הבלוק עצמו. הבלוק שומר על היישור שלו, על מספר הפריט שלו ועל הריפוד
+     הלוגי שלו, והטקסט שבתוכו נקרא בכיוון הנכון. הכול בעטיפה אחת ולא
+     באחת לכל רצף: שתי תיבות בידוד באותה שורה נפרשות בסדר של הבסיס, וכך
+     הוראה אנגלית שנשברה בין <b> ל-<b> הייתה מתפזרת לרסיסים הפוכים. */
+  function wrapInlineRuns(el, target){
+    if (structFrozen(el)) return [];
+    var kids = [], n;
+    for (n = el.firstChild; n; n = n.nextSibling) kids.push(n);
+    var run = [], made = [];
+    function flush(){
+      if (!run.length) return;
+      var strong = false;
+      for (var k = 0; k < run.length; k++){
+        var t = run[k].nodeType === 3 ? run[k].nodeValue : (run[k].textContent || '');
+        if (RTL_C.test(t) || LTR_C.test(t)){ strong = true; break; }
+      }
+      /* העטיפה כבר קיימת: הסריקה החוזרת של המשקיף הייתה עוטפת אותה שוב
+         ושוב, שכבה על שכבה. */
+      if (run.length === 1 && run[0].nodeType === 1 && run[0].getAttribute &&
+          run[0].getAttribute('data-bidi-wrap') !== null &&
+          run[0].getAttribute('data-bidi') === target){ run = []; return; }
+      if (strong && !hasPinned(run)){
+        var sp = mkWrap(run[0], target, 'data-bidi');
+        el.insertBefore(sp, run[0]);
+        for (var q = 0; q < run.length; q++) sp.appendChild(run[q]);
+        made.push(sp);
+      }
+      run = [];
+    }
+    for (var i = 0; i < kids.length; i++){
+      var c = kids[i];
+      if (c.nodeType === 3){ run.push(c); continue; }
+      if (c.nodeType !== 1){ flush(); continue; }
+      if (SKIP_TAG[c.tagName && c.tagName.toUpperCase()]){ flush(); continue; }
+      var d = null;
+      try { d = window.getComputedStyle(c).display; } catch (e) {}
+      if (d === 'none') d = null;
+      if (breaksLine(c, d)){ flush(); continue; }
+      run.push(c);
+    }
+    flush();
+    return made;
+  }
+
+  /* שינוי כיוון על בלוק מזיז גם פריסה: מספר הפריט ברשימה עובר אל הצד
+     ההפוך, והריפוד הלוגי מתהפך איתו. תשובה אחת במפתח התשובות קפצה כך אל
+     השוליים הנגדיים והמספר שלה נגרר מחוץ לכרטיס.
+     לכן: כשהכיוון המבוקש כבר הוא הכיוון של האיבר, או כשהאיבר מוטבע, פשוט
+     חותמים. פסקה עברית בדף אנגלית כן מקבלת rtl, כי השוליים המשוננים
+     והנקודה בסוף הם בדיוק מה שצריך לתקן ואין שם מספר פריט. בכל מקרה אחר
+     (פריט ברשימה, או בלוק שצריך ltr בתוך הקשר rtl) התיבה נשארת במקומה
+     והתוכן המוטבע שלה נכנס לתיבת בידוד אחת. */
+  function applyDir(el, texts, target, blockLevel, disp){
+    /* בתוך SVG המיקום של תווית תלוי ב-text-anchor, ו-text-anchor="start"
+       או "end" מתהפך יחד עם הכיוון: תווית ציר שקיבלה כיוון אחר קופצת
+       ברוחב שלה. לכן שם לעולם לא משנים כיוון של איבר, אלא עוטפים את
+       הטקסט שבתוכו ב-tspan מבודד. העוגן אינו זז, והסדר מתוקן. */
+    if (el.ownerSVGElement){
+      wrapInlineRuns(el, target);
+      if (texts.length) isolateRuns(el, texts, target);
+      return;
+    }
+    var cur = 'ltr';
+    try { cur = window.getComputedStyle(el).direction; } catch (e) {}
+    var listItem = disp === 'list-item' || (el.tagName || '').toUpperCase() === 'LI';
+    if (cur === target || !blockLevel || (target === 'rtl' && !listItem)){
+      stamp(el, target);
+      if (texts.length) isolateRuns(el, texts, target);
+      return;
+    }
+    wrapInlineRuns(el, target);
+    if (texts.length) isolateRuns(el, texts, target);
+  }
+
+  /* קישוט אינו פריט.
+
+     כלל (4) נועל תיבה גמישה על הכיוון שהיה לה, כדי שסדר הפריטים שבה
+     לא יתהפך. בתווית שבראש הדף ובשורת הפתיח אין סדר פריטים בכלל: יש
+     נקודה מעוצבת (span.dot) או קו מעוצב (::before), ואחריהם רצף טקסט
+     אחד. הנעילה השאירה את הקישוט בקצה השמאלי הפיזי בזמן שהטקסט שלידו
+     נעשה עברי ומתחיל מימין, כלומר הסימן שמסמן את תחילת השורה נשאר
+     בסופה. נמדד: הנקודה ב-x=951 בתוך תיבה 933..1116, והמילה הראשונה
+     שנקראת ב-x=1099.
+
+     תיבה שכל תוכנה הוא קישוט אחד או יותר בלי טקסט ורצף טקסט אחד אינה
+     נושאת סדר פריטים שיש מה לשמר בו, ולכן היא מקבלת row-reverse: זהו
+     סגנון בלבד, שום צומת אינו זז, והשוליים הלוגיים של התיבה עצמה
+     (margin-inline-start:auto של התווית) אינם מושפעים משום שכיוון
+     התיבה לא השתנה. */
+  function decorContent(el, which){
+    var c = null;
+    try { c = window.getComputedStyle(el, which).content; } catch (e) { return 0; }
+    if (!c || c === 'none' || c === 'normal') return 0;
+    return (c === '""' || c === "''") ? 1 : 2;   /* 1 = קישוט ריק, 2 = טקסט */
+  }
+  /* קישוט הוא סימן בלי צורה משלו ובלי תוכן משלו: <span class="dot"></span>
+     ריק, או ::before ריק שה-CSS צובע. שתי משפחות אינן קישוט:
+       - איבר מוחלף או פקד טופס (IMG, SVG, VIDEO, CANVAS, INPUT, SELECT,
+         TEXTAREA, BUTTON, OBJECT, IFRAME). הוא מצייר את עצמו והוא תוכן:
+         הלוגו של האתר, ושדה שהתלמיד מקליד בו.
+       - איבר שיש בתוכו איבר כלשהו: אייקון. אייקון הוא תוכן, ויש
+         מקרים שבהם מקומו נקבע במשמעות שלו ולא בסדר הקריאה
+         (חץ "הקודם" מול חץ "הבא" הם זוג מראה).
+
+     עד כאן נכתב כאן n.firstElementChild, וזו בדיקה שאינה יכולה
+     להידלק לעולם על איבר שאין לו ילדים כלל: <img> ו-<input> הם
+     עלים, ולכן נספרו כקישוט. נמדד על 1,667 הדפים הבנויים
+     (.work/proof-bidi/review5/decor.js): 676 תיבות DIV.brand התהפכו סביב
+     IMG.logo, ו-810 תיבות DIV.eqn-row התהפכו סביב שדה קלט ש-visit
+     נמנע ממנו במכוון.
+
+     לא נבדקת תיבת הגבול של הילד הריק עצמו, משום שקישוט
+     שה-CSS צובע הוא בדיוק איבר ריק שיש לו תיבה: span.dot הוא
+     9x9 (core/styles/03-header.css:19) ו-span.kpe הוא 9x9. פסילה לפי
+     תיבת הגבול של הילד עצמו הייתה מוחקת את כל 338 תיבות
+     .badge ו-446 מתוך 892 תיבות .kpow, כלומר את התכונה עצמה.
+     מה שנבדק הוא מה שיש בתוכו, והוא הכלל הרחב מן הקודם:
+     כל מה שנפסל עד כאן נפסל גם עכשיו, ולכן אין תיבה
+     שמתהפכת עכשיו ולא התהפכה קודם. */
+  var DECOR_NEVER = { IMG:1, SVG:1, VIDEO:1, CANVAS:1, INPUT:1, SELECT:1,
+                      TEXTAREA:1, BUTTON:1, OBJECT:1, IFRAME:1 };
+  function isDecorKid(n){
+    if (DECOR_NEVER[(n.tagName || '').toUpperCase()]) return false;
+    var deep = n.getElementsByTagName ? n.getElementsByTagName('*') : null;
+    if (deep && deep.length) return false;
+    return true;
+  }
+  function flipDecor(el){
+    var pin = el.getAttribute && el.getAttribute('data-bidi-pin');
+    if (!pin) return;
+    if (el.style.flexDirection === 'row-reverse') return;
+    var cs; try { cs = window.getComputedStyle(el); } catch (e) { return; }
+    if (cs.display !== 'flex' && cs.display !== 'inline-flex') return;
+    if (cs.flexDirection !== 'row') return;
+    var textKid = null, withText = 0, decor = 0;
+    for (var n = el.firstChild; n; n = n.nextSibling){
+      if (n.nodeType === 3){ if (/\S/.test(n.nodeValue || '')) withText++; continue; }
+      if (n.nodeType !== 1) continue;
+      if (SKIP_TAG[(n.tagName || '').toUpperCase()]) continue;
+      if (/\S/.test(n.textContent || '')){ withText++; textKid = n; continue; }
+      if (!isDecorKid(n)) return;   /* תוכן, לא קישוט */
+      decor++;
+    }
+    var b = decorContent(el, '::before'), a = decorContent(el, '::after');
+    if (b === 2 || a === 2) return;
+    decor += (b ? 1 : 0) + (a ? 1 : 0);
+    if (withText !== 1 || !textKid || decor < 1) return;
+    var td = null;
+    try { td = window.getComputedStyle(textKid).direction; } catch (e) { return; }
+    if (!td || td === pin) return;
+    /* השכבה מבטלת רק מה שהיא עצמה עשתה. מה שהיא עשתה כאן הוא
+       צומת טקסט אנונימי שיושב ישירות בתיבה הגמישה: אין לו איבר,
+       ולכן wrapOwnText יצר לו אחד ונתן לו כיוון, וזה הרגע שבו קצה
+       הקריאה עבר אל הצד השני והקישוט נשאר מאחור. כשהטקסט יושב
+       באיבר של הכותב, סדר הפריטים הוא של הכותב: השכבה משנה שם
+       את הכיוון בתוך הפריט ולא את מקומו של הפריט, ואין לה מה
+       לבטל. זה מה שמוציא מכאן את DIV.eqn-row, SPAN.rad, DIV.bg-pagefoot,
+       DIV.example-head ו-DIV.ul-step.
+       המבחן הוא data-bidi-wrap, כלומר עטיפה שהשכבה עצמה יצרה;
+       mkWrap כותב בה direction ו-unicode-bidi:isolate, ולכן הכיוון של
+       עטיפה הוא תמיד מעשה של השכבה. שתי בדיקות קרובות נמדדו
+       ונפסלו (.work/proof-bidi/review5/decor-class.js, 1,667 דפים):
+         - data-bidi לבדו אינו עדות שהשכבה שינתה משהו: stamp חותם
+           אותו גם על איבר של הכותב וגם כשהכיוון זהה לקודם.
+           SPAN.rad-b, SPAN.bg-turn, SPAN.tag ו-SPAN.ul-badge כולם נושאים
+           data-bidi="rtl", ולכן הבדיקה הזאת לבדה הייתה משאירה
+           784 תיבות מתהפכות, מהן 108 שאין כלל אחר הפוסל אותן.
+         - דרישת data-bidi על העטיפה הייתה מוחקת את SPAN.kpow: שם
+           העטיפה נולדה ב-isolateRuns ונושאת data-bidi-run, 892 תיבות. */
+    if (!isOurWrap(textKid)) return;
+    el.style.flexDirection = 'row-reverse';
+    el.setAttribute('data-bidi-decor', td);
+  }
+
+  /* טקסט שיושב ישירות בתיבת פריטים הוא פריט אנונימי. אי אפשר לעצב אותו,
+     ולכן הוא מקבל עטיפה משלו: כך "English · כיתה ה׳" בתווית שבראש הדף
+     נקרא נכון, והנקודה המעוצבת שלידו נשארת בצד שבו צוירה. */
+  function wrapOwnText(el, target){
+    var made = [];
+    if (structFrozen(el)) return made;
+    var kids = [];
+    for (var n = el.firstChild; n; n = n.nextSibling) kids.push(n);
+    for (var i = 0; i < kids.length; i++){
+      var tn = kids[i];
+      if (tn.nodeType !== 3 || !tn.nodeValue) continue;
+      if (!RTL_C.test(tn.nodeValue) && !LTR_C.test(tn.nodeValue)) continue;
+      var sp = mkWrap(tn, target, 'data-bidi');
+      el.insertBefore(sp, tn);
+      sp.appendChild(tn);
+      made.push(tn);
+    }
+    return made;
+  }
+
+  /* visit מחזיר את ספירת המילים של הפסקה של האיבר עצמו, כלומר הטקסט שלו
+     ושל כל צאצא מוטבע, גם צאצא מוצהר וגם צאצא שה-CSS בידד: span מוצהר
+     עברית הוא עדיין חלק מן המשפט שסביבו.
+     blockLevel ו-decides אינם אותה שאלה: תיבה מוטבעת שה-CSS בידד אותה
+     (span.math) מחליטה על כיוונה בעצמה, אבל היא עדיין נספרת בפסקה שסביבה. */
+  /* האם הצומת עומד בשורה משלו: מה שלפניו ומה שאחריו הוא <br> או קצה
+     ההורה. רווחים בלבד אינם נחשבים שכן. */
+  function ownLine(n){
+    var p = n.previousSibling;
+    while (p && p.nodeType === 3 && !/\S/.test(p.nodeValue || '')) p = p.previousSibling;
+    var q = n.nextSibling;
+    while (q && q.nodeType === 3 && !/\S/.test(q.nodeValue || '')) q = q.nextSibling;
+    var pb = !p || (p.nodeType === 1 && (p.tagName || '').toUpperCase() === 'BR');
+    var qb = !q || (q.nodeType === 1 && (q.tagName || '').toUpperCase() === 'BR');
+    return pb && qb;
+  }
+
+  /* הטקסט שההכרעה נמדדת עליו, נבנה מחדש מן הצמתים ולא מן המונים.
+     המונים paraR/paraW נצברים לכל צומת טקסט בנפרד, ולכן אחרי שהשכבה
+     כבר עטפה רצף אחד הם מפוצלים אחרת: "(עברה לגור)" נעשה
+     "(" + <span>עברה לגור</span> + ")", והבדיקה "כל העברית בסוגריים"
+     הייתה מחזירה תשובה אחרת בסריקה השנייה של המשקיף מאשר בראשונה -
+     כלומר הכרעה שאינה מתכנסת. הטקסט עצמו לעולם אינו משתנה (זו התכונה
+     שהשכבה מבטיחה), ולכן ההכרעה נמדדת עליו. אותם דילוגים בדיוק שבספירה:
+     תגית שאינה טקסט, ילד בלוקי (בלוק מחליט על עצמו) וילד מוצהר שהוא
+     שורה בפני עצמה. */
+  function decisionText(el){
+    var out = '';
+    for (var n = el.firstChild; n; n = n.nextSibling){
+      if (n.nodeType === 3){ out += n.nodeValue || ''; continue; }
+      if (n.nodeType !== 1) continue;
+      if (SKIP_TAG[(n.tagName || '').toUpperCase()]) continue;
+      var d = null;
+      try { d = window.getComputedStyle(n).display; } catch (e) {}
+      if (d === 'none') d = null;
+      if (isBlockLevel(n, d)) continue;
+      if (declOf(n) && ownLine(n)) continue;
+      out += decisionText(n);
+    }
+    return out;
+  }
+
+  function visit(el){
+    /* עטיפת רצף שאנחנו יצרנו: היא כבר מבודדת, והטקסט שבתוכה כבר טופל.
+       בלעדי היציאה הזאת כל סריקה חוזרת הייתה עוטפת אותו שוב, וזו גם
+       הסיבה שהסריקה החוזרת של המשקיף מתכנסת. */
+    if (el.getAttribute && el.getAttribute('data-bidi-run')){
+      var t0 = el.textContent || '';
+      return { paraR: nWords(t0, RTL_W), paraL: nWords(t0, LTR_W), paraW: nLatinWords(t0),
+               blockLevel: false, decided: true, texts: [], pending: [] };
+    }
+    /* שדה שהתלמיד כותב בתוכו, ושדה נוסחה: הקלדה, סמן ו-serializeNodes
+       תלויים במבנה הצמתים, ולכן לא נוגעים בהם כלל. */
+    var tag = (el.tagName || '').toUpperCase();
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' ||
+        (el.getAttribute && el.getAttribute('contenteditable') !== null)){
+      return { paraR: 0, paraL: 0, paraW: 0, blockLevel: true, decided: false, texts: [], pending: [] };
+    }
+    var disp = null;
+    try { disp = window.getComputedStyle(el).display; } catch (e) {}
+    if (disp === 'none') disp = null;
+
+    var decl       = declOf(el);
+    var blockLevel = isBlockLevel(el, disp);
+    var itemBox    = isItemBox(disp);
+
+    /* כלל (4), בצורתו החזקה: תיבת פריטים נועלת את הכיוון שיש לה עכשיו.
+       הילדים נסרקים לפני שההורה מחליט, ולכן ברגע הזה עוד לא נגענו באף
+       אב, והכיוון שננעל הוא הכיוון המקורי של הדף. מכאן והלאה שום עטיפה
+       ושום חתימה של אב אינה יכולה להפוך את סדר הפריטים שבה. */
+    if (itemBox && el.getAttribute && el.getAttribute('data-bidi-pin') === null){
+      var d0 = null;
+      try { d0 = window.getComputedStyle(el).direction; } catch (e) {}
+      if (d0){ el.setAttribute('data-bidi-pin', d0); el.style.direction = d0; }
+    }
+
+    var decides = blockLevel;
+    if (!decides && disp){
+      try {
+        var ub = window.getComputedStyle(el).unicodeBidi;
+        if (ub && ub !== 'normal') decides = true;
+      } catch (e) {}
+    }
+    var paraR = 0, paraL = 0, paraW = 0, texts = [], pending = [];
+    for (var n = el.firstChild; n; n = n.nextSibling){
+      if (n.nodeType === 3){
+        var t = n.nodeValue;
+        if (t){
+          paraR += nWords(t, RTL_W);
+          paraL += nWords(t, LTR_W);
+          paraW += nLatinWords(t);
+          texts.push(n);
+        }
+        continue;
+      }
+      if (n.nodeType !== 1) continue;
+      if (SKIP_TAG[n.tagName && n.tagName.toUpperCase()]) continue;
+      var r = visit(n);
+      if (r.pending.length) pending = pending.concat(r.pending);
+      if (!r.blockLevel){
+        /* ילד מוצהר שהוא שורה בפני עצמה אינו מצביע על כיוון השורות
+           שסביבו. span מוצהר עברית שיושב בתוך משפט הוא חלק מן המשפט
+           וכן מצביע; span מוצהר עברית ש-<br> חוצץ בינו לבין מה שלפניו
+           ואחריו הוא פסקה שלמה משלו, והכותב כבר הכריע בה.
+           נמדד: כרטיס הפתרון בשאלוני הבגרות באנגלית בנוי
+           <b>The route · הדרך:</b> אנגלית ארוכה <br> <span dir="rtl">
+           פסקה עברית</span> <br> אנגלית. הספירה הכוללת נתנה rtl לכרטיס
+           כולו, והפרוזה האנגלית שבו נקראה מן הקצה הלא נכון: 4 ממצאי
+           סדר של השער בשלושה שאלונים, והפס המוזכר בהערה 6 של הסבב. */
+        /* המבחן הוא מפריד השורה ולא האורך. סף אורך נוסה ונמדד ונדחה:
+           "יחידה מוצהרת בת שש מילים ומעלה אינה מצביעה" הפך את
+           english-g9-relative-clauses-no-pronoun לעברי, שם הציטוט
+           <span class="en">The boy who won the race is my neighbour.</span>
+           הוא תשע מילים לועזיות מול שלוש עבריות, והשורה באמת נקראת
+           משמאל לימין. ציטוט אנגלי בתוך משפט עברי הוא חלק מן המשפט; רק
+           <br> אומר "כאן נגמרת שורה ומתחילה אחרת". */
+        if (!(declOf(n) && ownLine(n))){
+          paraR += r.paraR; paraL += r.paraL; paraW += r.paraW;
+        }
+        if (!r.decided && r.texts.length) texts = texts.concat(r.texts);
+      }
+    }
+
+    /* עטיפה שהוצהרה עברית ואין בה מילה עברית אחת: "If + past simple,
+       would + base." בתוך span class="he". ההצהרה שם אינה מתארת את
+       הטקסט, וקביעת rtl עליה מושכת את הנקודה של המשפט האנגלי אל הצד
+       הלא נכון. זו אותה בדיקה שכבר נעשית על הצהרת אנגלית, בראי. */
+    if (decl === 'rtl' && paraR === 0 && paraL > 0) decl = null;
+
+    var target = null;
+    if (decl === 'rtl') target = 'rtl';
+    else if (decl === 'ltr'){
+      /* עטיפה מוטבעת שהטקסט שבתוכה מכחיש אותה: <b class="en">as + תואר
+         בצורת בסיס + as</b> מוצהר אנגלית ורוב מילותיו עבריות, ואז ההצהרה
+         אינה מתארת את הטקסט. רק עטיפה מוטבעת, לעולם לא בלוק: p.en-block
+         הוא אזור אנגלי מכוון (מאגר מילים, קטע קריאה), ושורת מילון שיש בה
+         שתי מילים עבריות אינה הופכת אותו לעברי. */
+      target = (!blockLevel && paraR > paraW) ? 'rtl' : 'ltr';
+    }
+    /* יחידה מעורבת שלא הוצהרה. המידה אינה "מי הרוב" אלא "האם זה משפט
+       עברי שיש בו מילים לועזיות". משפט עברי שמצטט משפט אנגלי שלם יכול
+       להיות ברוב לועזי ועדיין להיות משפט עברי, ולכן נדרש רוב מכריע כדי
+       לקבוע אנגלית: פי שלושה לפחות, ולפחות שש מילים. נמדד: "הוא שאל
+       "When will you do your homework?" ואז חיכה" הוא ארבע מילים עבריות
+       מול שש לועזיות, ורוב פשוט היה מהפך אותו. */
+    else if (decides && paraR > 0 && paraW < 3 * paraR){
+      /* היוצא מן הכלל, ‎30.9.2026: אם כל העברית שביחידה יושבת בסוגריים,
+         היחידה אינה משפט עברי אלא משפט לועזי עם פירוש (§5.3). אז אין
+         כאן הכרעה של rtl כלל, והיחידה נמסרת אל הטיפול של "יחידה שכולה
+         לועזית": היא תיצבע ltr רק אם אב שלה נצבע rtl. */
+      var dt = decisionText(el), dtx = dt.indexOf('(') < 0 ? dt : outsideParens(dt);
+      if (dtx !== dt && nWords(dtx, RTL_W) === 0 && nLatinWords(dtx) > 1){
+        pending = pending.concat([{ el: el, texts: texts, blockLevel: blockLevel, disp: disp }]);
+      } else target = 'rtl';
+    }
+    else if (decides && paraR > 0 && paraW >= 6) target = 'ltr';
+    else if (decides && paraR === 0 && paraL > 1){
+      /* יחידה שכולה לועזית צריכה טיפול רק אם הסביבה שלה rtl: תשובה
+         לועזית בת כמה מילים במפתח תשובות עברי, שורת מילון, כותרת
+         אנגלית בת שתי מילים ומעלה. אבל ההורה מחליט על עצמו אחרי ילדיו,
+         ולכן ברגע הזה עדיין אי אפשר לשאול את הדפדפן מה הכיוון שלה.
+         מעבירים את ההחלטה למעלה: האב הראשון שנצבע rtl הוא שמכריע.
+
+         paraL > 1 ולא paraL > 0, מ-28.9.2026: ביחידה שיש בה רצף לועזי
+         **אחד** אין סדר מילים שיש מה לתקן בו, ולכן ההצהרה אינה קונה
+         דבר - והיא כן משלמת: היא מכניסה את סימן הסיום שיושב בקצה
+         היחידה אל תוך תיבת ltr, והוא נצבע בקצה הימני שלה. זהו בדיוק
+         תג המספור של שאלוני הבגרות, <span class="bg-sublet">I.</span>
+         בתוך .bg-qhead שהוא display:flex - התג נעשה פריט גמיש, כלומר
+         בלוק, וקיבל עטיפת ltr יחד עם הנקודה, כך שקורא עברית ראה ".I".
+         שער הפיסוק מדד 39 ממצאי R3 עם השכבה מול 20 בלעדיה, ומתוכם 30
+         תגי ספרה רומית בשאלוני math-bagrut-371/372/471/472/571/572.
+         מה שהדפדפן עושה לבדו הוא בדיוק הקונבנציה של משרד החינוך
+         (§3, 4,921 תגים, 0 מופעים נגדיים): התו הלטיני בשולי הקריאה
+         והנקודה צמודה לו מבפנים, כלומר "I." בקריאה מימין לשמאל.
+         "Unit 3" ו-"x = 6" נשארים נכונים מאותה סיבה: כלל W7 של
+         אלגוריתם הדו-כיווניות הופך את הספרה ל-L אחרי אות לטינית. */
+      pending = pending.concat([{ el: el, texts: texts, blockLevel: blockLevel, disp: disp }]);
+    }
+
+    if (target === 'rtl' && pending.length){
+      for (var q = 0; q < pending.length; q++) resolveForeign(pending[q]);
+      pending = [];
+    }
+
+    var consumed = false;
+    if (target){
+      if (itemBox){
+        /* כלל (4): התיבה עצמה אינה מקבלת כיוון. רק הטקסט שיושב בה ישירות
+           עוטף את עצמו, ולכן סדר הפריטים נשאר בדיוק כפי שהוא. */
+        wrapOwnText(el, target);
+        if (texts.length) isolateRuns(el, texts, target);
+      } else {
+        /* בידוד במקום סידור מחדש ביד: כל רצף של הכתב הנגדי מקבל תיבת בידוד
+           משלו, ולכן הוא נקרא בכיוון שלו והפיסוק הצמוד נשאר איתו. */
+        applyDir(el, texts, target, blockLevel, disp);
+      }
+      consumed = texts.length > 0;
+    } else if (decides && texts.length){
+      /* לא שינינו כיוון, ועדיין מבודדים כל רצף נגדי מול הכיוון שיש לאיבר
+         בפועל. זה מה שמאחד "Choose <b>said</b> or <b>told</b>" לתיבה אחת
+         במקום לארבע, בלי לגעת בתיבה עצמה. */
+      var eff = 'ltr';
+      try { eff = window.getComputedStyle(el).direction; } catch (e) {}
+      isolateRuns(el, texts, eff);
+      consumed = true;
+    }
+    return { paraR: paraR, paraL: paraL, paraW: paraW, blockLevel: blockLevel,
+             decided: !!target || consumed, texts: texts, pending: pending };
+  }
+
+  /* יחידה שכולה לועזית בתוך הקשר עברי. אותו שיקול בדיוק: תיבה מוטבעת
+     נחתמת, ובלוק מקבל עטיפה אחת כדי שמספר הפריט והיישור לא יזוזו. */
+  function resolveForeign(p){
+    applyDir(p.el, p.texts, 'ltr', p.blockLevel, p.disp);
+  }
+
+  function paragraphRoot(node){
+    var el = node.nodeType === 1 ? node : node.parentElement;
+    while (el && el !== document.body){
+      var d = null;
+      try { d = window.getComputedStyle(el).display; } catch (e) {}
+      if (isBlockLevel(el, d === 'none' ? null : d)) return el;
+      el = el.parentElement;
+    }
+    return document.body;
+  }
+
+  function sweep(root){
+    if (!root || root.nodeType !== 1) return;
+    var r = visit(root);
+    /* מה שנותר ממתין: עכשיו כל האבות כבר נצבעו, ואפשר לשאול כל יחידה מה
+       הכיוון שלה בפועל. יחידה שכולה לועזית שיושבת בתיבה שכיוונה rtl
+       צריכה ltr, בין אם ה-rtl הגיע מן הדף, מאב שנצבע כאן, או מכלל
+       בגיליון הנושא: <span class="he">If + past simple, would + base.</span>
+       הוא הצהרה שגויה של הכותב, והנקודה שלו נגררה בגללה שמאלה. */
+    for (var q = 0; q < r.pending.length; q++){
+      var pe = r.pending[q], d = 'ltr';
+      try { d = window.getComputedStyle(pe.el).direction; } catch (e) {}
+      if (d === 'rtl') resolveForeign(pe);
+    }
+    /* עכשיו, כשכל כיוון כבר נקבע: תיבה נעוצה שהטקסט שבה נעשה הפוך
+       לנעיצה מקבלת את הקישוט שלה בקצה שממנו מתחילים לקרוא. זה נעשה
+       כאן ולא בתוך visit משום שהכיוון שנמדד כאן הוא כיוונה של
+       העטיפה, והוא נקבע רק אחרי שכל האבות נצבעו.
+       עד כאן נכתב כאן ש-.rail-btn הוא הדוגמה, כלומר תיבה שהתווית
+       שבה נצבעה והיא עצמה לא. זו אינה דוגמה: התווית של
+       .rail-btn היא איבר של הכותב, ומאז שהמבחן הוא data-bidi-wrap
+       תיבה כזאת אינה מתהפכת כלל. נמדד על 1,667 הדפים הבנויים,
+       שב-17,684 מקומות בהם מופיע .rail-btn: 0 תיבות .rail-btn התהפכו,
+       לפני התיקון ואחריו. */
+    if (root.getAttribute && root.getAttribute('data-bidi-pin')) flipDecor(root);
+    var pins = root.querySelectorAll ? root.querySelectorAll('[data-bidi-pin]') : [];
+    for (var w = 0; w < pins.length; w++) flipDecor(pins[w]);
+  }
+
+  sweep(document.body);
+
+  /* כל מה שנכתב אל הדף אחר כך עובר כאן שוב: קלפי המשחק, ההסבר שאחרי
+     "בדיקה", הרמז שמאחורי הנורה, בועת הקמע, לוח המיון.
+
+     הכתיבה שלנו עצמה כן חוזרת אל המשקיף: isolateTextNode מחליף צומת טקסט
+     בפרגמנט, ו-mergeBoundaryMarks מכניס span ומעביר אליו איבר, ושניהם
+     שינויי childList. הסריקה נעצרת משום שהיא חסרת השפעה בפעם השנייה:
+     visit יוצא מיד מכל איבר שכבר נושא data-bidi או data-bidi-run, stamp
+     יוצא מיד כשהכיוון שכבר נכתב זהה למבוקש, וצומת טקסט שאין בו רצף נגדי
+     אינו משתנה. לכן המעבר השני אינו מחולל שינוי, והלולאה נסגרת. */
+  if (window.MutationObserver){
+    var pendingRoots = [], queued = false;
+    var obs = new MutationObserver(function(recs){
+      for (var i = 0; i < recs.length; i++){
+        var root = paragraphRoot(recs[i].target);
+        if (root) pendingRoots.push(root);
+      }
+      if (!queued && pendingRoots.length){
+        queued = true;
+        var go = function(){
+          queued = false;
+          var list = pendingRoots; pendingRoots = [];
+          var seen = [];
+          for (var k = 0; k < list.length; k++){
+            var el = list[k], skip = false;
+            for (var m = 0; m < seen.length; m++){
+              if (seen[m] === el || seen[m].contains(el)){ skip = true; break; }
+            }
+            if (!skip){ seen.push(el); sweep(el); }
+          }
+        };
+        if (window.requestAnimationFrame) window.requestAnimationFrame(go); else setTimeout(go, 0);
+      }
+    });
+    obs.observe(document.body, { childList: true, subtree: true, characterData: true });
+  }
+
+  /* סריקה מיידית, למי שכותב טקסט חדש ויודע שהוא נראה עכשיו: בועת הקמע
+     מחליפה טיפ כשאזור אחר של הדף נכנס למסך, כלומר מתוך IntersectionObserver
+     ולא מתוך פעולה של התלמיד. המשקיף שלמעלה מטפל בזה רק בפריים הבא, ושער
+     שמודד בין שני הפריימים ראה טיפ אנגלי כמו "He is running · We are eating
+     · I am writing." בסדר הפוך, פעם כן ופעם לא. הקמע קורא לכאן מיד אחרי
+     הכתיבה, והמשקיף שבא אחריו אינו משנה דבר. */
+  window.katzBidiNow = function(node){
+    if (!node) return;
+    var r = paragraphRoot(node);
+    if (r) sweep(r);
+  };
+
+  /* גיליון העבודה וההדפסה הם אותו DOM בדיוק, ולכן הם מקבלים את התיקון בלי
+     מערכת כללים שנייה. פתיחת details לפני הדפסה מגלה טקסט שהיה מוסתר. */
+  window.addEventListener('beforeprint', function(){ sweep(document.body); });
+})();
+</script>
+</body></html>

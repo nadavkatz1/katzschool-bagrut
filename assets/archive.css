@@ -1,0 +1,355 @@
+/* ארכיון הבגרויות - גיליון הסגנון. נכתב בידי tools/gen-archive.js.
+   הפלטה והטיפוגרפיה הן של הקורפוס: core/styles/01-base.css ו-palettes/*.css.
+   הגופן David Libre הוא מה שדפי הבגרות בקורפוס כבר מגדירים (bagrut/bagrut.css),
+   בן עיצובו של הדויד שבו מוטבעים שאלוני המשרד. כאן הוא שמור לציטוט שם השאלון
+   ולשמות הקבצים של המשרד, כלומר לקול של הנייר, ולא לקול שלנו. */
+
+:root{
+  --bg:#F7F7F7; --surface:#FFFFFF; --surface-2:#F7F9FC;
+  --ink:#0A1B2E; --ink-soft:#3c4d66; --ink-faint:#5d6c83;
+  --line:rgba(10,27,46,0.10); --line-strong:rgba(10,27,46,0.18);
+  --gold:#D9AE54; --gold-strong:#C9962E; --math-gold:#F1C25C;
+  --good:#1b9e5a; --good-bg:#e9f7ef;
+  --radius:20px; --radius-sm:13px;
+  --shadow:0 14px 40px rgba(10,27,46,0.09), 0 3px 10px rgba(10,27,46,0.05);
+  --shadow-soft:0 8px 22px rgba(10,27,46,0.07);
+  --disp:'Secular One','Heebo',sans-serif;
+  --body:'Heebo','Inter',system-ui,-apple-system,sans-serif;
+  --paper:'David Libre','Frank Ruhl Libre','Noto Serif Hebrew','Times New Roman',serif;
+  --navy:#06172F; --navy-2:#0D2340; --accent:#2B73FF; --accent-deep:#1f57d6; --soft:#18C8FF;
+}
+[data-subject="math"]{--navy:#06172F;--navy-2:#0D2340;--accent:#2B73FF;--accent-deep:#1f57d6;--soft:#18C8FF;}
+[data-subject="english"]{--navy:#3d0f22;--navy-2:#280a17;--accent:#9d2449;--accent-deep:#7a1c39;--soft:#d98aa3;}
+[data-subject="hebrew"]{--navy:#2a1a3e;--navy-2:#1f1030;--accent:#7c3aed;--accent-deep:#6d28d9;--soft:#c084fc;}
+[data-subject="arabic"]{--navy:#12281c;--navy-2:#0c1a12;--accent:#0f9d58;--accent-deep:#0b7a43;--soft:#5ec48f;}
+
+*{box-sizing:border-box;}
+html{font-size:18px; scroll-behavior:smooth;}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--body); line-height:1.75; -webkit-font-smoothing:antialiased;
+  background-image:
+    radial-gradient(60% 50% at 88% -5%, rgba(24,200,255,.07), transparent 60%),
+    radial-gradient(45% 40% at 5% 8%, rgba(217,174,84,.06), transparent 60%);
+  background-attachment:fixed;
+}
+a{color:var(--accent-deep);}
+.wrap{max-width:1000px; margin:0 auto; padding:0 24px;}
+
+/* ---- סרגל המותג. צבעוני בכוונה: זה הדבר הראשון שמפריד בינינו לבין מסמך
+       של המשרד (תוכנית, 3.5). ---- */
+.brandbar{position:sticky; top:0; z-index:40; background:rgba(247,247,247,.88);
+  backdrop-filter:saturate(165%) blur(12px); border-bottom:1px solid var(--line);}
+.brandbar-in{display:flex; align-items:center; gap:13px; max-width:1000px; margin:0 auto; padding:11px 24px;}
+.brandmark{width:46px; height:46px; flex:0 0 auto; filter:drop-shadow(0 3px 8px rgba(201,150,46,.28));}
+.brandtext{display:flex; flex-wrap:wrap; align-items:baseline; gap:.4em; line-height:1.25;}
+.brandname{font-weight:800; font-size:1.12rem; letter-spacing:.2px;}
+.brandsep{color:var(--gold-strong);}
+.brandline{font-family:var(--disp); font-weight:400; font-size:.84rem; color:var(--gold-strong); letter-spacing:.3px;}
+.brandback{margin-inline-start:auto; font-size:.86rem; font-weight:700; text-decoration:none;
+  color:var(--navy); background:linear-gradient(180deg,#fff,#eef3fb); border:1px solid var(--line-strong);
+  padding:7px 15px; border-radius:999px; box-shadow:var(--shadow-soft); white-space:nowrap;}
+.brandback:hover{border-color:var(--accent);}
+
+/* ---- פתיח ---- */
+.hero{padding:40px 0 8px;}
+.eyebrow{font-family:var(--disp); font-size:.82rem; letter-spacing:.14em; color:var(--gold-strong); margin:0 0 6px;}
+h1{font-family:var(--disp); font-weight:400; font-size:2.5rem; line-height:1.18; margin:0 0 10px; color:var(--navy);}
+.lede{font-size:1.06rem; color:var(--ink-soft); max-width:46rem; margin:0 0 18px;}
+.stats{display:flex; flex-wrap:wrap; gap:9px; list-style:none; padding:0; margin:0 0 22px;}
+.stats li{background:var(--surface); border:1px solid var(--line); border-radius:999px;
+  padding:7px 16px; font-size:.9rem; color:var(--ink-faint); box-shadow:var(--shadow-soft);}
+.stats li b{color:var(--ink); font-size:1.1rem; font-family:var(--disp); font-weight:400; margin-inline-end:.3em;}
+
+.subjnav{display:flex; flex-wrap:wrap; gap:10px; margin:0 0 10px;}
+.subjnav a{display:inline-flex; align-items:baseline; gap:.45em; text-decoration:none; color:#fff;
+  background:linear-gradient(150deg,var(--navy-2),var(--navy)); border-radius:var(--radius-sm);
+  padding:11px 20px; font-weight:700; font-size:1rem; box-shadow:var(--shadow-soft);}
+.subjnav a span{font-size:.8rem; opacity:.72; font-weight:400;}
+.subjnav a:hover{filter:brightness(1.18);}
+.howto{font-size:.93rem; color:var(--ink-faint); margin:0 0 30px;}
+
+/* ---- מקצוע ---- */
+.subject{margin:34px 0 0; scroll-margin-top:78px;}
+.subject h2{font-family:var(--disp); font-weight:400; font-size:1.85rem; margin:0 0 4px; color:var(--navy);
+  display:flex; align-items:baseline; gap:.5em;}
+.subject h2 .cnt{font-family:var(--body); font-size:.8rem; font-weight:700; color:#fff;
+  background:var(--accent); border-radius:999px; padding:2px 11px;}
+.subject-sub{color:var(--ink-soft); margin:0 0 14px; max-width:46rem;}
+
+.sheelon{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  box-shadow:var(--shadow); padding:22px 24px 18px; margin:0 0 18px; scroll-margin-top:78px;}
+.sheelon h3{font-size:1.25rem; margin:0 0 6px; color:var(--navy);}
+.sheelon h3 .code{font-family:var(--paper); color:var(--accent-deep); font-weight:400;}
+.tags{display:flex; flex-wrap:wrap; gap:7px; list-style:none; padding:0; margin:0 0 10px;}
+.tags li{font-size:.8rem; color:var(--ink-faint); background:var(--surface-2);
+  border:1px solid var(--line); border-radius:999px; padding:3px 11px;}
+.sheelon .note{font-size:.92rem; color:var(--ink-soft); margin:0 0 14px;}
+
+/* ---- רשת השנה והמועד ---- */
+.gridwrap{overflow-x:auto;}
+table.moed{width:100%; border-collapse:collapse; font-size:.92rem;}
+table.moed th, table.moed td{border:1px solid var(--line); padding:0; text-align:center; vertical-align:stretch;}
+table.moed thead th{background:linear-gradient(150deg,var(--navy-2),var(--navy)); color:#fff;
+  font-weight:700; padding:9px 10px; font-size:.88rem;}
+table.moed tbody th{background:var(--surface-2); font-weight:700; padding:9px 12px; white-space:nowrap; color:var(--navy);}
+.cell{display:flex; flex-direction:column; gap:2px; padding:11px 10px; min-height:66px;
+  justify-content:center; text-decoration:none; height:100%;}
+a.cell{color:var(--accent-deep); font-weight:700;}
+a.cell:hover{background:var(--surface-2);}
+.cell .mark{font-size:.74rem; font-weight:400; color:var(--ink-faint);}
+.cell .mark.has{color:var(--good);}
+.cell.none, .cell.soon{color:var(--ink-faint); font-weight:400; font-size:.86rem;}
+.cell .cellmoed{display:none;}
+
+.coverage{font-size:.88rem; color:var(--ink-faint); margin:12px 0 0; padding-inline-start:14px;
+  border-inline-start:3px solid var(--gold); }
+.coverage b{color:var(--ink-soft);}
+
+/* ---- דף בחינה ---- */
+.crumbs{font-size:.85rem; color:var(--ink-faint); padding:18px 0 0;}
+.crumbs a{color:var(--ink-faint); text-decoration:none;}
+.crumbs a:hover{color:var(--accent-deep); text-decoration:underline;}
+.crumbs span{margin:0 .35em;}
+
+.idcard{background:linear-gradient(150deg,var(--navy-2),var(--navy)); color:#fff;
+  border-radius:var(--radius); padding:28px 28px 22px; margin:16px 0 26px; box-shadow:var(--shadow);}
+.idcard .eyebrow{color:var(--math-gold);}
+.idcard h1{color:#fff; font-size:2.1rem; margin:0 0 4px;}
+.idcard .when{font-size:1.05rem; color:rgba(255,255,255,.78); margin:0 0 18px;}
+dl.idgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:14px 22px; margin:0;}
+dl.idgrid dt{font-size:.76rem; letter-spacing:.06em; color:rgba(255,255,255,.62); margin:0 0 1px;}
+dl.idgrid dd{margin:0; font-weight:700; font-size:1rem;}
+.idnote{margin:18px 0 0; padding-top:14px; border-top:1px solid rgba(255,255,255,.16);
+  font-size:.9rem; color:rgba(255,255,255,.8);}
+.idquote{margin:8px 0 0; font-size:.86rem; color:rgba(255,255,255,.66);}
+.idquote q{font-family:var(--paper); color:rgba(255,255,255,.88);}
+
+h2.block{font-family:var(--disp); font-weight:400; font-size:1.5rem; color:var(--navy); margin:30px 0 4px;}
+.block-sub{color:var(--ink-soft); margin:0 0 16px; font-size:.95rem;}
+
+.files{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin:0 0 6px;}
+.groupline{display:flex; align-items:baseline; gap:.6em; margin:26px 0 10px;}
+.groupline h3{font-family:var(--disp); font-weight:400; font-size:1.12rem; color:var(--navy); margin:0;}
+.groupline p{font-size:.85rem; color:var(--ink-faint); margin:0;}
+
+/* ---- מסגרת של מקור חיצוני. בלי מותג, בלי זהב, בלי צל: היא צריכה להיראות
+       כמו ציטוט ולא כמו כרטיס שלנו. הבודק חותך אותה ומוודא שאין בה לא לוגו
+       ולא שם המותג. ---- */
+.ext{border:2px solid var(--line-strong); border-radius:var(--radius-sm);
+  background:#FCFCFD; padding:18px 20px 20px;}
+.ext .extlabel{font-size:.72rem; letter-spacing:.09em; color:var(--ink-faint);
+  border:1px solid var(--line-strong); border-radius:999px; padding:2px 10px; display:inline-block; margin:0 0 10px;}
+.ext h3{font-family:var(--paper); font-size:1.28rem; margin:0 0 3px; color:#111;}
+.ext .meta{font-size:.86rem; color:var(--ink-faint); margin:0 0 14px; direction:rtl;}
+.ext .fine{font-size:.78rem; color:var(--ink-faint); margin:10px 0 0;}
+/* קישור בתוך המסגרת החיצונית נשאר שחור: כחול המותג בתוך מסגרת של מקור זר
+   מטשטש בדיוק את ההפרדה שהמסגרת קיימת בשבילה. */
+.ext .fine a{color:#111; text-decoration:underline;}
+/* על נייר אין לחיצה, ולכן הכתובת נדפסת. היא נכתבת כטקסט אמיתי ולא כתוכן
+   של CSS, כדי שגם חיפוש וגם בודק יראו אותה. */
+.ext .printurl{display:none; font-size:.72rem; color:#333; word-break:break-all; direction:ltr; text-align:start; margin-top:8px;}
+.ext .missing{font-size:.92rem; color:var(--ink-soft); margin:0 0 4px;}
+.btn-ext{display:inline-block; text-decoration:none; font-weight:700; font-size:.92rem;
+  color:#111; background:#fff; border:1.5px solid #111; border-radius:8px; padding:9px 17px;}
+.btn-ext:hover{background:#111; color:#fff;}
+
+/* ---- כרטיס שהוא שלנו ---- */
+.ours{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-sm);
+  box-shadow:var(--shadow-soft); padding:18px 20px 20px; border-top:3px solid var(--gold);}
+.ours .ourslabel{font-family:var(--disp); font-size:.78rem; letter-spacing:.08em;
+  color:var(--gold-strong); margin:0 0 8px;}
+.ours h3{font-size:1.15rem; margin:0 0 6px; color:var(--navy);}
+.ours p{font-size:.9rem; color:var(--ink-soft); margin:0 0 10px;}
+.status{display:inline-block; font-size:.78rem; font-weight:700; color:var(--ink-faint);
+  background:var(--surface-2); border:1px solid var(--line); border-radius:999px; padding:3px 12px;}
+.status.only{color:var(--gold-strong); border-color:var(--gold);}
+
+/* ---- מועדים אחרים ---- */
+.chips{display:flex; flex-wrap:wrap; gap:8px; list-style:none; padding:0; margin:0;}
+.chips a, .chips span{display:inline-block; font-size:.88rem; text-decoration:none; border-radius:999px;
+  padding:7px 15px; border:1px solid var(--line); background:var(--surface); color:var(--accent-deep); font-weight:700;}
+.chips span{color:var(--ink-faint); font-weight:400; background:var(--surface-2);}
+.chips a:hover{border-color:var(--accent);}
+.chips .self{background:var(--navy); color:#fff; border-color:var(--navy);}
+
+/* ---- הכותרת התחתונה של הארכיון ---- */
+.archfoot{margin:52px 0 0; background:var(--surface); border-top:1px solid var(--line); padding:30px 0 44px;}
+.archfoot h2{font-family:var(--disp); font-weight:400; font-size:1.2rem; color:var(--navy); margin:0 0 12px;}
+.archfoot p{font-size:.88rem; color:var(--ink-soft); margin:0 0 9px; max-width:52rem;}
+.archfoot .rights{margin:16px 0; padding:12px 16px; border-inline-start:3px solid var(--line-strong);
+  background:var(--surface-2); border-radius:var(--radius-sm);}
+.archfoot .rights p{font-family:var(--paper); color:#111; margin:0; font-size:.95rem;}
+.archfoot .rights cite{display:block; font-style:normal; font-size:.76rem; color:var(--ink-faint); margin-top:7px;}
+.archfoot .disclaim{font-weight:700; color:var(--ink);}
+.archfoot .footbrand{display:flex; align-items:center; gap:11px; margin:0 0 16px;}
+.archfoot .footbrand img{width:34px; height:34px;}
+.archfoot .footbrand .brandname{font-size:1rem;}
+/* כתובת ארוכה היא מילה אחת בלי רווח, והיא דחפה את הדף ב-114 פיקסלים ימינה
+   בטלפון (נמדד ב-390 רוחב: scrollWidth 504 מול clientWidth 390). */
+.archfoot a{display:inline-block; max-width:100%; overflow-wrap:anywhere; word-break:break-word;
+  direction:ltr; unicode-bidi:isolate;}
+
+/* ---- הכפתור בכרטיס שלנו, כשהחומר כבר קיים ---- */
+.btn-ours{display:inline-block; text-decoration:none; font-weight:700; font-size:.92rem; color:#fff;
+  background:linear-gradient(150deg,var(--navy-2),var(--navy)); border-radius:999px; padding:8px 18px;
+  margin:0 0 10px; margin-inline-end:8px; box-shadow:var(--shadow-soft);}
+.btn-ours:hover{filter:brightness(1.18);}
+.status.done{color:var(--good); border-color:var(--good); background:var(--good-bg);}
+
+/* ---- הדפים שלנו: התשובות הסופיות והפתרון המלא. הכותרת שלהם נושאת את הזהב
+       של המותג, כי הם שלנו. ---- */
+.ourshead{background:linear-gradient(150deg,var(--navy-2),var(--navy)); color:#fff; border-radius:var(--radius);
+  padding:26px 28px 20px; margin:16px 0 22px; box-shadow:var(--shadow); border-top:4px solid var(--gold);}
+.ourshead .eyebrow{color:var(--math-gold);}
+.ourshead h1{color:#fff; font-size:2rem; margin:0 0 4px;}
+.ourshead .when{color:rgba(255,255,255,.78); margin:0 0 12px;}
+.ourslede{color:rgba(255,255,255,.88); margin:0 0 14px; max-width:46rem;}
+.ourslinks{display:flex; flex-wrap:wrap; gap:10px; margin:0;}
+.ourslinks a{color:var(--navy); background:#fff; text-decoration:none; font-weight:700; font-size:.88rem;
+  border-radius:999px; padding:6px 15px;}
+.ourslinks a:hover{background:var(--math-gold);}
+.oursnote, .paperflags{background:var(--surface); border:1px solid var(--line); border-inline-start:4px solid var(--gold);
+  border-radius:var(--radius-sm); padding:12px 18px; margin:0 0 16px; font-size:.92rem; color:var(--ink-soft);}
+.paperflags h2{font-family:var(--disp); font-weight:400; font-size:1.1rem; color:var(--navy); margin:0 0 6px;}
+.paperflags ul{margin:0; padding-inline-start:20px;}
+.paperflags li{margin:0 0 6px;}
+h2.chap{font-family:var(--disp); font-weight:400; font-size:1.45rem; color:var(--navy); margin:30px 0 10px;}
+.aq{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow-soft);
+  padding:16px 20px 12px; margin:0 0 14px;}
+.aq h3{margin:0 0 2px; font-size:1.15rem; color:var(--navy);}
+.aq .pts{font-size:.78rem; font-weight:700; color:var(--gold-strong); margin-inline-start:.5em;}
+.aq .topic{font-size:.9rem; color:var(--ink-faint); margin:0 0 8px;}
+.aq .ptsnote{font-size:.84rem; color:var(--ink-faint); margin:-4px 0 8px;}
+.tblwrap{overflow-x:auto;}
+table.ans{width:100%; border-collapse:collapse; font-size:.98rem;}
+table.ans th, table.ans td{border-top:1px solid var(--line); padding:9px 10px; vertical-align:top; text-align:start;}
+table.ans thead th{border-top:0; font-size:.74rem; color:var(--ink-faint); font-weight:700; letter-spacing:.04em; padding-top:2px; padding-bottom:4px;}
+table.ans tbody th{width:4.8em; color:var(--accent-deep); font-weight:700;}
+table.ans .a{font-weight:600; color:var(--ink);}
+table.ans .a.en{text-align:left;}
+table.ans .a.model{font-weight:400;}
+.ar, [lang="ar"]{font-family:'Noto Naskh Arabic','Heebo',serif; font-size:1.06em;}
+.agloss{font-size:.9rem; color:var(--ink-soft); margin-top:3px;}
+.atag{display:inline-block; font-size:.74rem; font-weight:700; color:var(--gold-strong); border:1px solid var(--gold);
+  border-radius:999px; padding:1px 10px; margin:6px 0 0;}
+.fromkey .atag{color:var(--ink-faint); border-color:var(--line-strong);}
+.anote, .also{font-size:.86rem; color:var(--ink-soft); margin:6px 0 0;}
+.alsol{font-weight:700;}
+
+/* ---- נוסחאות. נקראות משמאל לימין בתוך השורה העברית, בגופן של נוסחאות,
+       עם שבר בקו שבר ושורש בקו עליון. ---- */
+.math, .eq, .eqgrid{font-family:'STIX Two Text','Cambria Math','Times New Roman',serif;}
+.math{direction:ltr; unicode-bidi:isolate; font-size:1.08em;}
+.frac{display:inline-flex; flex-direction:column; align-items:center; vertical-align:middle; font-size:.88em;
+  line-height:1.15; margin:0 .1em; text-align:center;}
+.frac > .fn{border-bottom:.06em solid currentColor; padding:0 .15em .06em; min-width:.7em;}
+.frac > .fd{padding:.06em .15em 0;}
+.rad{white-space:nowrap;}
+.rad > .rb{border-top:.06em solid currentColor; padding:0 .1em 0 .04em;}
+.rad > .ri{font-size:.6em; vertical-align:.95em; margin-right:-.35em;}
+.math sup, .eq sup, .eqgrid sup, .math sub, .eq sub, .eqgrid sub{font-size:.68em; line-height:0; white-space:nowrap;}
+.frac, .frac > span{white-space:nowrap;}
+.dm{margin:10px 0 14px; padding:8px 16px; background:var(--surface-2); border-radius:var(--radius-sm);
+  border-inline-start:3px solid var(--soft); overflow-x:auto;}
+.eq{direction:ltr; unicode-bidi:isolate; text-align:right; white-space:pre-wrap; font-size:1.1em; line-height:2.05;}
+.eqr{white-space:pre-wrap; line-height:2.05;}
+.eqgrid{display:grid; grid-template-columns:auto auto; justify-content:end; column-gap:.3em;
+  direction:ltr; unicode-bidi:isolate; font-size:1.1em; line-height:2.05;}
+.eqgrid .lhs{text-align:right; white-space:pre-wrap;}
+.eqgrid .rhs{text-align:left; white-space:pre-wrap;}
+pre.art{font-family:ui-monospace,Menlo,Consolas,monospace; direction:ltr; text-align:left; line-height:1.25; margin:10px 0;
+  padding:10px 16px; background:var(--surface-2); border-radius:var(--radius-sm); overflow-x:auto;}
+
+/* ---- גוף הפתרון ---- */
+.soltoc{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:14px 22px;
+  margin:0 0 20px; box-shadow:var(--shadow-soft);}
+.soltoc h2{font-family:var(--disp); font-weight:400; font-size:1.1rem; color:var(--navy); margin:0 0 6px;}
+.soltoc ul{list-style:none; padding:0; margin:0; columns:2; column-gap:28px;}
+.soltoc li{font-size:.9rem; margin:0 0 4px; break-inside:avoid;}
+.soltoc li.lv2{font-weight:700; margin-top:8px;}
+.soltoc a{text-decoration:none; color:var(--accent-deep);}
+.soltoc a:hover{text-decoration:underline;}
+.sol{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow);
+  padding:8px 30px 24px;}
+.sol h2{font-family:var(--disp); font-weight:400; font-size:1.6rem; color:var(--navy); margin:28px 0 8px;
+  padding-top:16px; border-top:2px solid var(--line); scroll-margin-top:80px;}
+.sol h2:first-child{border-top:0;}
+.sol h3{font-size:1.25rem; color:var(--navy); margin:26px 0 6px; scroll-margin-top:80px;}
+.sol h4{font-size:1.04rem; color:var(--accent-deep); margin:18px 0 4px; scroll-margin-top:80px;}
+.sol hr{border:0; border-top:1px solid var(--line); margin:22px 0;}
+.sol p.ltrp{text-align:right; font-family:'STIX Two Text','Cambria Math','Times New Roman',serif; font-size:1.08em;}
+.sol ul, .sol ol{padding-inline-start:22px;}
+.sol blockquote.tip{margin:14px 0; padding:10px 18px; background:#FFF8E8; border-inline-start:4px solid var(--gold);
+  border-radius:var(--radius-sm);}
+.sol blockquote.tip p{margin:4px 0;}
+table.soltbl{border-collapse:collapse; margin:10px 0; font-size:.95rem;}
+table.soltbl th, table.soltbl td{border:1px solid var(--line-strong); padding:6px 12px; text-align:center;}
+table.soltbl thead th{background:var(--surface-2);}
+
+/* ---- טלפון ---- */
+@media (max-width:620px){
+  html{font-size:17px;}
+  .ourshead{padding:20px 18px 16px;}
+  .ourshead h1{font-size:1.55rem;}
+  .sol{padding:4px 16px 16px;}
+  .soltoc ul{columns:1;}
+  .aq{padding:14px 14px 10px;}
+  table.ans tbody th{width:3.4em;}
+  .dm{padding:8px 10px;}
+  .wrap{padding:0 16px;}
+  .brandbar-in{padding:10px 16px; gap:10px;}
+  .brandmark{width:38px; height:38px;}
+  .brandback{padding:6px 11px; font-size:.78rem;}
+  /* בטלפון שורת המותג יורדת לשורה משלה, והנקודה המפרידה מיותרת שם. */
+  .brandtext{flex-direction:column; gap:0;}
+  .brandsep{display:none;}
+  .brandline{font-size:.78rem;}
+  h1{font-size:1.85rem;}
+  .idcard{padding:20px 18px 18px;}
+  .idcard h1{font-size:1.6rem;}
+  .files{grid-template-columns:1fr;}
+  .groupline{flex-direction:column; gap:0;}
+  .sheelon{padding:18px 16px 14px;}
+  /* הרשת נפרשת לרשימה: כל שנה בלוק, וכל תא נושא את שם המועד בטקסט אמיתי
+     (span ולא תוכן מ-CSS, כדי שהוא יהיה קריא גם לבודק וגם למנוע חיפוש). */
+  .gridwrap{overflow:visible;}
+  table.moed, table.moed tbody, table.moed tr, table.moed td, table.moed th{display:block; width:100%;}
+  table.moed thead{display:none;}
+  table.moed tr{margin:0 0 12px; border:1px solid var(--line); border-radius:var(--radius-sm); overflow:hidden;}
+  table.moed th, table.moed td{border:0; border-bottom:1px solid var(--line); text-align:start;}
+  table.moed tr td:last-child{border-bottom:0;}
+  .cell{flex-direction:row; align-items:baseline; gap:.5em; flex-wrap:wrap; min-height:0; padding:10px 14px;}
+  .cell .cellmoed{display:inline; color:var(--ink-faint); font-weight:400; font-size:.82rem; min-width:5.2em;}
+}
+
+/* ---- הדפסה ---- */
+@media print{
+  html{font-size:12pt;}
+  body{background:#fff; background-image:none; color:#000;}
+  .brandbar{position:static; background:#fff; border-bottom:1px solid #000; backdrop-filter:none;}
+  .brandback, .subjnav, .chips{display:none;}
+  .idcard{background:#fff; color:#000; border:1.5px solid #000; box-shadow:none;}
+  .idcard h1, .idcard .when, dl.idgrid dd{color:#000;}
+  .idcard .eyebrow, dl.idgrid dt, .idnote, .idquote{color:#333;}
+  .idnote{border-top-color:#999;}
+  .idquote q{color:#000;}
+  .sheelon, .ours, .ext{box-shadow:none; break-inside:avoid; border-color:#999;}
+  table.moed thead th{background:#eee; color:#000;}
+  .btn-ext{border-color:#000;}
+  .ext .printurl{display:block;}
+  .siblings{display:none;}
+  .archfoot{border-top:1px solid #000; background:#fff;}
+  /* הדפים שלנו על נייר: בלי ניווט, בלי צל, ושום תשובה או נוסחה אינה נחתכת
+     בין שני עמודים. */
+  .ourshead{background:#fff; color:#000; border:1.5px solid #000; box-shadow:none;}
+  .ourshead h1, .ourshead .when, .ourslede{color:#000;}
+  .ourshead .eyebrow{color:#333;}
+  .ourslinks, .soltoc, .btn-ours, .crumbs{display:none;}
+  .aq, .sol, .oursnote, .paperflags{box-shadow:none; border-color:#999;}
+  table.ans tr, .dm, .eqgrid, pre.art, .sol blockquote.tip, table.soltbl{break-inside:avoid;}
+  .dm, pre.art{background:#fff; border-color:#999;}
+  .sol blockquote.tip{background:#fff;}
+  .sol h2, .sol h3, .sol h4, h2.chap, .aq h3{break-after:avoid;}
+  .sol{padding:0; border:0;}
+}
